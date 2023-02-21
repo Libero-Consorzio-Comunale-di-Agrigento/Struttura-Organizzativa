@@ -1,0 +1,43 @@
+CREATE TABLE P00_RAPPORTI_INDIVIDUALI
+(
+  NI        NUMBER(8),
+  CI        NUMBER(8),
+  COGNOME   VARCHAR2(240 BYTE),
+  NOME      VARCHAR2(40 BYTE),
+  DATA_NAS  DATE,
+  RAPPORTO  VARCHAR2(4 BYTE),
+  DAL       DATE,
+  AL        DATE,
+  E_MAIL    VARCHAR2(240 BYTE)
+)
+TABLESPACE SO4
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            MAXSIZE          UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           );
+
+COMMENT ON TABLE P00_RAPPORTI_INDIVIDUALI IS 'Tabella rapporti_individuali di P00 (in presenza di integrazione viene sostituita da un sinonimo)';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.NI IS 'Numero individuale del dipendente';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.CI IS 'Codice individuale del dipendente';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.COGNOME IS 'Cognome del dipendente';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.NOME IS 'Nome del dipendente';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.DATA_NAS IS 'Data di nascita del dipendente';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.RAPPORTO IS 'Classe di rapporto con l''ente';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.DAL IS 'Data inizio rapporto';
+
+COMMENT ON COLUMN P00_RAPPORTI_INDIVIDUALI.AL IS 'Data fine rapporto';
+
+
+

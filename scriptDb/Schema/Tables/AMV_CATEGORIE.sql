@@ -1,0 +1,21 @@
+CREATE TABLE AMV_CATEGORIE
+(
+  ID_CATEGORIA  NUMBER(10)                      NOT NULL,
+  NOME          VARCHAR2(100 BYTE)              NOT NULL,
+  DESCRIZIONE   VARCHAR2(2000 BYTE)
+)
+TABLESPACE SO4
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            MAXSIZE          UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           );
+
+COMMENT ON TABLE AMV_CATEGORIE IS 'CATE - Categirie degli articoli';
+
+
+

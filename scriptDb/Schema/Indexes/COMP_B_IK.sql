@@ -1,0 +1,13 @@
+CREATE INDEX COMP_B_IK ON COMPONENTI_B
+(CI)
+TABLESPACE SO4
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            MAXSIZE          UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           );
+
+

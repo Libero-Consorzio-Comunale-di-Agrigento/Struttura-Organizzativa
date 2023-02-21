@@ -1,0 +1,9 @@
+﻿Insert into SI4_TIPI_OGGETTO
+   (ID_TIPO_OGGETTO, TIPO_OGGETTO, DESCRIZIONE)
+ Values
+   (1, 'FILE', 'File');
+Insert into SI4_TIPI_OGGETTO
+   (ID_TIPO_OGGETTO, TIPO_OGGETTO, DESCRIZIONE)
+ Values
+   (2, 'DIRECTORY', 'Directory');
+COMMIT;

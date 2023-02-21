@@ -1,0 +1,28 @@
+CREATE TABLE RUOLI_DERIVATI
+(
+  ID_RUOLO_DERIVATO    NUMBER(10)               NOT NULL,
+  ID_RUOLO_COMPONENTE  NUMBER(10),
+  ID_PROFILO           NUMBER(10),
+  ID_RELAZIONE         NUMBER(10)
+)
+TABLESPACE SO4
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            MAXSIZE          UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           );
+
+COMMENT ON COLUMN RUOLI_DERIVATI.ID_RUOLO_DERIVATO IS 'PK progressiva';
+
+COMMENT ON COLUMN RUOLI_DERIVATI.ID_RUOLO_COMPONENTE IS 'Identificativo del ruolo su RUOLI_COMPONENTE';
+
+COMMENT ON COLUMN RUOLI_DERIVATI.ID_PROFILO IS 'Id_ruolo_componente del ruolo-profilo di origine';
+
+COMMENT ON COLUMN RUOLI_DERIVATI.ID_RELAZIONE IS 'Id_relazione di relazioni_ruoli che identifica la regola di origine';
+
+
+
