@@ -1,0 +1,54 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Profilo Utente">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Profilo">
+      <param name="Local" value="Profilo.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Utente">
+      <param name="Local" value="Utente.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Accesso">
+      <param name="Local" value="Accesso.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Servizi">
+      <param name="Local" value="Servizi.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Preferenze">
+      <param name="Local" value="Preferenze.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Richieste on-line">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Richieste on-line">
+        <param name="Local" value="AmvRichiesteElenco.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Le mie Richieste">
+        <param name="Local" value="AmvRichiesteAutore.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Tutte le Richieste">
+        <param name="Local" value="AmvRichiesteModello.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Registrazione richiesta">
+        <param name="Local" value="ServletModulistica.htm">
+      </object>
+      </ul>
+    </ul>
+</ul>
+</html>

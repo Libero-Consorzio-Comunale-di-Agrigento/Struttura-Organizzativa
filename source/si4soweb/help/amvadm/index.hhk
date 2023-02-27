@@ -1,0 +1,466 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="index">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Abilitazione">
+    <param name="Name" value="Approvazione">
+    <param name="Local" value="Approvazione.htm">
+    <param name="Name" value="Registrazione Automatica">
+    <param name="Local" value="Registrazione_Automatica.htm">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Local" value="Registrazione_Controllata.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Abilitazione accesso">
+    <param name="Name" value="Richieste abilitazione">
+    <param name="Local" value="AdmRichieste.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Accessi">
+    <param name="Name" value="Accessi">
+    <param name="Local" value="AdmAccessi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Accesso">
+    <param name="Name" value="Amministrazione DirittiAccesso">
+    <param name="Local" value="AdmDirittiAccesso.htm">
+    <param name="Name" value="Aree">
+    <param name="Local" value="AdmAree.htm">
+    <param name="Name" value="Diritti Accesso">
+    <param name="Local" value="AdmDiritti.htm">
+    <param name="Name" value="Richieste abilitazione">
+    <param name="Local" value="AdmRichieste.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="AD4">
+    <param name="Name" value="Gestione delle Notifiche">
+    <param name="Local" value="Gestione_delle_Notifiche.htm">
+    <param name="Name" value="Registrazione Anagrafica">
+    <param name="Local" value="Registrazione_Anagrafica.htm">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+    <param name="Name" value="Registrazione da Sistema">
+    <param name="Local" value="Registrazione_da_Sistema.htm">
+    <param name="Name" value="Servizi del Portale">
+    <param name="Local" value="Servizi_del_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Aggiornamento Documento">
+    <param name="Name" value="Aggiornamento Documento">
+    <param name="Local" value="AdmDocumento.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministratore">
+    <param name="Name" value="Caratteristiche Generali">
+    <param name="Local" value="AmvAmministratorePortale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministratore del Portale">
+    <param name="Name" value="Approvazione">
+    <param name="Local" value="Approvazione.htm">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Local" value="Registrazione_Controllata.htm">
+    <param name="Name" value="Registrazione da Applicazione">
+    <param name="Local" value="Registrazione_da_Applicazione.htm">
+    <param name="Name" value="Registrazione Utente al Portale">
+    <param name="Local" value="Registrazione_Utente_al_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministratore di Sistema">
+    <param name="Name" value="Registrazione da Sistema">
+    <param name="Local" value="Registrazione_da_Sistema.htm">
+    <param name="Name" value="Registrazione Utente al Portale">
+    <param name="Local" value="Registrazione_Utente_al_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione Contenuti">
+    <param name="Name" value="Amministrazione Contenuti">
+    <param name="Local" value="AdmContenuti.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione del Portale">
+    <param name="Name" value="Caratteristiche Generali">
+    <param name="Local" value="AmvAmministratorePortale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione Diritti Accesso">
+    <param name="Name" value="Amministrazione DirittiAccesso">
+    <param name="Local" value="AdmDirittiAccesso.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione Funzioni">
+    <param name="Name" value="Amministrazione Funzioni">
+    <param name="Local" value="AdmFunzioni.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione Guide">
+    <param name="Name" value="Amministrazione Guide">
+    <param name="Local" value="AdmGuide.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione Preferenze">
+    <param name="Name" value="Amministrazione Preferenze">
+    <param name="Local" value="AdmPreferenzeImpostazione.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione Revisioni">
+    <param name="Name" value="Amministrazione Revisioni">
+    <param name="Local" value="AdmRevisioniElenco.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione Servizi">
+    <param name="Name" value="Amministrazione Servizi">
+    <param name="Local" value="AdmServizi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Ammministrazione Classificazioni">
+    <param name="Name" value="Ammministrazione Classificazioni">
+    <param name="Local" value="AdmClassificazioni.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Applicazione">
+    <param name="Name" value="Registrazione da Applicazione">
+    <param name="Local" value="Registrazione_da_Applicazione.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Approvazione">
+    <param name="Name" value="Approvazione">
+    <param name="Local" value="Approvazione.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Aree">
+    <param name="Name" value="Aree">
+    <param name="Local" value="AdmAree.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Argomenti">
+    <param name="Name" value="Argomenti">
+    <param name="Local" value="AdmArgomenti.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Automatica">
+    <param name="Name" value="Registrazione Automatica">
+    <param name="Local" value="Registrazione_Automatica.htm">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Autorizzazione">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Azienda">
+    <param name="Name" value="Approvazione">
+    <param name="Local" value="Approvazione.htm">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Local" value="Registrazione_Controllata.htm">
+    <param name="Name" value="Registrazione Utente al Portale">
+    <param name="Local" value="Registrazione_Utente_al_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Caratteristiche Generali">
+    <param name="Name" value="Caratteristiche Generali">
+    <param name="Local" value="AmvAmministratorePortale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Categorie">
+    <param name="Name" value="Categorie">
+    <param name="Local" value="AdmCategorie.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Come fare per">
+    <param name="Name" value="Come fare per...">
+    <param name="Local" value="Come_fare_per___.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Communication Manager">
+    <param name="Name" value="Approvazione">
+    <param name="Local" value="Approvazione.htm">
+    <param name="Name" value="Registrazione Automatica">
+    <param name="Local" value="Registrazione_Automatica.htm">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Local" value="Registrazione_Controllata.htm">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contenuti">
+    <param name="Name" value="Aggiornamento Documento">
+    <param name="Local" value="AdmDocumento.htm">
+    <param name="Name" value="Amministrazione Contenuti">
+    <param name="Local" value="AdmContenuti.htm">
+    <param name="Name" value="Amministrazione Revisioni">
+    <param name="Local" value="AdmRevisioniElenco.htm">
+    <param name="Name" value="Storico Revisioni">
+    <param name="Local" value="AdmRevisioniStorico.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Controllata">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Diritti Accesso">
+    <param name="Name" value="Amministrazione DirittiAccesso">
+    <param name="Local" value="AdmDirittiAccesso.htm">
+    <param name="Name" value="Diritti Accesso">
+    <param name="Local" value="AdmDiritti.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Documento">
+    <param name="Name" value="Aggiornamento Documento">
+    <param name="Local" value="AdmDocumento.htm">
+    <param name="Name" value="Amministrazione Contenuti">
+    <param name="Local" value="AdmContenuti.htm">
+    <param name="Name" value="Storico Revisioni">
+    <param name="Local" value="AdmRevisioniStorico.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Esempi di Notifica">
+    <param name="Name" value="Esempi di Notifica">
+    <param name="Local" value="Esempi_di_Notifica.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Funzionalità Principali">
+    <param name="Name" value="Amministrazione Funzioni">
+    <param name="Local" value="AdmFunzioni.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Funzioni">
+    <param name="Name" value="Menu funzioni">
+    <param name="Local" value="AdmMenu.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Generalità">
+    <param name="Name" value="Caratteristiche Generali">
+    <param name="Local" value="AmvAmministratorePortale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Gestione delle Notifiche">
+    <param name="Name" value="Gestione delle Notifiche">
+    <param name="Local" value="Gestione_delle_Notifiche.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Gruppi">
+    <param name="Name" value="Gruppi">
+    <param name="Local" value="AdmGruppi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Guide del Menu">
+    <param name="Name" value="Amministrazione Guide">
+    <param name="Local" value="AdmGuide.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Impostazione Preferenze">
+    <param name="Name" value="Amministrazione Preferenze">
+    <param name="Local" value="AdmPreferenzeImpostazione.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Indirizzo CCR Servizio">
+    <param name="Name" value="Approvazione">
+    <param name="Local" value="Approvazione.htm">
+    <param name="Name" value="Registrazione Automatica">
+    <param name="Local" value="Registrazione_Automatica.htm">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Local" value="Registrazione_Controllata.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Istanza">
+    <param name="Name" value="Servizi del Portale">
+    <param name="Local" value="Servizi_del_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="JGDM - Gestione Documentale Modulistica">
+    <param name="Name" value="Richieste on-line">
+    <param name="Local" value="Richieste_on-line.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="LDAP">
+    <param name="Name" value="Registrazione da Sistema">
+    <param name="Local" value="Registrazione_da_Sistema.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Mail">
+    <param name="Name" value="Esempi di Notifica">
+    <param name="Local" value="Esempi_di_Notifica.htm">
+    <param name="Name" value="Gestione delle Notifiche">
+    <param name="Local" value="Gestione_delle_Notifiche.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Menu funzioni">
+    <param name="Name" value="Amministrazione Funzioni">
+    <param name="Local" value="AdmFunzioni.htm">
+    <param name="Name" value="Amministrazione Guide">
+    <param name="Local" value="AdmGuide.htm">
+    <param name="Name" value="Menu funzioni">
+    <param name="Local" value="AdmMenu.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Modello inserimento">
+    <param name="Name" value="Richieste on-line">
+    <param name="Local" value="Richieste_on-line.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Modulo">
+    <param name="Name" value="Servizi del Portale">
+    <param name="Local" value="Servizi_del_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Notifiche">
+    <param name="Name" value="Esempi di Notifica">
+    <param name="Local" value="Esempi_di_Notifica.htm">
+    <param name="Name" value="Gestione delle Notifiche">
+    <param name="Local" value="Gestione_delle_Notifiche.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Novità">
+    <param name="Name" value="Novità">
+    <param name="Local" value="Novit_.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="on-line">
+    <param name="Name" value="Richieste on-line">
+    <param name="Local" value="Richieste_on-line.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Preferenze">
+    <param name="Name" value="Amministrazione Preferenze">
+    <param name="Local" value="AdmPreferenzeImpostazione.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione al Portale">
+    <param name="Name" value="Registrazione Anagrafica">
+    <param name="Local" value="Registrazione_Anagrafica.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione Anagrafica">
+    <param name="Name" value="Registrazione Anagrafica">
+    <param name="Local" value="Registrazione_Anagrafica.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione Automatica">
+    <param name="Name" value="Registrazione Automatica">
+    <param name="Local" value="Registrazione_Automatica.htm">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Local" value="Registrazione_Controllata.htm">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione da Applicazione">
+    <param name="Name" value="Registrazione da Applicazione">
+    <param name="Local" value="Registrazione_da_Applicazione.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione da Sistema">
+    <param name="Name" value="Registrazione da Sistema">
+    <param name="Local" value="Registrazione_da_Sistema.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione Utente al Portale">
+    <param name="Name" value="Registrazione Utente al Portale">
+    <param name="Local" value="Registrazione_Utente_al_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Revisioni">
+    <param name="Name" value="Amministrazione Revisioni">
+    <param name="Local" value="AdmRevisioniElenco.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Revisioni Documento">
+    <param name="Name" value="Storico Revisioni">
+    <param name="Local" value="AdmRevisioniStorico.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Richieste abilitazione">
+    <param name="Name" value="Richieste abilitazione">
+    <param name="Local" value="AdmRichieste.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Richieste on-line">
+    <param name="Name" value="Richieste on-line">
+    <param name="Local" value="Richieste_on-line.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Rilevanze">
+    <param name="Name" value="Rilevanze">
+    <param name="Local" value="AdmRilevanze.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizi">
+    <param name="Name" value="Amministrazione Servizi">
+    <param name="Local" value="AdmServizi.htm">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizi del Portale">
+    <param name="Name" value="Servizi del Portale">
+    <param name="Local" value="Servizi_del_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizio">
+    <param name="Name" value="Registrazione Utente al Portale">
+    <param name="Local" value="Registrazione_Utente_al_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sezioni">
+    <param name="Name" value="Sezioni">
+    <param name="Local" value="AdmSezioni.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sistema">
+    <param name="Name" value="Registrazione da Sistema">
+    <param name="Local" value="Registrazione_da_Sistema.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Storico Revisioni">
+    <param name="Name" value="Storico Revisioni">
+    <param name="Local" value="AdmRevisioniStorico.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Tipologie">
+    <param name="Name" value="Tipologie">
+    <param name="Local" value="AdmTipologie.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Utente">
+    <param name="Name" value="Approvazione">
+    <param name="Local" value="Approvazione.htm">
+    <param name="Name" value="Registrazione Anagrafica">
+    <param name="Local" value="Registrazione_Anagrafica.htm">
+    <param name="Name" value="Registrazione Automatica">
+    <param name="Local" value="Registrazione_Automatica.htm">
+    <param name="Name" value="Registrazione Controllata">
+    <param name="Local" value="Registrazione_Controllata.htm">
+    <param name="Name" value="Registrazione da Applicazione">
+    <param name="Local" value="Registrazione_da_Applicazione.htm">
+    <param name="Name" value="Registrazione da Portale">
+    <param name="Local" value="Registrazione_da_Portale.htm">
+    <param name="Name" value="Registrazione da Sistema">
+    <param name="Local" value="Registrazione_da_Sistema.htm">
+    <param name="Name" value="Registrazione Utente al Portale">
+    <param name="Local" value="Registrazione_Utente_al_Portale.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Utenti">
+    <param name="Name" value="Utenti">
+    <param name="Local" value="AdmUtenti.htm">
+  </object>
+</ul>
+</html>

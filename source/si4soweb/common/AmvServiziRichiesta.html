@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Richiesta servizi</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="90%" valign="top" align="middle">
+            <p align="center"><font class="AFCFormHeaderFont">Conferma&nbsp;
+            registrazione al Servizio </font></p>
+ 
+            <p align="left"><strong></strong></p>
+ 
+            <!-- BEGIN Grid AD4_UTENTEGrid -->
+            <table cellpadding="3" cellspacing="0" width="100%">
+              <!-- BEGIN Row -->
+              <tr>
+                <td>
+                  <p>{NOMINATIVO}</p>
+ 
+                  <p>{PASSWORD}</p>
+ 
+                  <p>{NOTIFICA}</p>
+                  </td>
+              </tr>
+ 
+            </table><p align="left">
+ <font class="AFCFormHeaderFont">Residenza e recapito per notifica</font>
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <tr>
+                <td class="AFCFieldCaptionTD" valign="top" nowrap>Residenza</td> 
+                <td class="AFCDataTD" width="100%">&nbsp;{INDIRIZZO_COMPLETO}</td> 
+                <td class="AFCDataTD" width="100%" align="middle" ><a class="AFCDataLink" href="{MODIFICA_RESIDENZA_Src}">Modifica</a></td> 
+              </tr>
+ 
+              <tr>
+                <td colspan="3" class="AFCDataTD">&nbsp;</td> 
+              </tr>
+ 
+              <tr>
+                <td class="AFCFieldCaptionTD" valign="top" nowrap>e-Mail</td> 
+                <td class="AFCDataTD">&nbsp;{INDIRIZZO_WEB}</td> 
+                <td class="AFCDataTD" width="100%" rowspan="3" align="middle" valign="center"><a class="AFCDataLink" href="{MODIFICA_RECAPITO_Src}">Modifica</a></td> 
+              </tr>
+ 
+              <tr>
+                <td class="AFCFieldCaptionTD" valign="top">Telefono</td> 
+                <td class="AFCDataTD">&nbsp;{TELEFONO}</td> 
+              </tr>
+ 
+              <tr>
+                <td class="AFCFieldCaptionTD" valign="top">Fax</td> 
+                <td class="AFCDataTD">&nbsp;{FAX}</td> 
+              </tr>
+ 
+            </table>
+ </p>
+            <p align="left">Confermando questa pagina viene inoltrata la
+            richiesta di attivazione del servizio <b>{SERVIZIO}</b>. <!-- END Row --><!-- END Grid AD4_UTENTEGrid -->
+            <!-- BEGIN Record AD4_UTENTE -->
+            <form name="AD4_UTENTE" action="{Action}" method="post">
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td colspan="2" class="AFCErrorDataTD">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Conferma" name="{Button_Name}"><!-- END Button Update -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ <input type="hidden" name="{ISTANZA_Name}" value="{ISTANZA}" class="AFCInput"><input type="hidden" name="{MODULO_Name}" value="{MODULO}" class="AFCInput"><input type="hidden" name="{MVPAGES_Name}" value="{MVPAGES}" class="AFCInput">
+            </form>
+ <!-- END Record AD4_UTENTE --></p>
+ </td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+ 
+</table>
+</body>
+</html>

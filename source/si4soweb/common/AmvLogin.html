@@ -1,0 +1,43 @@
+
+<table width="100%" height="100%">
+ 
+  <tr>
+    <td width="100%" valign="top" align="center" height="100%">
+      <p>&nbsp;</p>
+ 
+      <!-- BEGIN Record LOGIN -->
+      <form name="{HTMLFormName}" action="j_security_check" method="post">
+        <font class="AFCFormHeaderFont">Login al Portale</font>&nbsp; 
+        <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+          <tr>
+            <td class="AFCErrorDataTD" colspan="2">{ERRORE}</td> 
+          </tr>
+                 <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+
+          <tr>
+            <td class="AFCFieldCaptionTD" valign="top">Username&nbsp;</td> 
+            <td class="AFCDataTD"><input class="AFCInput" maxlength="40" size="40" name="j_username">&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="AFCFieldCaptionTD" valign="top">Password&nbsp;</td> 
+            <td class="AFCDataTD"><input class="AFCInput" type="password" maxlength="40" size="40" name="j_password">&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="AFCFooterTD" nowrap align="middle" colspan="2">&nbsp; 
+              <!-- BEGIN Button Login --><input name="{Button_Name}" type="submit" value="  Login  " class="AFCButton"><!-- END Button Login --></td> 
+          </tr>
+ 
+        </table>
+ 
+        <p align="center">{LOSTMSG}</p>
+ 
+      </form>
+ <!-- END Record LOGIN --></td> 
+  </tr>
+</table>

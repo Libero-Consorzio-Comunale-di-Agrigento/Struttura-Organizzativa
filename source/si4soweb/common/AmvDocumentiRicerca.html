@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Ricerca Documenti</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+ function show() {		
+        document.getElementById('trSezione').style.display='block';
+		document.getElementById('trTipologia').style.display='block';
+		document.getElementById('trCategoria').style.display='block';
+		document.getElementById('trArgomento').style.display='block';
+		document.getElementById('btAvanzata').style.display='none';
+}
+</script>
+<script language="JavaScript">
+ function initRows() {
+ 	if ((document.getElementById('selSezione').value != '')
+ 	||(document.getElementById('selTipologia').value != '')
+ 	||(document.getElementById('selCategoria').value != '')
+ 	||(document.getElementById('selArgomento').value != '')){	
+	show();
+	}
+}
+</script>
+
+</head>
+<body onload="initRows();" bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY" cols="100">
+<table class="" border="0" cellpadding="0" cellspacing="2" style="BORDER-COLLAPSE: collapse" bordercolor="#111111" width="100%" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td width="100%" valign="top">
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td align="left">
+            <!-- BEGIN Record AMV_VISTA_DOCUMENTISearch -->
+            <form name="ARTICOLISearch" action="{Action}" method="get" target="">
+              <font class="AFCFormHeaderFont">Ricerca</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="5">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="middle">Contenuto&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="250" value="{s_TESTO}" name="s_TESTO" size="40">&nbsp;cerca&nbsp;nel&nbsp;testo <input class="AFCInput" type="checkbox" value="1" name="{s_CERCA_TESTO_Name}" {s_CERCA_TESTO}>&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="middle">Risultati&nbsp;per&nbsp;pagina</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{s_DISPLAY_Name}">
+                      {s_DISPLAY_Options} 
+                    </select>
+ &nbsp;</td> 
+                </tr>
+ 
+                <tr id="trSezione" style="DISPLAY: none">
+                  <td class="AFCFieldCaptionTD" valign="middle">Sezione&nbsp;</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" tabindex="0" name="s_ID_SEZIONE" id="selSezione">
+                      <option value="" selected>Tutte</option>
+ {s_ID_SEZIONE_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr id="trTipologia" style="DISPLAY: none">
+                  <td class="AFCFieldCaptionTD" valign="middle">Tipologia</td> 
+                  <td class="AFCDataTD" valign="middle">
+                    <select name="s_ID_TIPOLOGIA" tabindex="0" class="AFCSelect" id="selTipologia">
+                      <option value="" selected>Tutte</option>
+ {s_ID_TIPOLOGIA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr id="trCategoria" style="DISPLAY: none">
+                  <td class="AFCFieldCaptionTD" valign="middle">Categoria</td> 
+                  <td class="AFCDataTD" valign="middle">
+                    <select class="AFCSelect" tabindex="0" name="s_ID_CATEGORIA" id="selCategoria">
+                      <option value="" selected>Tutte</option>
+ {s_ID_CATEGORIA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr id="trArgomento" style="DISPLAY: none">
+                  <td class="AFCFieldCaptionTD" valign="middle">Argomento</td> 
+                  <td class="AFCDataTD" valign="middle">
+                    <select class="AFCSelect" tabindex="0" name="s_ID_ARGOMENTO" id="selArgomento">
+                      <option value="" selected>Tutte</option>
+ {s_ID_ARGOMENTO_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" colspan="2" align="right">
+                    <!-- BEGIN Button RicercaAvanzata --><input class="AFCButton" type="button" value="Avanzata" name="{Button_Name}" id="btAvanzata" onclick="show();"><!-- END Button RicercaAvanzata -->&nbsp; 
+                    <!-- BEGIN Button DoSearch --><input class="AFCButton" type="submit" value="Cerca" name="DoSearch"><!-- END Button DoSearch -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AMV_VISTA_DOCUMENTISearch --></td> 
+        </tr>
+ 
+        <tr width="100%">
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid AMV_VISTA_DOCUMENTI -->
+			<font class="AFCFormHeaderFont">Elenco
+            Documenti</font> 
+            <table width="100%" class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+              <tr>
+                <td class="AFCColumnTD" nowrap width="100%" colspan="3">Ordina&nbsp;per&nbsp;:&nbsp; 
+                  <!-- BEGIN Sorter Sorter_TITOLO --><a class="AFCSorterLink" title="Ordinamento per titolo" href="{Sort_URL}">Titolo</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_TITOLO -->&nbsp; 
+                  <!-- BEGIN Sorter SorterMODIFICA --><a class="AFCSorterLink" title="Ordinamento per data ultimo aggiornamento" href="{Sort_URL}">Data</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter SorterMODIFICA --></td> 
+              </tr>
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD" valign="top" width="85%"><a class="AFCDataLink" href="{TITOLO_Src}">{TITOLO}</a> &nbsp;(&nbsp;{SEZIONE}&nbsp;) </td> 
+                <td class="AFCDataTD" width="10%" valign="top" nowrap><font class="AFCNote">Ultimo
+                  aggiornamento&nbsp;{DATA_ULTIMA_MODIFICA}</font></td> 
+                <td class="AFCDataTD" valign="top" width="5%">{MODIFICA}&nbsp;</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="3">Nessuna registrazione&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" colspan="3" align="center" nowrap>{AFCNavigator}</td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AMV_VISTA_DOCUMENTI --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

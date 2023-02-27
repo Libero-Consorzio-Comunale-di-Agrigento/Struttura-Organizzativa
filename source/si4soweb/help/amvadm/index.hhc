@@ -1,0 +1,148 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Amministrazione del Portale">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Caratteristiche Generali">
+      <param name="Local" value="AmvAmministratorePortale.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Novità">
+      <param name="Local" value="Novit_.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Come fare per...">
+      <param name="Local" value="Come_fare_per___.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Funzioni">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Amministrazione Funzioni">
+        <param name="Local" value="AdmFunzioni.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Menu Funzioni">
+        <param name="Local" value="AdmMenu.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Guide del Menù">
+        <param name="Local" value="AdmGuide.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Contenuti">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Amministrazione Contenuti">
+        <param name="Local" value="AdmContenuti.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Gestione dei Documenti">
+        <param name="Local" value="AdmDocumento.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Revisioni">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Amministrazione Revisioni">
+        <param name="Local" value="AdmRevisioniElenco.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Storico Revisioni">
+        <param name="Local" value="AdmRevisioniStorico.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Classificazioni">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Amministrazione Classificazioni">
+        <param name="Local" value="AdmClassificazioni.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Tipologie">
+        <param name="Local" value="AdmTipologie.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Categorie">
+        <param name="Local" value="AdmCategorie.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Argomenti">
+        <param name="Local" value="AdmArgomenti.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Sezioni">
+        <param name="Local" value="AdmSezioni.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Rilevanze">
+        <param name="Local" value="AdmRilevanze.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Diritti Accesso">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Amministrazione Diritti Accesso">
+        <param name="Local" value="AdmDirittiAccesso.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Diritti di Accesso">
+        <param name="Local" value="AdmDiritti.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Aree di Accesso">
+        <param name="Local" value="AdmAree.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Servizi">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Ammministrazione Servizi">
+        <param name="Local" value="AdmServizi.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Richieste">
+        <param name="Local" value="AdmRichieste.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Utenti">
+        <param name="Local" value="AdmUtenti.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Gruppi">
+        <param name="Local" value="AdmGruppi.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Accessi">
+        <param name="Local" value="AdmAccessi.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Preferenze">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Amministrazione Preferenze">
+        <param name="Local" value="AdmPreferenzeImpostazione.htm">
+      </object>
+      </ul>
+    </ul>
+</ul>
+</html>

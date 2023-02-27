@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta name="GENERATOR" content="CodeCharge Studio 2.3.2.24">
+<title>Selezione File</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<link rel="stylesheet" type="text/css" href="../editor/skins/default/fck_dialog.css">
+<!--<script language="JavaScript" src="../Lov.js"></script>-->
+<script>
+	function updateUrl(){
+	var url = '../common/AmvDocumentoInfo.do?'+document.forms[0].DOCUMENTO.value;
+	top.opener.document.getElementById('txtUrl').value = url;
+	top.opener.document.getElementById('cmbLinkProtocol').value = "";
+	window.close();
+}
+</script>
+</head>
+<body class="BackColor">
+{AmvStyle}
+<!-- BEGIN Record FILE_LIST -->
+<form method="post" action="{Action}" name="{HTMLFormName}" enctype="multipart/form-data">
+  <!--<font class="AFCFormHeaderFont">&nbsp;&nbsp;{TITOLO}</font> -->
+  <div class="PopupTitle PopupTitleBorder" align="left">
+    Selezione file
+  </div>
+ 
+  <table cellpadding="3" cellspacing="3" align="center">
+    <!-- BEGIN Error -->
+    <tr>
+      <td colspan="2" class="AFCErrorDataTD">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td class="PopupBody" colspan="2" valign="top">
+        <!-- era della  class="AFCSelect" -->
+        <select size="20" name="{DOCUMENTO_Name}" align="center">
+          <!--<option value="" selected>&nbsp;-&nbsp;-</option>-->
+ 				{DOCUMENTO_Options} 
+        </select>
+ </td> 
+    </tr>
+ 
+    <tr valign="top">
+      <td align="left" nowrap>&nbsp;</td> 
+      <td align="right" nowrap><input name="url" type="button" value="Aggiorna URL" class="Button" onclick="updateUrl()">
+        <!-- BEGIN Button Annulla --><input class="Button" onclick="window.close()" type="button" value="Annulla" name="{Button_Name}"><!-- END Button Annulla -->&nbsp; </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record FILE_LIST -->
+</body>
+</html>

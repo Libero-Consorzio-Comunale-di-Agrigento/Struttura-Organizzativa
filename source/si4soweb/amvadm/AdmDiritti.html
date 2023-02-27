@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Diritti Aree Documentali</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%">
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td valign="top" align="left" width="100%">
+            <!-- BEGIN Record AMV_VISTA_DOCUMENTISearch -->
+            <form name="ARTICOLISearch" action="{Action}" method="get" target="">
+              <font class="AFCFormHeaderFont">Ricerca</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="5">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr id="trSezione">
+                  <td class="AFCFieldCaptionTD" valign="middle">Area&nbsp;</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" tabindex="0" name="s_AREA">
+                      <option value="" selected>- -</option>
+ {s_AREA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr id="trTipologia">
+                  <td class="AFCFieldCaptionTD" valign="middle">Gruppo</td> 
+                  <td class="AFCDataTD" valign="middle">
+                    <select class="AFCSelect" tabindex="0" name="s_GRUPPO">
+                      <option value="" selected>&nbsp;-&nbsp;-</option>
+ {s_GRUPPO_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="middle">Risultati&nbsp;per&nbsp;pagina</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{s_DISPLAY_Name}">
+                      {s_DISPLAY_Options} 
+                    </select>
+ &nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" align="right" colspan="2">&nbsp; 
+                    <!-- BEGIN Button DoSearch --><input class="AFCButton" type="submit" value="Cerca" name="DoSearch"><!-- END Button DoSearch -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AMV_VISTA_DOCUMENTISearch --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid AMV_DIRITTI --><font class="AFCFormHeaderFont">Elenco
+            Diritti</font> 
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <!-- BEGIN Row -->
+              <!-- BEGIN Label HEADER_AREA -->
+              <tr>
+                <td class="AFCDataTD" colspan="4">{HEADER_AREA}</td> 
+              </tr>
+              <!-- END Label HEADER_AREA -->
+              <tr>
+                <td class="AFCDataTD">{GRUPPO}&nbsp;</td> 
+                <td class="AFCDataTD">{NOME_TIPOLOGIA}&nbsp;</td> 
+                <td class="AFCDataTD">{ACCESSO}&nbsp;</td> 
+                <td class="AFCDataTD">&nbsp;<a class="AFCDataLink" href="{Edit_Src}">{Edit}</a></td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="4">Nessuna registrazione&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" nowrap align="center" colspan="4">{AFCNavigator}
+                  &nbsp;</td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AMV_DIRITTI --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="center">
+            <!-- BEGIN Record AMV_DIRITTI1 --><br>
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <font class="AFCFormHeaderFont">Aggiornamento&nbsp;Diritti</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="90%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Area</td> 
+                  <td class="AFCDataTD" width="100%">
+                    <select name="ID_AREA" class="AFCSelect" tabindex="0">
+                      <option value="" selected>- -</option>
+ {ID_AREA_Options} 
+                    </select>
+ &nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Tipologia</td> 
+                  <td class="AFCDataTD">
+                    <select name="ID_TIPOLOGIA" class="AFCSelect" tabindex="0">
+                      <option value="" selected>- -</option>
+ {ID_TIPOLOGIA_Options} 
+                    </select>
+ &nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Gruppo&nbsp;</td> 
+                  <td class="AFCDataTD">
+                    <select name="GRUPPO" class="AFCSelect" tabindex="0">
+                      <option value="" selected>(Tutti)</option>
+ {GRUPPO_Options} 
+                    </select>
+ &nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Accesso&nbsp;</td> 
+                  <td class="AFCDataTD">
+                    <select name="ACCESSO" class="AFCSelect" tabindex="0">
+                      <option value="" selected>- -</option>
+ {ACCESSO_Options} 
+                    </select>
+ &nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                    <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Inserisci" name="Insert"><!-- END Button Insert -->
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+                    <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Elimina" name="Delete"><!-- END Button Delete -->
+                    <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ <input type="hidden" value="{ID_DIRITTO}" name="ID_DIRITTO" class="AFCInput">
+            </form>
+ <!-- END Record AMV_DIRITTI1 --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

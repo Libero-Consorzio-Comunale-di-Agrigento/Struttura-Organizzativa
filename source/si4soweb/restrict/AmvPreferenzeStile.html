@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>Impostazione Stili</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include Common JSFunctions @1-A1D84A39
+</script>
+<script language="JavaScript" type="text/javascript" src="../DatePicker.js"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-37377C01
+
+var NewRecord1_DatePicker1 = new Object(); 
+NewRecord1_DatePicker1.format           = "dd/mm/yyyy";
+NewRecord1_DatePicker1.style            = "Themes/AFC/Style.css";
+NewRecord1_DatePicker1.relativePathPart = "../";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td valign="top" align="left" width="100%"><br>
+            <!-- BEGIN Grid STILE_ATTUALE --><font class="AFCFormHeaderFont">Stile</font> 
+            <table class="AFCFormTable" cellspacing="0" cellpadding="3">
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCFieldCaptionTD">Scelto</td> 
+                <td class="AFCDataTD"><input name="{STILE_SCELTO_Name}" value="{STILE_SCELTO}" class="AFCInputReadOnly" readonly></td> 
+                <td class="AFCFieldCaptionTD" nowrap>Precedentemente&nbsp;in uso</td> 
+                <td class="AFCDataTD"><input name="{STILE_Name}" value="{STILE}" class="AFCInputReadOnly" readonly></td> 
+                <td class="AFCColumnTD"><a class="AFCSorterLink" href="{CONFERMA_Src}">Conferma</a></td> 
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords --><!-- END NoRecords -->
+            </table>
+ <!-- END Grid STILE_ATTUALE --></td> 
+        </tr>
+ 
+        <tr>
+          <td valign="top" align="left"><br>
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <td width="50%" rowspan="2" valign="top"><font class="AFCFormHeaderFont">Elenco
+                    Stili</font>{AmvStili} </td> 
+                  <td width="50%" valign="top" align="center">&nbsp; <font class="AFCFormHeaderFont">Esempio</font></td> 
+                  <tr>
+                    <td width="50%" style="PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BORDER-TOP-STYLE: ridge; BORDER-RIGHT-STYLE: ridge; BORDER-LEFT-STYLE: ridge; BORDER-BOTTOM-STYLE: ridge" valign="top"><br>
+                      <!-- BEGIN Record NewRecord1 --><font class="AFCNote">(*)
+                      Eventuali annotazioni</font><br>
+                      <form name="{HTMLFormName}" action="{Action}" method="post">
+                        <font class="AFCFormHeaderFont">Aggiornamento</font> 
+                        <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                          <tr>
+                            <td class="AFCErrorDataTD" colspan="3">Messaggio di
+                              errore</td> 
+                          </tr>
+ 
+                          <tr>
+                            <td class="AFCFieldCaptionTD" valign="top" nowrap>Dato
+                              modificabile</td> 
+                            <td class="AFCDataTD" colspan="2" nowrap><input class="AFCInput" name="{TextBox0_Name}" value="{TextBox0}" style="WIDTH: 80%">&nbsp; 
+                              <!-- BEGIN DatePicker DatePicker1 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker1 --></td> 
+                          </tr>
+ 
+                          <tr>
+                            <td class="AFCFieldCaptionTD" valign="top" nowrap>Dato
+                              non modificabile</td> 
+                            <td class="AFCDataTD" colspan="2"><input class="AFCInputReadOnly" value="{TextBox1}" name="{TextBox1_Name}" readonly style="WIDTH: 100%"></td> 
+                          </tr>
+ 
+                          <tr>
+                            <td class="AFCFieldCaptionTD" nowrap valign="top">Dato
+                              non introducibile</td> 
+                            <td class="AFCDataTD" colspan="2"><input class="AFCInputReadOnly" name="{TextBox2_Name}" readonly value="{TextBox2}" disabled style="WIDTH: 100%"></td> 
+                          </tr>
+ 
+                          <tr>
+                            <td class="AFCFieldCaptionTD" valign="top" nowrap>Testo
+                              solo visibile </td> 
+                            <td class="AFCDataTD"><input class="AFCInputDisplay" name="{TextBox3_Name}" value="{TextBox3}" readonly></td> 
+                            <td class="AFCFieldCaptionTD" align="center"><a class="AFCNavigatorLink" href="{Modifica_Src}">Modifica</a></td> 
+                          </tr>
+ 
+                          <tr>
+                            <td class="AFCFieldCaptionTD" valign="top" nowrap>Area
+                              di testo</td> 
+                            <td class="AFCDataTD" colspan="2"><textarea class="AFCTextarea" style="WIDTH: 100%" name="{TextArea1_Name}">{TextArea1}</textarea></td> 
+                          </tr>
+ 
+                          <tr>
+                            <td class="AFCFooterTD" nowrap align="left"><a class="AFCNavigatorLink" href="{Link1_Src}">Nuovo</a></td> 
+                            <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                              <!-- BEGIN Button Button_Update --><input class="AFCButton" type="button" value="Aggiorna" name="{Button_Name}"><!-- END Button Button_Update -->
+                              <!-- BEGIN Button Button_Delete --><input class="AFCButton" type="button" value="Elimina" name="{Button_Name}"><!-- END Button Button_Delete -->&nbsp; </td> 
+                          </tr>
+ 
+                        </table>
+ 
+                      </form>
+ <!-- END Record NewRecord1 -->
+                      <!-- BEGIN Grid NewGrid1 --><font class="AFCFormHeaderFont">Elenco</font> 
+                      <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                        <tr>
+                          <td class="AFCColumnTD" nowrap>
+                            <!-- BEGIN Sorter Sorter1 --><a class="AFCSorterLink" href="{Sort_URL}">Colonna1</a> 
+                            <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                            <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter1 -->&nbsp;</td> 
+                          <td class="AFCColumnTD" nowrap>Colonna2&nbsp;</td> 
+                        </tr>
+ 
+                        <!-- BEGIN Row -->
+                        <tr>
+                          <td class="AFCDataTD"><a class="AFCDataLink" href="{Link1_Src}">{Link1}</a></td> 
+                          <td class="AFCDataTD">{Label2}&nbsp;</td> 
+                        </tr>
+ <!-- END Row -->
+                        <!-- BEGIN NoRecords -->
+                        <tr>
+                          <td class="AFCDataTD" colspan="2">Nessuna
+                            registrazione&nbsp;</td> 
+                        </tr>
+ <!-- END NoRecords -->
+                        <tr>
+                          <td class="AFCFooterTD" colspan="2" align="center">
+                            <!-- BEGIN Navigator Navigator -->
+                            <!-- BEGIN First_On --><a class="AFCNavigatorLink" href="{First_URL}"><img src="../Themes/AFC/FirstOn.gif" border="0"></a> <!-- END First_On -->
+                            <!-- BEGIN Prev_On --><a class="AFCNavigatorLink" href="{Prev_URL}"><img src="../Themes/AFC/PrevOn.gif" border="0"></a> <!-- END Prev_On -->&nbsp;{Page_Number}&nbsp;di
+                            {Total_Pages}&nbsp; 
+                            <!-- BEGIN Next_On --><a class="AFCNavigatorLink" href="{Next_URL}"><img src="../Themes/AFC/NextOn.gif" border="0"></a> <!-- END Next_On -->
+                            <!-- BEGIN Last_On --><a class="AFCNavigatorLink" href="{Last_URL}"><img src="../Themes/AFC/LastOn.gif" border="0"></a> <!-- END Last_On --><!-- END Navigator Navigator --></td> 
+                        </tr>
+ 
+                      </table>
+ <!-- END Grid NewGrid1 --><br>
+                    </td> 
+                  </tr>
+ </td> 
+              </tr>
+ 
+            </table>
+ </td> 
+        </tr>
+ 
+      </table>
+ 
+      <td></td> 
+      <tr>
+        <td width="100%" colspan="2">&nbsp; 
+          <!-- BEGIN Grid copyright -->
+          <table cellspacing="0" cellpadding="3" width="100%">
+            <!-- BEGIN Row -->
+            <tr>
+              <td class="AFCDataTD" valign="top" align="center">{MESSAGGIO}{STILE}</td> 
+            </tr>
+ <!-- END Row -->
+            <!-- BEGIN NoRecords --><!-- END NoRecords -->
+          </table>
+ <!-- END Grid copyright -->
+          <table cellspacing="0" cellpadding="3" width="100%">
+            <tr>
+              <td valign="top" align="center" style="FONT-SIZE: 9px; COLOR: #808080" class="">{Versione}&nbsp;(&nbsp;{AmvVersione})</td> 
+            </tr>
+ 
+          </table>
+ </td> 
+      </tr>
+ 
+    </tbody>
+ 
+  </table>
+</td>
+</tr>
+</tbody>
+</table>
+ 
+</body>
+ 
+</html>

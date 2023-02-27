@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Residenza Utente</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include JSFunctions @1-FB634A57
+  </script>
+  <script language="JavaScript" type="text/javascript" src="../functions.js"></script>
+  <script language="JavaScript" type="text/javascript">
+  
+//End Include JSFunctions
+
+//page_AD4_UTENTE_PROVINCIA_OnChange @17-747F41BF
+function page_AD4_UTENTE_PROVINCIA_OnChange()
+{
+    var result;
+//End page_AD4_UTENTE_PROVINCIA_OnChange
+
+//Custom Code @51-2A29BDB7
+// -------------------------
+// Write your own code here.
+// -------------------------
+ //document.AD4_UTENTE.action="AmvUtenteResidenza.do?ccsForm=AD4_UTENTE";
+ document.AD4_UTENTE.submit();
+
+//End Custom Code
+
+//Close page_AD4_UTENTE_PROVINCIA_OnChange @17-BC33A33A
+    return result;
+}
+//End Close page_AD4_UTENTE_PROVINCIA_OnChange
+
+//page_AD4_UTENTE_Button_Cancel_OnClick @23-A735365F
+function page_AD4_UTENTE_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_AD4_UTENTE_Button_Cancel_OnClick
+
+//bind_events @1-2087F21A
+function bind_events() {
+    if (document.forms["AD4_UTENTE"]) check_and_bind('document.forms["AD4_UTENTE"].PROVINCIA','onchange',page_AD4_UTENTE_PROVINCIA_OnChange);
+    if (document.forms["AD4_UTENTE"]) check_and_bind('document.forms["AD4_UTENTE"].Button_Cancel','onclick',page_AD4_UTENTE_Button_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left"><br>
+            <!-- BEGIN Record AD4_UTENTE -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                <font class="AFCFormHeaderFont">Modifica&nbsp;Residenza&nbsp;</font> 
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Nominativo&nbsp;</td> 
+                  <td class="AFCDataTD" width="100%"><input class="AFCInputDisplay" style="WIDTH: 100%" readonly value="{NOMINATIVO}" name="{NOMINATIVO_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Residenza
+                    attuale</td> 
+                  <td class="AFCDataTD"><input class="AFCInputDisplay" style="WIDTH: 100%" readonly value="{INDIRIZZO_COMPLETO}" name="{INDIRIZZO_COMPLETO_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" style="BORDER-RIGHT: 0px; COLOR: #000000" valign="top" nowrap><strong>Nuova
+                    Residenza :</strong></td> 
+                  <td class="AFCDataTD">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Indirizzo</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{VIA_Name}">
+                      <option value="" selected>- -</option>
+ {VIA_Options} 
+                    </select>
+ &nbsp;<input class="AFCInput" maxlength="40" size="40" value="{INDIRIZZO}" name="{INDIRIZZO_Name}">&nbsp;n. <input class="AFCInput" maxlength="6" size="6" value="{NUM}" name="{NUM_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Provincia</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{PROVINCIA_Name}">
+                      <option value="" selected>- -</option>
+ {PROVINCIA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Comune</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{COMUNE_Name}">
+                      <option value="" selected>- -</option>
+ {COMUNE_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">CAP</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="5" size="5" value="{CAP}" name="{CAP_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2"><input class="AFCInput" type="hidden" value="{MVPAGES}" name="{MVPAGES_Name}">
+                    <!-- BEGIN Button Button_Update --><input class="AFCButton" type="submit" value="Aggiorna" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Cancel --><input class="AFCButton" type="submit" value="Annulla" name="{Button_Name}"><!-- END Button Button_Cancel -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AD4_UTENTE --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

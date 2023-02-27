@@ -1,0 +1,55 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%" height="100%">
+      <table width="100%" height="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" height="100%" valign="top" align="left">
+            <!-- BEGIN Grid ELENCO_REVISIONI --><font class="AFCFormHeaderFont">Elenco
+            Revisioni</font> 
+            <table class="AFCFormTABLE" cellpadding="5" width="100%" cellspacing="0">
+              <!-- BEGIN Row -->
+              <tr>
+                <td valign="top" class="AFCDataTD"><b>Titolo:</b>&nbsp;{TITOLO}&nbsp;<br><br>
+                  <b>Revisione:</b>&nbsp;{REVISIONE}&nbsp; 
+                <td valign="top" class="AFCDataTD"><b>Cronologia:</b><br>
+                  {CRONOLOGIA}</td><td valign="top" class="AFCDataTD">{STATO_DOCUMENTO}&nbsp;</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td colspan="3" class="AFCDataTD">Nessuna registrazione&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" colspan="3" align="center" nowrap>{AFCNavigator} </td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid ELENCO_REVISIONI --></td>&nbsp; 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

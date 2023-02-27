@@ -1,0 +1,147 @@
+P { 
+   margin-left:5.75pt; 
+   margin-right:6.50pt; 
+   margin-top:4.00pt; 
+   margin-bottom:1pt; 
+   text-align:left; 
+   font-family:Arial; 
+   font-size:9pt;  }
+H1 { 
+    margin-left:5.75pt; 
+    margin-right:6.50pt; 
+    margin-top:6.00pt; 
+    margin-bottom:2.00pt; 
+    text-align:left; 
+    font-family:Arial; 
+    font-size:9pt; 
+    font-weight:bold;  }
+H2 { 
+    margin-left:5.75pt; 
+    margin-right:6.50pt; 
+    margin-top:6.00pt; 
+    margin-bottom:2.00pt; 
+    text-align:left; 
+    font-family:Arial; 
+    font-size:9pt; 
+    font-weight:bold;  }
+H3 { 
+    margin-left:5.75pt; 
+    margin-right:6.50pt; 
+    margin-top:6.00pt; 
+    margin-bottom:2.00pt; 
+    text-align:left; 
+    font-family:Arial; 
+    font-size:9pt; 
+    font-weight:bold;  }
+P.footnote-text { 
+                 margin-left:5.75pt; 
+                 margin-right:6.50pt; 
+                 margin-top:4.00pt; 
+                 margin-bottom:1pt; 
+                 text-align:left; 
+                 font-family:Verdana; 
+                 font-size:10pt;  }
+P.Body-Text { 
+             margin-top:4.00pt; 
+             margin-bottom:1pt; 
+             text-align:left; 
+             font-family:Verdana; 
+             font-size:10pt;  }
+P.paragrafo { 
+             margin-right:6.50pt; 
+             margin-top:8.00pt; 
+             margin-bottom:1pt; 
+             text-align:left; 
+             font-family:Verdana; 
+             font-size:10pt; 
+             color:navy; 
+             font-weight:bold;  }
+P.Stile-Titolo-1-Topic { 
+                        margin-right:6.50pt; 
+                        margin-top:6.00pt; 
+                        margin-bottom:2.00pt; 
+                        text-align:left; 
+                        font-family:Arial; 
+                        font-size:14pt; 
+                        font-weight:bold;  }
+P.Normal-Indent { 
+                 margin-left:36.00pt; 
+                 margin-right:6.50pt; 
+                 margin-top:4.00pt; 
+                 margin-bottom:1pt; 
+                 text-align:left; 
+                 font-family:Arial; 
+                 font-size:9pt;  }
+P.Tip-Note-Heading { 
+                    margin-left:5.75pt; 
+                    margin-right:6.50pt; 
+                    margin-top:6.00pt; 
+                    margin-bottom:1pt; 
+                    text-align:left; 
+                    font-family:Arial; 
+                    font-size:9pt; 
+                    font-weight:bold;  }
+P.Tip-Note-Text { 
+                 margin-left:15.10pt; 
+                 margin-right:6.50pt; 
+                 margin-top:4.00pt; 
+                 margin-bottom:1pt; 
+                 text-align:left; 
+                 font-family:Arial; 
+                 font-size:9pt;  }
+P.Tip-Note-Text-Bulleted { 
+                          margin-left:15.10pt; 
+                          margin-right:6.50pt; 
+                          margin-top:4.00pt; 
+                          margin-bottom:1pt; 
+                          text-indent:0; 
+                          text-align:left; 
+                          font-family:Arial; 
+                          font-size:9pt;  }
+P.Topic-Text-Bulleted { 
+                       margin-left:15.10pt; 
+                       margin-right:6.50pt; 
+                       margin-top:4.00pt; 
+                       margin-bottom:1pt; 
+                       text-indent:0; 
+                       text-align:left; 
+                       font-family:Arial; 
+                       font-size:9pt;  }
+P.Topic-Text-Indent { 
+                     margin-left:15.10pt; 
+                     margin-right:6.50pt; 
+                     margin-top:4.00pt; 
+                     margin-bottom:1pt; 
+                     text-align:left; 
+                     font-family:Arial; 
+                     font-size:9pt;  }
+P.Topic-Text-Numbered { 
+                       margin-left:15.10pt; 
+                       margin-right:6.50pt; 
+                       margin-top:4.00pt; 
+                       margin-bottom:1pt; 
+                       text-indent:0; 
+                       text-align:left; 
+                       font-family:Arial; 
+                       font-size:9pt;  }
+P.Topic-Text-Onestep { 
+                      margin-left:15.10pt; 
+                      margin-right:6.50pt; 
+                      margin-top:4.00pt; 
+                      margin-bottom:1pt; 
+                      text-indent:0; 
+                      text-align:left; 
+                      font-family:Arial; 
+                      font-size:9pt;  }
+BODY { 
+      font-family:Arial; 
+      font-size:9pt; 
+      background-color:white;  }
+ol ol { 
+       margin-top:4px;  }
+ol ul { 
+       margin-top:4px;  }
+ul ul { 
+       margin-top:4px;  }
+ul ol { 
+       margin-top:4px;  }

@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Inserimento immagine</title>
+<!--<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">-->
+<link rel="stylesheet" type="text/css" href="../editor/skins/default/fck_dialog.css">
+<script language="JavaScript">
+	// Sets the Skin CSS
+	document.write( '<link href="' + dialogArguments.Editor.FCKConfig.SkinPath + 'fck_dialog.css" type="text/css" rel="stylesheet">' ) ;
+	function mostra(src,dir)
+	{
+		document.getElementById('image').src = dir + '/' + src;
+	}
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<!-- BEGIN Record RecordImage -->
+<form method="post" action="{Action}" name="formImage" enctype="multipart/form-data">
+  <div class="PopupTitle PopupTitleBorder">
+    Inserimento immagine 
+  </div>
+ 
+  <table cellpadding="3" cellspacing="0" class="AFCFormTABLE" height="500px">
+    <!-- BEGIN Error -->
+    <tr>
+      <td colspan="2">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td class="AFCDataTD" height="200px">{FILE_LIST_BOX} </td> 
+      <td class="AFCDataTD"><iframe id="image" width="100%" height="100%" align="center" valign="middle" src="images/AMV/spacer.gif"></iframe></td> 
+    </tr>
+ 
+    <tr valign="top">
+      <td class="AFCFieldCaptionTD" width="100">
+        <p>File immagine:&nbsp;</p>
+ </td> 
+      <td class="AFCDataTD" valign="top" align="right"><input type="file" name="campo_image" class="AFCInput" style="WIDTH: 100%" size="50">
+        <p></p>
+ 
+        <!-- BEGIN Button Button_Insert --><input class="Button" type="submit" value="Upload" name="{Button_Name}" title="Aggiunge un'immagine all'elenco"><!-- END Button Button_Insert -->
+        <!-- BEGIN Button Button1 --><input class="Button" type="submit" value="Ok" name="{Button_Name}" onclick="inserisciImage(document.formImage)"><!-- END Button Button1 -->
+        <!-- BEGIN Button Button2 --><input class="Button" type="button" value="Annulla" name="{Button_Name}" onclick="window.close()"><!-- END Button Button2 -->
+        <p></p>
+ </td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFooterTD" width="350" colspan="2"></td> 
+    </tr>
+ 
+  </table>
+ 
+  <p><!-- END Record RecordImage --></p>
+</form>
+</body>
+</html>
+<script type="text/javascript"> 
+
+function inserisciImage(theForm) {
+		   //Da utilizzare con l'altro editor, non con FCKEditor
+		   //var imageTag	= "<img src='../common/docs/"+ escape(theForm.nomeImmagine.value)+"'>";
+         	   //window.opener.insertHTML(imageTag); 		
+
+		   var imageSrc = "../common/docs/"+ escape(theForm.VALORE.value);
+           top.opener.document.getElementById('txtUrl').value = imageSrc;
+		   window.close();
+        } 
+</script>

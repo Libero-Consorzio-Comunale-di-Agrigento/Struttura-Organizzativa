@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Valida Abilitazione</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="middle">
+            <!-- BEGIN Grid RICHIESTA -->&nbsp;<font class="AFCFormHeaderFont">Registrazione&nbsp;Richiesta</font> 
+            <table cellspacing="0" cellpadding="3" width="90%">
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="">
+                  <p>{NOMINATIVO}</p>
+ Registrazione della richiesta di abilitazione al servizio : <br>
+                  <b>{SERVIZIO}</b> </td> 
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords --><!-- END NoRecords -->
+            </table>
+ <!-- END Grid RICHIESTA --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="middle">
+            <!-- BEGIN Record GESTISCI_RICHIESTA -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <table width="90%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr>
+                  <td colspan="2">La registrazione della richiesta di
+                    abilitazione al servizio è stata inoltrata ma non si è
+                    conclusa correttamente.<br>
+                    <br>
+                    Premere <strong>Indietro</strong> per ripetere la richiesta
+                    e rettificare i parametri introdotti o seguire il link&nbsp; <strong>Fine</strong> per
+                    concludere comunque la richiesta.</td> 
+                </tr>
+ 
+                <tr>
+                  <td align="right" colspan="2" class="AFCFooterTD">
+                    <!-- BEGIN Button Indietro --><input class="AFCButton" onclick="history.back()" type="button" value="Indietro" name="{Button_Name}"><!-- END Button Indietro -->
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="{Button_Name}"><!-- END Button Update -->
+                    <!-- BEGIN Button Fine --><input class="AFCButton" onclick="window.location.replace('../common/AmvRegistrazioneFine.do')" type="button" value=" Fine   " name="{Button_Name}"><!-- END Button Fine -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record GESTISCI_RICHIESTA --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Accesso Aree Documentali</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="left" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left"><br>
+            <p>
+            <!-- BEGIN Grid AMV_DIRITTI --><font class="AFCFormHeaderFont">Elenco
+            Diritti di Accesso sui documenti</font> 
+            <table cellpadding="3" cellspacing="0" class="AFCFormTABLE" width="100%">
+              <tr>
+                <td nowrap class="AFCColumnTD">Area&nbsp;</td> 
+                <td class="AFCColumnTD" nowrap>Tipologia</td> 
+                <td class="AFCColumnTD" nowrap>Accesso</td> 
+                <td nowrap class="AFCColumnTD">Assegnato al Gruppo&nbsp;</td> 
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD">{AREA}&nbsp;</td> 
+                <td class="AFCDataTD">{TIPOLOGIA}</td> 
+                <td class="AFCDataTD">{DES_ACCESSO}</td> 
+                <td class="AFCDataTD">{GRUPPO}&nbsp;</td> 
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td colspan="4" class="AFCDataTD">Nessuna registrazione&nbsp;</td> 
+              </tr>
+ <!-- END NoRecords -->
+              <tr>
+                <td align="middle" colspan="4" class="AFCFooterTD">{AFCNavigator}&nbsp;</td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AMV_DIRITTI --></p>
+ </td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Ambiente MiniVortal Standard per Code Charge Studio AFC ADS Foundation Class
+____________________________________________________________________________
+(c) 2004 Gruppo Finmatica - www.ads.it 
+
+
+In questa cartella vengono depositati i file caricati da web e utilizzati nella gestione del menu funzioni per le pagine che includono un file html.

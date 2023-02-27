@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Notifica Approvazione</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Record AD4_RICHIESTE_ABILITAZIONE -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                <font class="AFCFormHeaderFont">Aggiornamento&nbsp;Notifica
+                Approvazione </font>
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Servizio</td> 
+                  <td class="AFCDataTD" width="100%"><input class="AFCInputDisplay" style="WIDTH: 100%" readonly value="{SERVIZIO}" name="{SERVIZIO_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" style="BORDER-RIGHT: 0px; COLOR: #000000" valign="top">&nbsp;</td> 
+                  <td class="AFCDataTD" width="100%">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Tipo Notifica</td> 
+                  <td class="AFCDataTD" width="100%">
+                    <select name="{TIPO_NOTIFICA_Name}" class="AFCSelect">
+                      <option value="" selected>-&nbsp;-</option>
+ {TIPO_NOTIFICA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Indirizzo
+                    Notifica</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="2000" size="100" value="{INDIRIZZO_NOTIFICA}" name="{INDIRIZZO_NOTIFICA_Name}" style="WIDTH: 100%"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                    <!-- BEGIN Button Button_Update --><input class="AFCButton" type="submit" value="Aggiorna" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Cancel --><input class="AFCButton" type="submit" value="Annulla" name="{Button_Name}"><!-- END Button Button_Cancel -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AD4_RICHIESTE_ABILITAZIONE --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

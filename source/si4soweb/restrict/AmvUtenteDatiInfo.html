@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Dati Utente</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include JSFunctions @1-FB634A57
+  </script>
+<script language="JavaScript" type="text/javascript" src="../functions.js"></script>
+<script language="JavaScript" type="text/javascript">
+  
+//End Include JSFunctions
+
+//page_AD4_SOGGETTO_STATO_NASCITA_OnChange @58-3B04DB35
+function page_AD4_SOGGETTO_STATO_NASCITA_OnChange()
+{
+    var result;
+//End page_AD4_SOGGETTO_STATO_NASCITA_OnChange
+
+//Custom Code @59-2A29BDB7
+// -------------------------
+// Write your own code here.
+// -------------------------
+document.AD4_SOGGETTO.submit();
+//End Custom Code
+
+//Close page_AD4_SOGGETTO_STATO_NASCITA_OnChange @58-BC33A33A
+    return result;
+}
+//End Close page_AD4_SOGGETTO_STATO_NASCITA_OnChange
+
+//page_AD4_SOGGETTO_PROVINCIA_NASCITA_OnChange @60-C2A12EFE
+function page_AD4_SOGGETTO_PROVINCIA_NASCITA_OnChange()
+{
+    var result;
+//End page_AD4_SOGGETTO_PROVINCIA_NASCITA_OnChange
+
+//Custom Code @61-2A29BDB7
+// -------------------------
+// Write your own code here.
+// -------------------------
+ document.AD4_SOGGETTO.action="AmvUtenteDatiInfo.do?ccsForm=AD4_SOGGETTO:Edit";
+ document.AD4_SOGGETTO.submit();
+
+//End Custom Code
+
+//Close page_AD4_SOGGETTO_PROVINCIA_NASCITA_OnChange @60-BC33A33A
+    return result;
+}
+//End Close page_AD4_SOGGETTO_PROVINCIA_NASCITA_OnChange
+
+//bind_events @1-FB76DDDB
+function bind_events() {
+    if (document.forms["AD4_SOGGETTO"]) check_and_bind('document.forms["AD4_SOGGETTO"].PROVINCIA_NASCITA','onchange',page_AD4_SOGGETTO_PROVINCIA_NASCITA_OnChange);
+    if (document.forms["AD4_SOGGETTO"]) check_and_bind('document.forms["AD4_SOGGETTO"].STATO_NASCITA','onchange',page_AD4_SOGGETTO_STATO_NASCITA_OnChange);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left"><br>
+            <!-- BEGIN Record AD4_UTENTE -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <font class="AFCFormHeaderFont">Dati&nbsp;anagrafici </font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Nominativo&nbsp;</td> 
+                  <td class="AFCDataTD" width="100%">{NOME}&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Sesso</td> 
+                  <td class="AFCDataTD">{SESSO}&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Codice
+                    Fiscale</td> 
+                  <td class="AFCDataTD">{CODICE_FISCALE}&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" style="BORDER-RIGHT: 0px; COLOR: #000000" valign="top"><strong>Nascita:</strong></td> 
+                  <td class="AFCDataTD">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Data&nbsp;</td> 
+                  <td class="AFCDataTD">{DATA_NASCITA}&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Comune&nbsp;</td> 
+                  <td class="AFCDataTD">{DES_COMUNE_NAS}&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Provincia&nbsp;</td> 
+                  <td class="AFCDataTD">{DES_PROVINCIA_NAS}&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" valign="top" style="BORDER-RIGHT: 0px; COLOR: #000000">&nbsp;</td> 
+                  <td class="AFCDataTD">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" style="BORDER-RIGHT: 0px; COLOR: #000000">Residenza</td> 
+                  <td class="AFCDataTD">{INDIRIZZO_COMPLETO}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2">&nbsp; 
+                    <!-- BEGIN Button Button_Update --><input class="AFCButton" type="submit" value="Modifica Residenza" name="{Button_Name}"><!-- END Button Button_Update --></td> 
+                </tr>
+ 
+              </table>
+ <input type="hidden" value="{MVPAGES}" name="{MVPAGES_Name}" class="AFCInput">
+            </form>
+ <!-- END Record AD4_UTENTE -->
+            <!-- BEGIN Record AD4_SOGGETTO -->
+            <form name="AD4_SOGGETTO" action="{Action}" method="post">
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="90%">
+                <font class="AFCFormHeaderFont">Inserimento&nbsp;dati&nbsp;anagrafici </font> <br>
+                <font class="AFCNote">I campi identificati con (*) sono
+                obbligatori.</font> 
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Cognome&nbsp;(*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" style="TEXT-TRANSFORM: uppercase" maxlength="40" size="40" value="{COGNOME}" name="{COGNOME_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Nome (*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" style="TEXT-TRANSFORM: uppercase" maxlength="40" size="40" value="{NOME}" name="{NOME_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Sesso (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{SESSO_Name}">
+                      <option value="" selected>- -</option>
+ {SESSO_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" style="BORDER-RIGHT: 0px; COLOR: #000000" valign="top"><strong>Nascita:</strong></td> 
+                  <td class="AFCDataTD" style="BORDER-LEFT: 0px">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Data&nbsp;(*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="10" size="10" value="{DATA_NASCITA}" name="{DATA_NASCITA_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Stato (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{STATO_NASCITA_Name}">
+                      <option value="" selected>- -</option>
+ {STATO_NASCITA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Provincia (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{PROVINCIA_NASCITA_Name}">
+                      {PROVINCIA_NASCITA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Comune (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{COMUNE_NASCITA_Name}">
+                      {COMUNE_NASCITA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Codice
+                    fiscale (*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" style="TEXT-TRANSFORM: uppercase" maxlength="40" size="40" value="{CODICE_FISCALE}" name="{CODICE_FISCALE_Name}"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="{Button_Name}"><!-- END Button Update -->
+                    <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Registra" name="{Button_Name}"><!-- END Button Insert -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AD4_SOGGETTO -->
+            <p></p>
+ 
+            <p></p>
+ </td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,141 @@
+Si4afcCCS - Ambiente MiniVortal Standard per Code Charge Studio AFC ADS Foundation Class
+__________________________________________________________________________________________
+(c) 2004 Gruppo Finmatica - www.ads.it 
+
+
+Versione: 2005.05
+
+
+L'aggiornamento delle pagine CCS relative all'Ambiente MiniVortal Standard per Code Charge Studio AFC ADS Foundation Class si effettua copiando, all'interno della propria directory di progetto, le nuove pagine standard (nelle cartelle amvadm, common e restrict) ed il relativo codice associato (sottocartelle amvadm, common e restrict nella cartella CCSBuild\src).
+
+Le pagine standard che generalmente possono essere oggetto di aggiornamento sono quelle identificabili dai prefissi:
+
+- Adm (pagine di amministrazione contenute nella cartella amvadm)
+- Amv (cartelle common e restrict).
+
+La sostituzione delle pagine vecchie con le nuove avviene automaticamente lanciando il file Si4afcCCS.exe e fornendo come percorso di scompattazione la propria cartella di progetto Codecharge.
+(es.: S:\SI4\Gp4\Gp4Web\Gp4Web). 
+
+
+Componenti
+==========
+
+- Si4afcCCSNew		Versione 2005.05
+
+Occasionalmente possono essere oggetto di revisione anche le pagine standard che vengono fornite nella prima installazione (es.: index, Main, Footer..). Per tali pagine si veda il documento Si4afcCCSNew.txt allegato alla distribuzione del componente Si4afcCCSNew.
+
+
+- Si4afcCCSDB		Versione 2005.05
+
+Il componente distribuisce i file per l'installazione o l'aggiornamento della Base Dati dei prodotti realizzati con lo standard Code Charge Studio AFC ADS Foundation Class.
+
+
+- Si4afcLIB.exe		Versione 2004.09
+
+Contine le Librerie da utilizzare nello sviluppo del Portale. 
+Per l'uso dei "Modelli inserimento" nella gestione documenti del portale standard che prevede l'integrazione con "JGDM Gestione Documentale Modulistica" deve essere inclusa la Libreria java "ModulisticaCC.jar" inclusa in "Si4afcLIB.exe".
+La versione standard del portale si aspetta la presenza dei file di configurazione in una cartella di contesto, parallela a quella del portale con il nome “JGDM”, oppure la presenza dei file di configurazione della Modulistica direttamente sotto il contesto del portale nella cartella "config" e la presenza della cartella "log".
+
+
+- Si4afcCCSComponents		Versione 2005.05
+
+L'aggiornamento riguarda files che si trovano sul proprio client nella cartella: 
+   C:\Programmi\CodeChargeStudio\Components.
+
+
+Prerequisiti
+============
+
+* Client
+
+  - Code Charge Studio		Versione 2.3.2 ( o successive )
+
+
+Novità
+======
+Elenco delle novità più rilevanti rispetto le versioni precedenti.
+
+
+Versione 2005.05
+------------------
+· Risolti problemi 2004.09 e suddivise pagine e script di installazione in :
+  - base
+  - amministratore servizi e menu
+  - amministratore documenti
+
+
+Versione 2004.09
+----------------
+· Revisione della struttura Documentale e integrazione con Modulistica.
+
+L’integrazione con la Gestione Documentale Modulistica prevede la inclusione di un nuovo Data Source per la connessione al DB della Modulistica.
+L'integrazione comporta la gestione dei file di Configurazione e di Log della Modulistica e del Documentale.
+
+. Introduzione del modulo Si4afcCCSDB.
+
+Precedentemente gli aggiornamenti sul DB venivano eseguiti con il Modulo Si4Amv che costringeva ad una operazione manuale per riportare le modifiche eseguite nello standard sull'installante di dataBase del proprio Progetto.
+
+· Nuovi file .HTML di Help on Line.
+
+Sulla cartella "help" vengono scaricati 3 Help on-line realizzati con RobHelp nelle rispettivi cartelle "amvadm", "common" e "restrict".
+I vecchi file già presenti direttamente sulla cartella "help" devono essere eliminati salvo i due file index.html e index.htm. Direttamente nella cartella "help" potranno rimanere solo i file .HTM generati da eventuale Help on-line specifico del prodotto.
+
+
+· Modifica delle Classi di stile utilizzate.
+
+La compatibilità è stata mantenuta solo su 5 stili che sono identificati dalla presenza all'interno della directory di stile di un file "V2004.txt".
+
+Gli stili sono:
+
+- AFC
+- Blue
+- Grey
+- InLine
+- Simplicity
+
+Le directory che non corrispondono a quelle elencate (ad esclusione di "DatePicker" e "Default") possono essere rimosse dalla cartella Themes.
+
+
+Versione 2003.11 del 19/11/2003
+------------------------------
+· Gestione dei menu con possibilità di selezionare progetto, modulo e ruolo.
+
+· Navigatore che tiene traccia di tutti i livelli di menu.
+
+· Evidenziazione a menu della voce selezionata.
+
+· Guide visualizzate come folder.
+
+· Navigatore custom sugli elenchi di record (Grid), utilizza la nuova libreria finmatica-jfcccs.jar che dovrà essere inclusa nel Class Path del progetto e nelle Runtime Libraries per essere presente sull’application server nella cartella WEB-INF\lib. Il navigatore custom si può inserire al posto del normale navigatore copiandolo da una delle grid delle pagine standard (esempio pagina “AmvDocumentiRicerca”).
+
+· Pagine di gestione degli accessi per utente amministratore.
+
+· Possibilità di assegnare come preferenza (“debug”) la modalità di visualizzazione estesa degli errori.
+
+· Gestione degli stili a cartelle separate.
+
+· Inserito codice javascript nella pagina AmvHeader che aggiunge al link che punta alla pagina di help il parametro “ID” impostato al nome dell’ultimo campo che ha ricevuto il focus. Questo consente di avere un help contestuale al singolo campo (cfr. par. 4.4.3.10 del documento relativo allo Standard di Progettazione DSP.SI4.SV.CCS.doc).
+
+· Possibilità di disabilitare a livello di preferenza il controllo sull’accesso alla singola pagina.
+
+
+N.B.:
+=====
+
+· Inclusione libreria "java finmatica-jfcccs.jar"
+
+Essendo state introdotte alcune nuove funzionalità è necessario che venga inclusa a livello di progetto CodeCharge la libreria java finmatica-jfcccs.jar utilizzando le proprietà Class Path e Runtime Libraries, così come fatto per la libreria finmatica-jfcutils e illustrato al paragrafo 4.2.1 del documento relativo allo Standard di Progettazione (DSP.SI4.SV.CCS.doc) consultabile nell'applicazione Code Charge Studio AFC sotto il progetto Si4 sul db Release/Installato.
+
+· Ricopia cartella "Themes"
+
+Essendo stata attivata la gestione degli stili a cartelle separate, è necessario ricopiare, sull’application Server, sotto la cartella “Themes” il contenuto della cartella Themes distribuita con la nuova versione. 
+La copia potrà essere eseguita manualmente oppure in automatico ridefinendo a livello di Project Settingsà Publishing la specifica “File to publish”.
+
+
+_________________________________________________________________________________________
+
+Gruppo Finmatica S.p.A.
+via del Lavoro,17 40127 BOLOGNA 
+tel.051-6307411 fax 051-6307498
+
+E-mail Internet: SegreteriaClienti@ads.it

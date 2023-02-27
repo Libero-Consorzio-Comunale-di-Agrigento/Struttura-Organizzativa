@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+//BuildXML @0-69EDDF61
+-->
+<project name="si4soweb" default="pack" basedir=".">
+
+  <target name="init">
+    <property name="deployment.dir" value="VALORIZZAMI"/>
+    <property name="lib_dir" value="VALORIZZAMI"/>
+    <property name="cp"
+                  value="${lib_dir}classes12.jar;${lib_dir}\finmatica-jfcccs.jar;${lib_dir}\finmatica-jfcutils.jar;${lib_dir}\ModulisticaCC.jar;${lib_dir}\DMServer.jar;${lib_dir}\servlet.jar;"/>
+    <property name="project.name" value="si4soweb"/>
+    <property name="encoding" value="ISO-8859-1"/>
+    <available classname="javax.servlet.ServletConfig" classpath="${cp}" property="servlet.available"/>
+
+    <available classname="java.util.regex.Pattern" classpath="${cp}" property="jdk14.available"/>
+    <available classname="javax.sql.DataSource" classpath="${cp}" property="jdbcext.available"/>
+    <echo message="ServletTemplates build: 2.3.0149"/>
+  </target>
+
+  <target name="check.servlet.lib" depends="init" unless="servlet.available">
+    <fail message="Servlet 2.2 API is not found in your Class Path. Please add it to site Class Path property."/>
+  </target>
+
+  <target name="check.oro.regexp" depends="init" unless="oro.available">
+    <fail message="Jakarta ORO API is not found in your Class Path. Please add it to site Class Path property."/>
+  </target>
+
+  <target name="check.jdk14.regexp" depends="init" unless="jdk14.available">
+    <fail message="You selected to use JDK 1.4 regexps but your JAVA_HOME points to earlier version. Please install and configure J2SDK version 1.4 or choose other Regexp library."/>
+  </target>
+
+  <target name="check.jdbcext.lib" depends="init" unless="jdbcext.available">
+    <fail message="JDBC 2.0 API is not found in your Class Path. Please add it to site Class Path property."/>
+  </target>
+
+  <target name="compile" depends="check.servlet.lib,check.jdk14.regexp,check.jdbcext.lib">
+    <mkdir dir="app/WEB-INF/classes"/>
+    <javac srcdir="src" destdir="app/WEB-INF/classes" classpath="${cp}" debug="on"
+            encoding="${encoding}" fork="yes" memoryMaximumSize="1024m"/>
+  </target>
+
+  <target name="build" depends="compile">
+    <copy todir="app/WEB-INF">
+      <fileset dir="config"/>
+    </copy>
+    <mkdir dir="app/WEB-INF/lib"/>
+    <copy file="${lib_dir}finmatica-jfcccs.jar" todir="app/WEB-INF/lib"/>
+    <copy file="${lib_dir}finmatica-jfcutils.jar" todir="app/WEB-INF/lib"/>
+
+    <copy todir="app">
+      <fileset dir=".." excludes="CCSBuild/**"/>
+    </copy>
+  </target>
+	
+  <target name="pack" depends="build">
+    <mkdir dir="appWar"/>
+    <jar jarfile="appWar/${project.name}.war" basedir="app"/>
+  </target>
+
+  <target name="deploy" depends="pack">
+    <delete dir="${deployment.dir}/${project.name}"/>
+    <copy file="appWar/${project.name}.war" todir="${deployment.dir}"/>
+  </target>
+
+  <target name="clean">
+    <delete dir="app"/>
+    <delete dir="bin"/>
+  </target>
+</project>
+<!--
+//End BuildXML
+
+-->

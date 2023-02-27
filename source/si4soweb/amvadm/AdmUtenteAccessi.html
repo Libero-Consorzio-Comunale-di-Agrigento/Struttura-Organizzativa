@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Caratteristiche Accesso</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%">{AmvUtenteNominativo_i}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left"><br>
+            <p align="left">
+            <!-- BEGIN Record AD4_UTENTI -->
+            <form action="{Action}" method="post" name="{HTMLFormName}">
+              <font class="AFCFormHeaderFont">Accesso Utente </font> 
+              <table cellpadding="3" cellspacing="0" class="AFCFormTABLE" width="100%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td colspan="2">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Nominativo</td> 
+                  <td class="AFCDataTD" width="100%">{NOMINATIVO}&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Codice
+                    Interno</td> 
+                  <td class="AFCDataTD">{UTENTE}&nbsp;{DSP_ID_UTENTE}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" colspan="2" valign="top">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Ultimo
+                    Accesso</td> 
+                  <td class="AFCDataTD">{ULTIMO_TENTATIVO}&nbsp;<font color="red">{DSP_NUMERO_TENTATIVI}</font></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" colspan="2" valign="top">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Registrato
+                    il</td> 
+                  <td class="AFCDataTD">{DATA_INSERIMENTO}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Modificato
+                    il</td> 
+                  <td class="AFCDataTD">{DATA_AGGIORNAMENTO}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Modificato
+                    da</td> 
+                  <td class="AFCDataTD">{UTENTE_AGGIORNAMENTO}</td> 
+                </tr>
+ 
+                <tr>
+                  <td align="right" class="AFCFooterTD" colspan="2" nowrap>&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AD4_UTENTI --></p>
+ 
+            <p></p>
+ 
+            <p>
+            <!-- BEGIN Grid AD4_DIRITTI_ACCESSO --><font class="AFCFormHeaderFont">Caratteristiche
+            accesso </font> 
+            <table cellpadding="3" cellspacing="0" class="AFCFormTABLE" width="100%">
+              <tr>
+                <td class="AFCColumnTD" nowrap>Servizio</td> 
+                <td class="AFCColumnTD" nowrap>&nbsp;</td> 
+              </tr>
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD" nowrap valign="top">{DES_SERVIZIO}&nbsp;</td> 
+                <td class="AFCDataTD" width="100%">{DSP_ACCESSO}&nbsp;<br>
+                  {DSP_NOTE}</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="2">Nessuna registrazione&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td align="middle" class="AFCFooterTD" colspan="2" nowrap>&nbsp; </td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AD4_DIRITTI_ACCESSO --></p>
+ </td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

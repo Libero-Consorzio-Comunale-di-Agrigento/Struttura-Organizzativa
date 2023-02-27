@@ -1,0 +1,37 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Funzionalità standard del Portale">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Home">
+      <param name="Local" value="Home.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Login">
+      <param name="Local" value="Login.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Ricerca">
+      <param name="Local" value="AmvDocumentiRicerca.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Registrazione">
+      <param name="Local" value="AmvRegistrazioneInizio.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Richieste on-line">
+      <param name="Local" value="ServletModulistica.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Servizio">
+      <param name="Local" value="Servizio.htm">
+    </object>
+    </ul>
+</ul>
+</html>

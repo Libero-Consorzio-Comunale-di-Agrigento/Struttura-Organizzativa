@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<indexdata>
+<key name="Abilitazione" >
+  <topic name="Registrazione" url="AmvRegistrazioneInizio.htm" />
+</key>
+<key name="Documenti" >
+  <topic name="Ricerca" url="AmvDocumentiRicerca.htm" />
+</key>
+<key name="HeaderBar" >
+  <topic name="Home" url="Home.htm" />
+</key>
+<key name="Home" >
+  <topic name="Home" url="Home.htm" />
+</key>
+<key name="Istanza" >
+  <topic name="Servizio" url="Servizio.htm" />
+</key>
+<key name="Login" >
+  <topic name="Login" url="Login.htm" />
+</key>
+<key name="Modulo" >
+  <topic name="Servizio" url="Servizio.htm" />
+</key>
+<key name="Password dimenticata" >
+  <topic name="Login" url="Login.htm" />
+</key>
+<key name="Registrazione" >
+  <topic name="Registrazione" url="AmvRegistrazioneInizio.htm" />
+</key>
+<key name="Registrazione richiesta" >
+  <topic name="Richieste on-line" url="ServletModulistica.htm" />
+</key>
+<key name="Ricerca" >
+  <topic name="Ricerca" url="AmvDocumentiRicerca.htm" />
+</key>
+<key name="Richiesta abilitazione" >
+  <topic name="Registrazione" url="AmvRegistrazioneInizio.htm" />
+</key>
+<key name="Richieste on-line" >
+  <topic name="Richieste on-line" url="ServletModulistica.htm" />
+</key>
+<key name="Servizio" >
+  <topic name="Servizio" url="Servizio.htm" />
+</key>
+
+</indexdata>

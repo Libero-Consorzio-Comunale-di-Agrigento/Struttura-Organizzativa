@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Amministrazione Preferenze del Portale</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body class="AFCPageBODY">
+<table cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid TITLEGrid --><font class="AFCFormHeaderFont">Elenco
+            Impostazioni&nbsp;del&nbsp; 
+            <!-- BEGIN Row -->{TITOLO}</font> 
+            <p class="AFCNote">Le impostazioni contrassegnate da '*' sono
+            modificate a livello di {LIVELLO} </p>
+ <!-- END Row -->
+            <!-- BEGIN NoRecords --><!-- END NoRecords --><!-- END Grid TITLEGrid -->
+            <!-- BEGIN Grid PREFERENZE -->
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <tr>
+                <td class="AFCColumnTD" align="left" nowrap>Impostazione</td> 
+                <td class="AFCColumnTD" align="left" nowrap>Valore</td> 
+                <!-- BEGIN Row -->
+                <tr>
+                  <td class="AFCDataTD" valign="top" width="20%"><a class="AFCDataLink" title="{COMMENTO}" href="{STRINGA_Src}#Aggiorna">{STRINGA}</a>&nbsp;{IMPOSTATA}</td> 
+                  <td class="AFCDataTD" width="80%">{VALORE}&nbsp;<input class="AFCInput" type="hidden" value="{COMMENTO}" name="{COMMENTO_Name}"></td> 
+                </tr>
+ <!-- END Row -->
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="middle" colspan="2">{AFCNavigator}&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ <!-- END Grid PREFERENZE --></td> 
+          </tr>
+ 
+          <tr>
+            <td valign="top" align="middle">
+              <!-- BEGIN Record PREFERENZA --><br>
+              <form name="AMV_RILEVANZE1" action="{Action}" method="post">
+                <font class="AFCFormHeaderFont"><a name="Aggiorna">Aggiornamento
+                Impostazione&nbsp;:&nbsp;</a>{STRINGA_LABEL}</font><br>
+                <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="90%">
+                  <!-- BEGIN Error -->
+                  <tr>
+                    <td class="AFCErrorDataTD">{Error}</td> 
+                  </tr>
+ <!-- END Error -->
+                  <tr>
+                    <td class="AFCDataTD"><font class="AFCNote">{COMMENTO}</font></td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCDataTD" width="100%"><textarea class="AFCTextarea" style="WIDTH: 100%" name="{VALORE_Name}" rows="5">{VALORE}</textarea></td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFooterTD" valign="top" align="right">
+                      <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+                      <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Predefinito" name="Delete"><!-- END Button Delete -->
+                      <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;</td> 
+                  </tr>
+ 
+                </table>
+ <input class="AFCInput" type="hidden" value="{STRINGA}" name="{STRINGA_Name}"><input class="AFCInput" type="hidden" value="{MODULO}" name="MODULO">
+              </form>
+ <!-- END Record PREFERENZA --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+
+    <tr>
+      <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+    </tr>
+  </table>
+ 
+  </body>
+ 
+  </html>

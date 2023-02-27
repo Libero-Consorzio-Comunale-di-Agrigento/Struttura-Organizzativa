@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<ftstdata>
+<topic name="Home" url="Home.htm" />
+<topic name="Login" url="Login.htm" />
+<topic name="Ricerca" url="AmvDocumentiRicerca.htm" />
+<topic name="Registrazione" url="AmvRegistrazioneInizio.htm" />
+<topic name="Richieste on-line" url="ServletModulistica.htm" />
+<topic name="Servizio" url="Servizio.htm" />
+
+</ftstdata>  

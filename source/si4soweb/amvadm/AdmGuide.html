@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Amministrazione Guide</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%"><br>
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%">
+            <!-- BEGIN Grid AMV_VOCI --><font class="AFCFormHeaderFont">Elenco
+            Guide voce: " 
+            <!-- BEGIN Row -->{TITOLO_VOCE}<!-- END Row -->"</font><!-- END Grid AMV_VOCI --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="center">
+            <!-- BEGIN Grid AMV_GUIDE -->
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <tr>
+                <td class="AFCColumnTD" nowrap>
+                  <!-- BEGIN Sorter Sorter_TITOLO --><a class="AFCSorterLink" href="{Sort_URL}" target="" name="">Titolo</a>&nbsp; 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_TITOLO -->&nbsp;</td> 
+                <td class="AFCColumnTD" nowrap>
+                  <!-- BEGIN Sorter Sorter_SEQUENZA --><a class="AFCSorterLink" href="{Sort_URL}" target="" name="">Sequenza</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_SEQUENZA -->&nbsp;</td> 
+                <td class="AFCColumnTD" nowrap>&nbsp;Voce Associata</td> 
+                <td class="AFCColumnTD" nowrap>&nbsp;Link Riferimento</td> 
+                <td class="AFCColumnTD" nowrap>&nbsp;</td> 
+              </tr>
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD">{TITOLO}&nbsp;</td> 
+                <td class="AFCDataTD">{SEQUENZA}&nbsp;</td> 
+                <td class="AFCDataTD">{VOCE_RIF}&nbsp;</td> 
+                <td class="AFCDataTD">{URL_RIF}&nbsp;</td> 
+                <td class="AFCDataTD">&nbsp;<a class="AFCDataLink" href="{Modifica_Src}">{Modifica}</a></td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="5">Nessuna guida&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" nowrap align="center" colspan="5">{AFCNavigator}&nbsp;</td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AMV_GUIDE --></td> 
+          <tr>
+            <td width="100%" valign="top" align="center">
+              <!-- BEGIN Record AMV_GUIDE1 --><br>
+              <form name="{HTMLFormName}" action="{Action}" method="post">
+                <font class="AFCFormHeaderFont">Aggiornamento&nbsp;Guida</font> 
+                <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+                  <!-- BEGIN Error -->
+                  <tr>
+                    <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                  </tr>
+                  <!-- END Error -->
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Titolo</td> 
+                    <td class="AFCDataTD"><input name="TITOLO" value="{TITOLO}" maxlength="20" class="AFCInput">&nbsp;<input type="hidden" name="GUIDA" value="{GUIDA}" class="AFCInput"></td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Sequenza&nbsp;</td> 
+                    <td class="AFCDataTD"><input name="SEQUENZA" value="{SEQUENZA}" maxlength="8" size="8" class="AFCInput">&nbsp;</td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Voce attivata
+                      dalla guida</td> 
+                    <td class="AFCDataTD">
+                      <select class="AFCSelect" tabindex="0" name="VOCE_MENU">
+                        <option value="" selected>- -</option>
+ {VOCE_MENU_Options} 
+                      </select>
+ &nbsp;&nbsp;</td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Alias&nbsp;</td> 
+                    <td class="AFCDataTD"><input name="{ALIAS_Name}" value="{ALIAS}" class="AFCInput" maxlength="6" size="6"></td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Visibile se è
+                      abilitata la voce</td> 
+                    <td class="AFCDataTD" nowrap align="left">
+                      <select class="AFCSelect" tabindex="0" name="VOCE_RIF">
+                        <option value="" selected>- -</option>
+ {VOCE_RIF_Options} 
+                      </select>
+ </td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                      <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Inserisci" name="Insert"><!-- END Button Insert -->
+                      <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+                      <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Elimina" name="Delete"><!-- END Button Delete -->
+                      <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;</td> 
+                  </tr>
+ 
+                </table>
+ 
+              </form>
+ <!-- END Record AMV_GUIDE1 --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+    <tr>
+      <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+    </tr>
+ 
+  </table>
+ 
+  </body>
+ 
+  </html>

@@ -1,0 +1,271 @@
+<html>
+<head>
+<title>Editor HTML</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="JavaScript" src="../Lov.js"></script>
+
+<script type="text/javascript">
+  _editor_url = "htmleditor";
+  _editor_lang = "en";
+</script>
+<script type="text/javascript" src="htmleditor/htmlarea.js"></script>
+<script type="text/javascript">
+      // WARNING: using this interface to load plugin
+      // will _NOT_ work if plugins do not have the language
+      // loaded by HTMLArea.
+
+      // In other words, this function generates SCRIPT tags
+      // that load the plugin and the language file, based on the
+      // global variable HTMLArea.I18N.lang (defined in the lang file,
+      // in our case "lang/en.js" loaded above).
+
+      // If this lang file is not found the plugin will fail to
+      // load correctly and nothing will work.
+
+      HTMLArea.loadPlugin("TableOperations");
+      HTMLArea.loadPlugin("SpellChecker");
+      HTMLArea.loadPlugin("FullPage");
+      HTMLArea.loadPlugin("CSS");
+      HTMLArea.loadPlugin("ContextMenu");
+</script>
+<script type="text/javascript">
+var editor = null;
+function initEditor() {
+
+  // create an editor for the "ta" textbox
+  editor = new HTMLArea("ta");
+
+  // register the FullPage plugin
+  editor.registerPlugin(FullPage);
+
+  // register the SpellChecker plugin
+  editor.registerPlugin(TableOperations);
+
+  // register the SpellChecker plugin
+  editor.registerPlugin(SpellChecker);
+
+  // register the CSS plugin
+  editor.registerPlugin(CSS, {
+    combos : [
+      { label: "Syntax:",
+                   // menu text       // CSS class
+        options: { "None"           : "",
+                   "Code" : "code",
+                   "String" : "string",
+                   "Comment" : "comment",
+                   "Variable name" : "variable-name",
+                   "Type" : "type",
+                   "Reference" : "reference",
+                   "Preprocessor" : "preprocessor",
+                   "Keyword" : "keyword",
+                   "Function name" : "function-name",
+                   "Html tag" : "html-tag",
+                   "Html italic" : "html-helper-italic",
+                   "Warning" : "warning",
+                   "Html bold" : "html-helper-bold"
+                 },
+        context: "pre"
+      },
+      { label: "Info:",
+        options: { "None"           : "",
+                   "Quote"          : "quote",
+                   "Highlight"      : "highlight",
+                   "Deprecated"     : "deprecated"
+                 }
+      }
+    ]
+  });
+
+  // add a contextual menu
+  editor.registerPlugin("ContextMenu");
+
+  // load the stylesheet used by our CSS plugin configuration
+  editor.config.pageStyle = "@import url(custom.css);";
+
+  // bottoni custom
+   editor.config.registerButton("immagine", "Inserisci immagine", "../images/image.gif", false, clickHandler); 
+   editor.config.registerButton("preview", "Anteprima", "../images/anteprima.gif", false, clickHandler); 
+   editor.config.toolbar.push(["immagine","preview"]); 
+
+  
+  setTimeout(function() {
+    editor.generate();
+  }, 500);
+  return false;
+}
+// Handler per bottoni custom
+   function clickHandler(editor, buttonId) { 
+      switch (buttonId) { 
+         case "immagine": 
+            if (typeof(imagewin) == "undefined"||imagewin.closed) {
+			   var szURL;
+			   szURL="../../common/AmvImages.do"; 
+               imagewin =  window.open(szURL,"imagewin","width=430,height=120, resizable=yes"); 
+            } 
+            imagewin.focus(); 
+            break; 
+         case "preview": 
+	    if (!(typeof(fullscreen) == "undefined"|| fullscreen.closed)) {
+			   fullscreen.close();
+	    }
+		    var x = document.createElement("<input type='hidden' name='previewModulo' value='1'>");
+		    document.edit.appendChild(x);
+            salvaFile(document.edit); 
+            break; 
+	  }
+   }; 
+   
+function insertHTML() {
+  editor._iframe.contentWindow.focus(); 
+  editor.insertHTML(html); 
+//  var html = prompt("Enter some HTML code here");
+//  if (html) {
+//    editor.insertHTML(html);
+//  }
+}
+function highlight() {
+  editor.surroundHTML('<span style="background-color: yellow">', '</span>');
+}
+function carica(){
+ editor._iframe.contentWindow.focus(); 
+ editor.insertHTML(top.opener.get_value());
+}
+
+</script>
+
+
+
+
+<!--
+
+
+
+<script type="text/javascript">
+var editor = null;
+function initEditor() {
+  editor = new HTMLArea("ta");
+
+  // comment the following two lines to see how customization works
+  //editor.generate();
+  //return false;
+
+  var cfg = editor.config; // this is the default configuration
+  cfg.registerButton({
+    id        : "my-hilite",
+    tooltip   : "Highlight text",
+    image     : "ed_custom.gif",
+    textMode  : false,
+    action    : function(editor) {
+                  editor.surroundHTML("<span class=\"hilite\">", "</span>");
+                },
+    context   : 'table'
+  });
+
+  cfg.toolbar.push(["linebreak", "my-hilite"]); // add the new button to the toolbar
+
+  // BEGIN: code that adds a custom button
+  // uncomment it to test
+  var cfg = editor.config; // this is the default configuration
+ 
+  /*
+  cfg.registerButton({
+    id        : "my-hilite",
+    tooltip   : "Highlight text",
+    image     : "ed_custom.gif",
+    textMode  : false,
+    action    : function(editor) {
+                  editor.surroundHTML("<span class=\"hilite\">", "</span>");
+                }
+  });
+  */
+
+   function clickHandler(editor, buttonId) { 
+      switch (buttonId) { 
+         case "immagine": 
+            if (typeof(imagewin) == "undefined"||imagewin.closed) {
+			   var szURL;
+			   szURL="../common/AmvImages.do"; 
+               imagewin =  window.open(szURL,"imagewin","width=430,height=120, resizable=yes"); 
+            } 
+            imagewin.focus(); 
+            break; 
+         case "preview": 
+	    if (!(typeof(fullscreen) == "undefined"|| fullscreen.closed)) {
+			   fullscreen.close();
+	    }
+		    var x = document.createElement("<input type='hidden' name='previewModulo' value='1'>");
+		    document.edit.appendChild(x);
+            salvaFile(document.edit); 
+            break; 
+	  }
+   }; 
+   cfg.toolbar = [ [ "fontname", "space", "fontsize", "space", "formatblock", "space", "bold", "italic",
+        "underline", "separator", "strikethrough", "subscript", "superscript", "separator", "copy", 
+        "cut", "paste", "space", "undo", "redo" ], [ "justifyleft", "justifycenter", "justifyright", "justifyfull", 
+        "separator", "insertorderedlist", "insertunorderedlist", "outdent", "indent", "separator", "forecolor", 
+        "hilitecolor", "textindicator", "separator", "inserthorizontalrule", "createlink", "popupeditor","inserttable", 
+        "htmlmode", "separator", "showhelp", "about" ]]; 
+   cfg.registerButton("immagine", "Inserisci immagine", "images/image.gif", false, clickHandler); 
+   cfg.registerButton("preview", "Anteprima", "images/anteprima.gif", false, clickHandler); 
+   cfg.toolbar.push(["immagine","preview"]); 
+
+  /*
+  cfg.registerButton("my-hilite", "Highlight text", "ed_custom.gif", false,
+    function(editor) {
+      editor.surroundHTML('<span class="hilite">', '</span>');
+    }
+  );
+  */
+ /* cfg.pageStyle = "body { background-color: #efd; } .hilite { background-color: yellow; } "+
+                  ".sample { color: green; font-family: monospace; }";*/
+ // END: code that adds a custom button
+
+  editor.generate();
+  editor._iframe.style.width = "100%";
+  editor._iframe.style.height = "70%";
+  editor._textArea.style.width = "100%";
+  editor._textArea.style.height = "70%";
+  resize_editor();
+  return false;
+}
+function insertHTML(html) {
+  editor._iframe.contentWindow.focus(); 
+  editor.insertHTML(html); 
+}
+function highlight() {
+  editor.surroundHTML('<span style="background-color: yellow">', '</span>');
+}
+
+function carica(){
+ editor._iframe.contentWindow.focus(); 
+ editor.insertHTML(top.opener.get_value());
+}
+</script> -->
+
+</head>
+
+<!-- use <body onload="HTMLArea.replaceAll()" if you don't care about
+     customizing the editor.  It's the easiest way! :) -->
+<body onload="initEditor();">
+<script type="text/javascript">
+ carica();
+</script>
+<form action="AmvHtmlEdit.html" method="post" id="edit" name="edit">
+
+<textarea id="ta" name="ta"  style="width:100%;" rows="25">
+</textarea>
+
+<p align="right">
+
+<input class="AFCButton" type="submit" name="ok" value="  Aggiorna  " onclick="top.opener.returnLOV(editor.getHTML())" />
+<input type="button" class="AFCButton" name="hil" value="  Carica Testo  " onclick="carica();" />
+<input type="button" class="AFCButton" name="ins" value="  Annulla  " onclick="top.opener.closeLOV()" />
+</p>
+
+</form>
+
+</body>
+</html>

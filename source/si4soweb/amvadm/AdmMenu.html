@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>Amministrazione Menu</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript" src="../Lov.js"></script>
+<script language="JavaScript">
+//Begin CCS script
+//Include JSFunctions @1-FB634A57
+  </script>
+<script language="JavaScript" type="text/javascript" src="../functions.js"></script>
+<script language="JavaScript" type="text/javascript">
+  
+//End Include JSFunctions
+
+//page_AMV_VOCI_Delete_OnClick @58-F05FD789
+function page_AMV_VOCI_Delete_OnClick()
+{
+    var result;
+//End page_AMV_VOCI_Delete_OnClick
+
+//Confirmation Message @164-A1FE8B44
+    return confirm('ATTENZIONE:\nL\'operazione elimina completamente la voce.\n\nProcedendo nella eliminazione non sarà più possibile assegnarla a nessun altro Menu o Ruolo.\nPer togliere la voce da un Menu è sufficiente indicare "No" nella Abilitazione.\n\nContinuare?');
+//End Confirmation Message
+
+//Close page_AMV_VOCI_Delete_OnClick @58-BC33A33A
+    return result;
+}
+//End Close page_AMV_VOCI_Delete_OnClick
+
+//bind_events @1-62633D8C
+function bind_events() {
+    if (document.forms["AMV_VOCI"]) check_and_bind('document.forms["AMV_VOCI"].Delete','onclick',page_AMV_VOCI_Delete_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table class="" border="0" cellpadding="0" cellspacing="2" style="BORDER-COLLAPSE: collapse" bordercolor="#111111" width="100%" height="100%" id="AutoNumber1">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" width="100%">
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%" colspan="2">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left" height="100%">
+            <p>
+            <!-- BEGIN Record Ruolo -->
+            <form name="AD4_RUOLISearch" action="AdmMenu.do" method="post">
+              <font class="AFCFormHeaderFont">Cerca Menu</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="10%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="3">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" style="BORDER-BOTTOM-WIDTH: 0px" valign="bottom">Progetto</td> 
+                  <td class="AFCFieldCaptionTD" style="BORDER-BOTTOM-WIDTH: 0px" valign="bottom" width="100%">
+                    <select onchange="document.forms[0].SM.value=null;document.forms[0].submit()" class="AFCSelect" name="{SP_Name}">
+                      {SP_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" style="BORDER-BOTTOM-WIDTH: 0px" valign="bottom">Modulo</td> 
+                  <td class="AFCFieldCaptionTD" style="BORDER-BOTTOM-WIDTH: 0px" valign="bottom" width="100%">
+                    <select onchange="document.forms[0].submit()" class="AFCSelect" tabindex="0" name="SM">
+                      <option value="" selected>-&nbsp;-</option>
+ {SM_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" style="BORDER-TOP-WIDTH: 0px" valign="bottom">Ruolo</td> 
+                  <td class="AFCFieldCaptionTD" style="BORDER-TOP-WIDTH: 0px">
+                    <select onchange="document.forms[0].submit()" class="AFCSelect" tabindex="0" name="SR">
+                      {SR_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record Ruolo -->
+            <!-- BEGIN Grid Albero -->
+            <!-- BEGIN Row -->{MENU}<!-- END Row --><!-- END Grid Albero --></p>
+ </td> 
+          <td width="50%" valign="top" align="left">
+            <!-- BEGIN Record AMV_VOCI -->
+            <form name="AMV_VOCI" action="{Action}" method="post" target="">
+              <font class="AFCFormHeaderFont">Aggiornamento Menu</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Voce</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="8" size="12" value="{VOCE_NEW}" name="VOCE_NEW">&nbsp;<input type="hidden" name="{VOCE_OLD_Name}" value="{VOCE_OLD}" class="AFCInput"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Titolo</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="40" value="{TITOLO}" name="TITOLO" style="WIDTH: 100%"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Tipo</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" tabindex="0" name="TIPO">
+                      {TIPO_Options} 
+                    </select>
+ &nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Link</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="200" value="{STRINGA}" name="STRINGA" style="WIDTH: 100%"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Pagina
+                    inclusa <br>
+                  </td> 
+                  <td class="AFCDataTD" nowrap><input class="AFCInput" value="{MODULO}" name="{MODULO_Name}" style="WIDTH: 92%">
+				  </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Note</td> 
+                  <td class="AFCDataTD"><textarea class="AFCTextarea" title="Consultare l'help in linea per l'utilizzo di questo campo per funzionalità particolari." style="WIDTH: 100%" name="{NOTE_Name}">{NOTE}</textarea></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Voce Guida</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="VOCE_GUIDA">
+                      <option value="" selected>- -</option>
+ {VOCE_GUIDA_Options} 
+                    </select>
+ <input type="hidden" name="{SM_Name}" value="{SM}" class="AFCInput">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Padre</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" tabindex="0" name="PD">
+                      {PD_Options} 
+                    </select>
+ <input type="hidden" name="{PADRE_OLD_Name}" value="{PADRE_OLD}" class="AFCInput"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Sequenza</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" size="4" value="{SQ}" name="SQ"><input type="hidden" name="{RUOLO_Name}" value="{RUOLO}" class="AFCInput"><input type="hidden" name="{MVDIRUPLOAD_Name}" value="{MVDIRUPLOAD}" class="AFCInput"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Abilitazione</td> 
+                  <td class="AFCDataTD">
+                    <!-- BEGIN RadioButton AB --><input class="" type="radio" value="{Value}" name="AB" {Check}>&nbsp;{Description}&nbsp;<!-- END RadioButton AB -->&nbsp;&nbsp;&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                    <table width="100%">
+                      <tr>
+                        <td class="" align="center" colspan="2"><a class="AFCNavigatorLink" href="{Nuovo_Src}" target="" name="">{Nuovo}</a></td> 
+                        <td align="right">
+                          <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Inserisci" name="Insert"><!-- END Button Insert -->
+                          <!-- BEGIN Button Update --><input class="AFCButton" title="" tabindex="0" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+                          <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Elimina" name="Delete" title="Eliminazione definitiva della Voce"><!-- END Button Delete --></td> 
+                      </tr>
+ 
+                    </table>
+ </td> 
+                </tr>
+ 
+                <tr>
+                </tr>
+ 
+              </table>
+ 
+              <p></p>
+ 
+              <p>&nbsp;</p>
+ 
+              <p></p>
+ 
+            </form>
+ <!-- END Record AMV_VOCI --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

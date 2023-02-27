@@ -1,0 +1,151 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include Common JSFunctions @1-A1D84A39
+</script>
+<script language="JavaScript" type="text/javascript" src="../DatePicker.js"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-15E6936A
+
+var NUOVA_REVISIONE_DatePicker1 = new Object(); 
+NUOVA_REVISIONE_DatePicker1.format           = "dd/mm/yyyy";
+NUOVA_REVISIONE_DatePicker1.style            = "Themes/AFC/Style.css";
+NUOVA_REVISIONE_DatePicker1.relativePathPart = "../";
+
+var NUOVA_REVISIONE_DatePicker2 = new Object(); 
+NUOVA_REVISIONE_DatePicker2.format           = "dd/mm/yyyy";
+NUOVA_REVISIONE_DatePicker2.style            = "Themes/AFC/Style.css";
+NUOVA_REVISIONE_DatePicker2.relativePathPart = "../";
+
+//End Date Picker Object Definitions
+//End CCS script
+</script>
+</head>
+<body link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Record NUOVA_REVISIONE -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <font class="AFCFormHeaderFont">Creazione nuova Revisione</font> 
+              <table class="AFCFormTABLE" cellpadding="1" width="100%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td colspan="2" class="AFCerrorDataTD">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" width="20%">Titolo</td> 
+                  <td width="100%" class="AFCDataTD">&nbsp;{TITOLO}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Tipologia</td> 
+                  <td class="AFCDataTD">&nbsp;{DES_TIPOLOGIA}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Categoria</td> 
+                  <td class="AFCDataTD">&nbsp;{DES_CATEGORIA}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Argomento</td> 
+                  <td class="AFCDataTD">&nbsp;{DES_ARGOMENTO}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Autore </td> 
+                  <td class="AFCDataTD">&nbsp;{NOME_AUTORE}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Data
+                    inserimento</td> 
+                  <td class="AFCDataTD">&nbsp;{DATA_INSERIMENTO}</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Pubblicato </td> 
+                  <td class="AFCDataTD">&nbsp;dal&nbsp;{INIZIO_PUBBLICAZIONE_LABEL}&nbsp;&nbsp;al&nbsp;{FINE_PUBBLICAZIONE_LABEL}</td> 
+                </tr>
+ 
+              </table>
+ 
+              <p></p>
+ 
+              <table class="AFCFormTABLE" cellpadding="1" width="100%">
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" width="20%">Redazione&nbsp;</td> 
+                  <td valign="top" class="AFCDataTD">&nbsp; 
+                    <select class="AFCSelect" tabindex="0" name="REDAZIONE">
+                      {REDAZIONE_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td valign="top" class="AFCFieldCaptionTD">Verifica&nbsp;</td> 
+                  <td valign="top" class="AFCDataTD">&nbsp; 
+                    <select class="AFCSelect" tabindex="0" name="VERIFICA">
+                      {VERIFICA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td valign="top" class="AFCFieldCaptionTD">Approvazione</td> 
+                  <td valign="top" class="AFCDataTD">&nbsp; 
+                    <select class="AFCSelect" tabindex="0" name="APPROVAZIONE">
+                      {APPROVAZIONE_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td valign="top" class="AFCFieldCaptionTD">Pubblicazione&nbsp;</td> 
+                  <td valign="top" class="AFCDataTD">&nbsp;<input class="AFCInput" maxlength="10" size="10" value="{INIZIO_PUBBLICAZIONE}" name="INIZIO_PUBBLICAZIONE">&nbsp; 
+                    <!-- BEGIN DatePicker DatePicker1 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker1 -->&nbsp;-&nbsp;<input class="AFCInput" maxlength="10" size="10" value="{FINE_PUBBLICAZIONE}" name="FINE_PUBBLICAZIONE">&nbsp; 
+                    <!-- BEGIN DatePicker DatePicker2 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker2 --></td> 
+                </tr>
+ 
+                <tr>
+                  <td align="right" colspan="2" class="AFCFooterTD"><input class="AFCInput" type="hidden" value="{REVISIONE}" name="REVISIONE"><input class="AFCInput" type="hidden" value="{ID_DOCUMENTO}" name="ID_DOCUMENTO">
+                    <!-- BEGIN Button Button_Insert --><input type="submit" value="Inserisci" name="{Button_Name}" class="AFCButton"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input type="submit" value="Crea Revisione" name="{Button_Name}" class="AFCButton"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input type="submit" value="Elimina" name="{Button_Name}" class="AFCButton"><!-- END Button Button_Delete -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record NUOVA_REVISIONE --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

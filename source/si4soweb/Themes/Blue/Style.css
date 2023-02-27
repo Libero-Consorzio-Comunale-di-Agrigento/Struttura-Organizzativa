@@ -1,0 +1,703 @@
+/* Blue AFC CCSTheme ex StormyWeather */
+BODY, TABLE, TH, TR, TD, UL, OL, LI, P, FONT, A, BLOCKQUOTE, LABEL {
+	font-family: Verdana, Tahoma,  Arial, Helvetica;
+	font-size: 100%;
+}
+BODY{ 
+	font-size: 70%;
+}
+.AFCPageBODY{ 
+	font-size: 70%;
+	/*margin-left:70px;
+	margin-right:70px;*/
+}  
+.AFCFormTABLE{ 
+	border-bottom: 1px solid #7386A5;
+	border-right: 1px solid #7386A5;
+	border-top: 1px solid #DEE3EF;
+	border-left: 1px solid #DEE3EF;
+}
+.AFCFormHeaderFont{
+	font-size: 100%;
+	font-weight: bold;
+	padding-left : 5px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	color: navy;
+	font-size: 100%;
+	font-weight: bold;
+	background-color: transparent;
+	border-right: 0px;
+	border-top: 0px;
+}
+.AFCFieldCaptionTD{
+	background-color: #FFFFFF;
+	color: #00659C;
+	font-weight: bold;
+	font-size: 100%;
+}
+.AFCAltDataTD{ 
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-bottom: 1px solid #C6CBDE;
+	border-right: 1px solid #C6CBDE;
+	background-color: #C1C7DE;
+	color: #000000;
+	font-size: 100%;
+}
+.AFCColumnTD{ 
+	border-bottom: 1px solid #DEE3EF;
+	border-right: 1px solid #DEE3EF;
+	border-top: 1px solid #7386A5;
+	border-left: 1px solid #7386A5;
+ 	background-image: url('HeaderBar.gif');
+	color: #FFFFFF;
+	font-size: 100%;
+	font-weight: bold;
+ 	
+}
+.AFCDataTD{ 
+	background-color: #FFFFFF;
+	font-size: 100%;
+	color: #000000;
+	border-bottom: 1px solid #DEE3EF;
+}
+.AFCErrorDataTD{ 
+	background-color: #FFFFFF;
+	color: #FF0000;
+	font-size: 100%;
+	border-bottom: 1px solid #DEE3EF;
+}
+.AFCSeparatorTD{ 
+	height: 0px;
+}
+.AFCFooterTD{ 
+	border-bottom: 1px solid #DEE3EF;
+	border-right: 1px solid #DEE3EF;
+	border-top: 1px solid #7386A5;
+	border-left: 1px solid #7386A5;
+	background-color: #9CAECE;
+	color: #FFFFFF;
+	font-size: 100%;
+}
+a.AFCSorterLink:link, a.AFCSorterLink:visited{ 
+	color: #FFFFFF;
+	font-size: 100%;
+	text-decoration: underline;
+}
+a.AFCSorterLink:hover, a.AFCSorterLink:active{ 
+	color: red;
+	font-size: 100%;
+	text-decoration: none;
+}
+a.AFCDataLink:link, a.AFCDataLink:visited{ 
+	color: #000080;
+	font-size: 100%;
+	text-decoration: underline;
+}
+a.AFCDataLink:hover, a.AFCDataLink:active{ 
+	color: red;
+	font-size: 100%;
+	text-decoration: none;
+}
+a.AFCNavigatorLink:link, a.AFCNavigatorLink:visited{ 
+	color: navy;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.AFCNavigatorLink:hover, a.AFCNavigatorLink:active{ 
+	color: red;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: none;
+}
+.AFCButton { 
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	font-size: 100%;
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+.AFCInput { 
+	border-bottom: 2px solid #E6E6E6;
+	border-left: 2px ridge #E6E6E6;
+	border-right: 2px solid #E6E6E6;
+	border-top: 2px ridge #E6E6E6;
+	font-size: 100%;
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+.AFCTextarea { 
+	border-bottom: 2px solid #E6E6E6;
+	border-left: 2px ridge #E6E6E6;
+	border-right: 2px solid #E6E6E6;
+	border-top: 2px ridge #E6E6E6;
+	font-size: 100%;
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+.AFCSelect { 
+	font-size: 100%;
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+a:link, a:visited { color: #000000; }
+a:hover, a:active { color: red; }
+
+
+/* Calendar */
+a.today:link, a.today:visited{ color: #FF0000; font-weight: bold; text-decoration: none; }
+a.today:hover, a.today:active{ color: #000000; font-weight: bold; text-decoration: none; }
+a.selectedDay:link, a.selectedDay:visited{ color: #FFFFFF; font-weight: bold; text-decoration: none; }
+a.selectedDay:hover, a.selectedDay:active{ color: #FF0000; font-weight: bold; text-decoration: none; }
+a.weekDay:link, a.weekDay:visited{ color: #000080; text-decoration: none; }
+a.weekDay:hover, a.weekDay:active{ color: #FF0000; text-decoration: none; }
+TD.selectedDay { margin: 1px; border-bottom: 1px solid #DEE3EF; border-right: 1px solid #DEE3EF; border-top: 1px solid #7386A5; border-left: 1px solid #7386A5; background-color: #9CAECE; color: #FFFFFF; font-size: 13px; font-weight: bold; }
+TD.today { border-top: 1px solid #FF0000; border-left: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-right: 1px solid #FF0000; background-color: #DEE3EF; color: #000000; font-size: 13px; }
+TD.workday { border-top: 1px solid #FFFFFF; border-left: 1px solid #FFFFFF; border-bottom: 1px solid #C6CBDE; border-right: 1px solid #C6CBDE; background-color: #DEE3EF; color: #000000; font-size: 13px; }
+TD.weekend { border-top: 1px solid #FFFFFF; border-left: 1px solid #FFFFFF; border-bottom: 1px solid #C6CBDE; border-right: 1px solid #C6CBDE; background-color: #C1C7DE; color: #000000; font-size: 13px; }
+TH.calendar { margin: 1px; border-bottom: 1px solid #DEE3EF; border-right: 1px solid #DEE3EF; border-top: 1px solid #7386A5; border-left: 1px solid #7386A5; background-color: #9CAECE; color: #FFFFFF; font-size: 13px; font-weight: bold; }
+.CalendarButtons { margin: 1px; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; font-size: 13px; font-family: Verdana, Tahoma, Arial, Helvetica; }
+.CalendarControls { font-family: Verdana, Tahoma, Arial, Helvetica; font-size: 13px; }
+.Table { border-bottom: 1px solid #7386A5; border-right: 1px solid #7386A5; border-top: 1px solid #DEE3EF; border-left: 1px solid #DEE3EF; }
+
+/* AFC CCSTheme classi speciali */
+.AFCInputReadOnly {
+	border-bottom: 2px solid #E6E6E6; 
+	border-left: 2px ridge #E6E6E6; 
+	border-right: 2px solid #E6E6E6; 
+	border-top: 2px ridge #E6E6E6; 
+	background-color: #FFFFFF; 
+	font-size: 100%; 
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+.AFCInputDisplay {
+	border-bottom: 0px; 
+	border-left: 0px ; 
+	border-right: 0px; 
+	border-top: 0px; 
+	background-color: #FFFFFF; 
+	font-size: 100%; 
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+.AFCTextEnable { 
+	color: navy;
+}
+a.AFCTextEnable:link, a.AFCTextEnable:active, a.AFCTextEnable:visited { 
+	color: navy;
+}
+a.AFCTextEnable:hover { 
+	color: red;
+} 
+.AFCTextDisable { 
+	color: #808080;
+}
+a.AFCTextDisable:link, a.AFCTextDisable:active, a.AFCTextDisable:visited { 
+	color: #808080;
+}
+a.AFCTextDisable:hover { 
+	color: red;
+}
+.AFCVisible { 
+	visibility: inherit;
+	/*display:block;*/
+}
+.AFCHidden { 
+	visibility: hidden;
+	display:none;
+}  
+/* ------------------------------------- Menu ------------------------------------- */
+
+.AFCMenu {
+	color: navy;
+	text-decoration: none;
+}
+a.AFCMenuNavigatorLink:link, a.AFCMenuNavigatorLink:visited{ 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCMenuNavigatorLink:hover, a.AFCMenuNavigatorLink:active{ 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCMenuDataLink:link, a.AFCMenuDataLink:active, a.AFCMenuDataLink:visited { 
+	color: navy; 
+	text-decoration: none;
+}
+a.AFCMenuDataLink:hover { 
+	color: navy; 
+	text-decoration: underline;
+}
+.AFCMenuColumnTD{ 
+	border:1px solid #7386A5; 
+ 	background-image: url('HeaderBar.gif');
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+}
+.AFCMenuDataTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #DEE3EF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCMenuSelectedColumnTD{ 
+	border:1px solid #FF7519; background-color: #FFAB73; 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+}
+.AFCMenuSelectedTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #D0BAAC; 
+	border-bottom: 1px solid #D0BAAC; 
+	border-right: 1px solid #D0BAAC; 
+	background-color: #FFEACF;
+	color: #FEB658; 
+	font-weight: bold;
+	font-size: 100%; 
+
+}
+.AFCMenuDetailTD{ 
+	border-top: 1px solid #FFFFFF;  
+	border-left: 1px solid #D0BAAC; 
+	border-bottom: 1px solid #D0BAAC; 
+	border-right: 1px solid #D0BAAC; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCMenuSelectedTR{ 
+	background-repeat: no-repeat;
+	background-position :  right center;
+}
+.AFCMenuSeparatorTD{ 
+ 	background-image: url('section_sep.jpg');
+	background-repeat: repeat-x
+}
+/* ------------------------------------- Blocchi Left------------------------------------ */
+
+.AFCLeft {
+	width:150px;
+}
+.AFCLeftTable {
+	padding-top:3px;
+	padding-bottom:0px;
+} 
+.AFCLeftFormTABLE{
+}
+a.AFCLeftNavigatorLink:link, a.AFCLeftNavigatorLink:visited{ 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCLeftNavigatorLink:hover, a.AFCLeftNavigatorLink:active{ 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCLeftDataLink:link, a.AFCLeftDataLink:active, a.AFCLeftDataLink:visited { 
+	color: navy; 
+	text-decoration: none;
+}
+a.AFCLeftDataLink:hover { 
+	color: navy; 
+	text-decoration: underline;
+}
+.AFCLeftColumnTD{ 
+	border:1px solid #7386A5;
+ 	background-image: url('HeaderBar.gif');
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+} 
+.AFCLeftDataTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #DEE3EF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCLeftImageTD{ 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE;
+	border-top: 1px solid #C6CBDE; 
+}
+.AFCLeftSelectedColumnTD{ 
+	border-bottom: 1px solid #DEE3EF; 
+	border-right: 1px solid #DEE3EF; 
+	border-top: 1px solid #7386A5; 
+	border-left: 1px solid #7386A5; 
+	background-color: #FEB658; 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+}
+.AFCLeftSelectedTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #FFEACF;
+	color: #FEB658; 
+	font-weight: bold;
+	font-size: 100%; 
+
+}
+.AFCLeftDetailTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCLeftSeparatorTD{ 
+ 	background-image: url('section_sep.jpg');
+	background-repeat: repeat-x
+}
+/* ------------------------------------- Blocchi Center------------------------------------ */
+
+.AFCCenter {
+	width:100%;
+}
+.AFCCenterTable {
+	padding-top:3px;
+	padding-bottom:0px;
+} 
+.AFCCenterFormTABLE{
+	border-top: 1px solid #DEE3EF; 
+/*	border-bottom: 1px solid #7386A5;
+	border-right: 1px solid #7386A5;
+	border-left: 1px solid #DEE3EF;*/
+}
+a.AFCCenterNavigatorLink:link, a.AFCCenterNavigatorLink:visited{ 
+	color: navy; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCCenterNavigatorLink:hover, a.AFCCenterNavigatorLink:active{ 
+	color: navy; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCCenterDataLink:link, a.AFCCenterDataLink:active, a.AFCCenterDataLink:visited { 
+	color: navy; 
+	text-decoration: none;
+}
+a.AFCCenterDataLink:hover { 
+	color: navy; 
+	text-decoration: underline;
+}
+.AFCCenterColumnTD{ 
+/*	border-bottom: 1px solid #7386A5; 
+	border-top: 1px solid #7386A5;
+	border-right: 1px solid #7386A5;*/
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+/*	background-color: #DEE3EF; */
+ 	
+} 
+.AFCCenterDataTD{ 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCCenterImageTD{ 
+/*	border-top: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; */
+}
+.AFCCenterHeadlineTD{ 
+	border-top: 1px solid #C6CBDE; 
+}
+.AFCCenterSelectedColumnTD{ 
+	border-bottom: 1px solid #DEE3EF; 
+	border-right: 1px solid #DEE3EF; 
+	border-top: 1px solid #7386A5; 
+	border-left: 1px solid #7386A5; 
+	background-color: #FEB658; 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+}
+.AFCCenterSelectedTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #FFEACF;
+	color: #FEB658; 
+	font-weight: bold;
+	font-size: 100%; 
+
+}
+.AFCCenterDetailTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCCenterSeparatorTD{ 
+ 	background-repeat: repeat-x
+}
+/* ------------------------------------- Blocchi Right------------------------------------ */
+
+.AFCRight {
+	width:150px;
+}
+.AFCRightTable {
+	padding-top:3px;
+	padding-bottom:0px;
+} 
+.AFCRightFormTABLE{ }
+a.AFCRightNavigatorLink:link, a.AFCRightNavigatorLink:visited{ 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCRightNavigatorLink:hover, a.AFCRightNavigatorLink:active{ 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCRightDataLink:link, a.AFCRightDataLink:active, a.AFCRightDataLink:visited { 
+	color: navy; 
+	text-decoration: none;
+}
+a.AFCRightDataLink:hover { 
+	color: navy; 
+	text-decoration: underline;
+}
+.AFCRightColumnTD{ 
+	border:1px solid #7386A5;
+ 	background-image: url('HeaderBar.gif');
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+} 
+.AFCRightDataTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #DEE3EF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCRightImageTD{ 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	border-top: 1px solid #C6CBDE; 
+}
+.AFCRightSelectedColumnTD{ 
+	border-bottom: 1px solid #DEE3EF; 
+	border-right: 1px solid #DEE3EF; 
+	border-top: 1px solid #7386A5; 
+	border-left: 1px solid #7386A5; 
+	background-color: #FEB658; 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+}
+.AFCRightSelectedTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #FFEACF;
+	color: #FEB658; 
+	font-weight: bold;
+	font-size: 100%; 
+
+}
+.AFCRightDetailTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCRightSeparatorTD{ 
+ 	background-image: url('section_sep.jpg');
+	background-repeat: repeat-x
+}
+/* ------------------------------------- Header ------------------------------------- */
+
+.AFCHeaderTable {
+	background-image: url('head.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.AFCHeaderTR { 
+}
+.AFCHeaderTitle { 
+}
+.AFCHeaderWelcome { 
+}
+.AFCHeaderDate { 
+}
+.AFCHeaderNote { 
+}
+.AFCHeaderNewMessage { 
+}
+
+/* ------------------------------------- Header Bar ------------------------------------- */
+
+.AFCHeaderBarTD{
+ 	border-top: 0px solid #808080;
+ 	border-bottom: 0px solid #808080;
+ 	background-color: #F3F3F3;
+ 	color: black;
+ 	font-weight: bold;
+ 	background-image: url('HeaderBar.gif')
+}
+
+.AFCHeaderBarNavigator { 
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 93%;
+}
+a.AFCHeaderBarNavigator:link, a.AFCHeaderBarNavigator:visited { 
+	color: black;
+	text-decoration: underline;
+	font-weight: normal;
+}
+a.AFCHeaderBarNavigator:hover, a.AFCHeaderBarNavigator:active {
+	color: #FF0000;
+	text-decoration: none;
+	font-weight: normal;
+}
+a.AFCHeaderBarMenu:link, a.AFCHeaderBarMenu:visited { 
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.AFCHeaderBarMenu:hover, a.AFCHeaderBarMenu:active {
+	color: #FF0000;
+	text-decoration: underline;
+}
+/* ------------------------------------- Pagina Main  ------------------------------------- */
+
+.AFCHomePageTitle{
+	font-size: 125%;
+	color: #000080;
+}
+.AFCHomePageTD{
+	border: 1px solid #E1E1E1;
+}
+.AFCHeadLineFormTable{ 
+}
+.AFCHeadLineColumnTD{ 
+	font-weight: bold;
+}
+.AFCHeadLineDataTD{ 
+}
+.AFCHeadLineSeparatorTD{ 
+	border-bottom: 1px solid #C0C0C0; 
+}
+.AFCHomePageFormTable{ 
+}
+.AFCHomePageColumnTD{ 
+}
+.AFCHomePageTR{
+	 
+}
+.AFCHomePageDataTD{ 
+}
+.AFCHomePageLink{ 
+}
+.AFCHomePageSeparatorTD{ 
+ border-bottom: 1px solid #C0C0C0; 
+}
+.AFCHomeNavigatorTD{ 
+ border: 1px solid #C0C0C0; 
+}
+/* ------------------------------------- Guida ------------------------------------- */
+
+.AFCGuida{
+	border-top: 0px solid #808080;
+	border-bottom: 0px solid #808080;
+	color: #ffffff; font-size: 100%;
+	font-weight: normal;
+	BACKGROUND-IMAGE: url('GuidaC.gif');
+	background-repeat: repeat-x
+}
+.AFCGuidaL{
+	border-top: 0px solid #808080;
+	border-bottom: 0px solid #808080;
+	color: #ffffff; font-size: 100%;
+	font-weight: normal;
+	BACKGROUND-IMAGE: url('GuidaL.gif');
+}
+.AFCGuidaR{
+	 border-top: 0px solid #808080;
+	 border-bottom: 0px solid #808080;
+	 color: #ffffff; font-size: 100%;
+	 font-weight: normal;
+	 BACKGROUND-IMAGE: url('GuidaR.gif');
+}
+.AFCGuidaSel{ 
+	 border-top: 0px solid #808080;
+	 border-bottom: 0px solid #808080;
+	 color: #ffffff;
+	 font-size: 100%;
+	 font-weight: bold;
+	 BACKGROUND-IMAGE: url('GuidaSelC.gif');
+	 background-repeat: repeat-x
+}
+.AFCGuidaSelL{ 
+	 border-top: 0px solid #808080;
+	 border-bottom: 0px solid #808080;
+	 color: #ffffff;
+	 font-size: 100%;
+	 font-weight: normal;
+	 BACKGROUND-IMAGE: url('GuidaSelL.gif');
+}
+.AFCGuidaSelR{ 
+	 border-top: 0px solid #808080;
+	 border-bottom: 0px solid #808080;
+	 color: #ffffff;
+	 font-size: 100%;
+	 font-weight: normal;
+	 BACKGROUND-IMAGE: url('GuidaSelR.gif');
+}
+a.AFCGuidaLink:link, a.AFCGuidaLink:active, a.AFCGuidaLink:visited { 
+	 text-decoration:none;
+	 color: #000000;
+	 font-size: 100%;
+	 font-weight: normal;
+}
+.AFCGuidaTable{
+	 background-repeat: repeat-x
+}

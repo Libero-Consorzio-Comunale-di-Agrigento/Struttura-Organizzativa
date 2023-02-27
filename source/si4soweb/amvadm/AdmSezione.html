@@ -1,0 +1,153 @@
+
+<!-- BEGIN Record AMV_SEZIONE_RECORD -->
+<form name="{HTMLFormName}" action="{Action}" method="post" enctype="{HTMLFormEnctype}">
+  <font class="AFCFormHeaderFont">Aggiornamento Sezione</font> 
+  <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="90%">
+    <!-- BEGIN Error -->
+    <tr>
+      <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+    </tr>
+ <!-- END Error -->
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Nome&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" maxlength="40" size="40" value="{NOME}" name="NOME">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Descrizione&nbsp;</td> 
+      <td class="AFCDataTD"><textarea class="AFCTextarea" name="{DESCRIZIONE_Name}" rows="5" cols="50">{DESCRIZIONE}</textarea></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Padre&nbsp;</td> 
+      <td class="AFCDataTD">
+        <select class="AFCSelect" name="ID_PADRE">
+          {ID_PADRE_Options} 
+        </select>
+ </td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Sequenza&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" maxlength="4" size="4" value="{SEQUENZA}" name="SEQUENZA">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Area di accesso&nbsp;</td> 
+      <td class="AFCDataTD">
+        <select class="AFCSelect" name="{ID_AREA_Name}">
+          {ID_AREA_Options} 
+        </select>
+ </td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD" title="Visibilità nel blocco padre">Visibilità:&nbsp;</td> 
+      <td class="AFCDataTD">
+        <!-- BEGIN RadioButton VISIBILITA --><input type="radio" name="{VISIBILITA_Name}" value="{Value}" {Check}>{Description}<!-- END RadioButton VISIBILITA --></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Visibilità&nbsp;dettagli:&nbsp;</td> 
+      <td class="AFCDataTD">
+        <!-- BEGIN RadioButton ZONA_ESPANSIONE --><input type="radio" name="{ZONA_ESPANSIONE_Name}" value="{Value}" {Check}>{Description}<!-- END RadioButton ZONA_ESPANSIONE --></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Tipo&nbsp;dettaglio:&nbsp;</td> 
+      <td class="AFCDataTD">
+        <!-- BEGIN RadioButton ZONA_TIPO --><input type="radio" name="{ZONA_TIPO_Name}" value="{Value}" {Check}>{Description} <!-- END RadioButton ZONA_TIPO --></td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFieldCaptionTD" valign="top" colspan="2">
+        <p align="left"><font class="AFCFormHeaderFont">Proprietà&nbsp;blocco:</font></p>
+ </td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Zona&nbsp;di&nbsp;visualizzazione:&nbsp;</td> 
+      <td width="100%" class="AFCDataTD">
+        <!-- BEGIN RadioButton ZONA --><input type="radio" name="{ZONA_Name}" value="{Value}" {Check}>{Description}<!-- END RadioButton ZONA --></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Visibile:&nbsp;</td> 
+      <td class="AFCDataTD">
+        <!-- BEGIN RadioButton ZONA_VISIBILITA --><input type="radio" name="{ZONA_VISIBILITA_Name}" value="{Value}" {Check}>{Description}<!-- END RadioButton ZONA_VISIBILITA --></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Intestazione&nbsp;del&nbsp;blocco:&nbsp;</td> 
+      <td class="AFCDataTD">
+        <!-- BEGIN RadioButton ZONA_FORMATO --><input type="radio" name="{ZONA_FORMATO_Name}" value="{Value}" {Check}>{Description}<!-- END RadioButton ZONA_FORMATO --></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Immagine&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{IMMAGINE}" name="IMMAGINE" size="50"><a id="TestoLink" href="javascript:void(0)" onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVTYPE=img&amp;MVFILE={IMMAGINE}','scrollbars=no', 'AMV_SEZIONE_RECORD', 'IMMAGINE')" name="ImageNote"><img alt="Seleziona immagine da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Documenti&nbsp;visualizzati&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" maxlength="4" size="4" value="{MAX_VIS}" name="MAX_VIS">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Icona&nbsp;documenti</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{ICONA}" name="ICONA" size="50"><a id="IconaLink" href="javascript:void(0)" onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVTYPE=icn&amp;MVFILE={ICONA}','scrollbars=no', 'AMV_SEZIONE_RECORD', 'ICONA')" name="ImageNote"><img alt="Seleziona immagine da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a></td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFieldCaptionTD" valign="top" colspan="2">
+        <p align="left"><font class="AFCFormHeaderFont">Stile&nbsp;sezione:</font></p>
+ </td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD" valign="top">Intestazione&nbsp;Header&nbsp;</td> 
+      <td class="AFCDataTD"><textarea class="AFCTextarea" name="{INTESTAZIONE_Name}" rows="5" cols="50">{INTESTAZIONE}</textarea></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Logo&nbsp;sinistro&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{LOGO_SX}" name="{LOGO_SX_Name}" size="50"><a id="TestoLink" href="javascript:void(0)" onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVTYPE=img&amp;MVFILE={IMMAGINE}','scrollbars=no', 'AMV_SEZIONE_RECORD', 'LOGO_SX')" name="ImageNote"><img alt="Seleziona immagine da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a> </td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Link&nbsp;logo&nbsp;sinistro</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{LOGO_SX_LINK}" name="{LOGO_SX_LINK_Name}" size="50"></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Logo&nbsp;destro&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{LOGO_DX}" name="{LOGO_DX_Name}" size="50"><a id="TestoLink" href="javascript:void(0)" onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVTYPE=img&amp;MVFILE={IMMAGINE}','scrollbars=no', 'AMV_SEZIONE_RECORD', 'LOGO_DX')" name="ImageNote"><img alt="Seleziona immagine da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a> </td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Link&nbsp;logo&nbsp;destro&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{LOGO_DX_LINK}" name="{LOGO_DX_LINK_Name}" size="50"></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD">Stile</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{STYLE}" name="{STYLE_Name}" size="25"></td> 
+    </tr>
+ 
+    <tr>
+      <td align="left" class="AFCFieldCaptionTD" valign="top">Copyright</td> 
+      <td class="AFCDataTD"><textarea class="AFCTextarea" name="{COPYRIGHT_Name}" rows="5" cols="50">{COPYRIGHT}</textarea></td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFooterTD" nowrap align="right" colspan="2">
+        <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Inserisci" name="Insert"><!-- END Button Insert -->
+        <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+        <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Elimina" name="Delete"><!-- END Button Delete -->
+        <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;</td> 
+    </tr>
+ 
+  </table>
+ <input class="AFCInput" type="hidden" value="{ID_SEZIONE}" name="ID_SEZIONE">
+</form>
+<!-- END Record AMV_SEZIONE_RECORD -->

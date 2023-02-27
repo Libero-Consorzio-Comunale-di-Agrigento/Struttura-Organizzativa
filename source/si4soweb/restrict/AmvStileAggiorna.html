@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Aggiornamento Sile</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<!-- BEGIN Record STILE -->
+<form method="post" action="{Action}" name="STILE">
+  <font class="AFCFormHeaderFont">Aggiornamento&nbsp;Preferenza Stile</font>&nbsp; 
+  <table cellpadding="3" cellspacing="0" class="AFCFormTABLE">
+    <!-- BEGIN Error -->
+    <tr>
+      <td colspan="2" class="AFCErrorDataTD">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td valign="top" class="AFCFieldCaptionTD">Utente</td> 
+      <td class="AFCDataTD"><input name="{P_UTENTE_Name}" value="{P_UTENTE}" class="AFCInput">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td valign="top" class="AFCFieldCaptionTD">Stringa&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{P_STRINGA}" name="{P_STRINGA_Name}">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFieldCaptionTD" valign="top">Progetto</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{P_MODULO}" name="{P_MODULO_Name}"></td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFieldCaptionTD" valign="top">Styleshhet</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{P_STYLESHEET}" name="{P_STYLESHEET_Name}"></td> 
+    </tr>
+ 
+    <tr>
+      <td colspan="2" align="right" nowrap class="AFCFooterTD">
+        <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Inserisci" class="AFCButton"><!-- END Button Button_Insert -->
+        <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Aggiorna" class="AFCButton"><!-- END Button Button_Update -->
+        <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Elimina" class="AFCButton"><!-- END Button Button_Delete -->&nbsp; </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record STILE -->
+</body>
+</html>

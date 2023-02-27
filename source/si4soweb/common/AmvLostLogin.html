@@ -1,0 +1,68 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body class="AFCPageBODY">
+<table cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%">{Header}</td> 
+  </tr> 
+  <tr>
+    <td valign="top" align="middle" width="100%" height="100%">
+	<p>&nbsp;</p>
+      <table width="100%">
+ 
+        <tr>
+          <td width="100%" valign="top" align="center">            
+            <!-- BEGIN Record LOSTLOGIN -->
+ 
+            <div align="center">
+              <form name="{HTMLFormName}" action="{Action}" method="post">
+                Dimenticata Username e/o Password 
+                <table>
+                  <!-- BEGIN Error -->
+                  <tr>
+                    <td colspan="2" class="AFCErrorDataTD">{Error}</td> 
+                  </tr>
+ <!-- END Error -->
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Cognome&nbsp;</td> 
+                    <td class="AFCDataTD"><input value="{COGNOME}" name="{COGNOME_Name}" class="AFCInput" size="40"></td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Nome&nbsp;</td> 
+                    <td class="AFCDataTD"><input value="{NOME}" name="{NOME_Name}" class="AFCInput" size="40"></td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFieldCaptionTD" valign="top">Email&nbsp;</td> 
+                    <td class="AFCDataTD"><input value="{EMAIL}" name="{EMAIL_Name}" class="AFCInput" size="40"></td> 
+                  </tr>
+ 
+                  <tr>
+                    <td class="AFCFooterTD" align="middle" colspan="2">
+                      <!-- BEGIN Button InviaRichiesta --><input type="submit" value="Invia Username e Password" name="{Button_Name}" class="AFCButton"><!-- END Button InviaRichiesta -->&nbsp; </td> 
+                  </tr>
+ 
+                </table>
+ 
+              </form>
+ 
+            </div>
+ 
+            <!-- END Record LOSTLOGIN -->
+ </td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

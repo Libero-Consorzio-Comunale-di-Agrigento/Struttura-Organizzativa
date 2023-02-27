@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Amministrazione Tipologie</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript" src="../Lov.js"></script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table id="AutoNumber1" style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%">
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid AMV_TIPOLOGIE --><font class="AFCFormHeaderFont">Elenco
+            Tipologie</font> 
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <tr>
+                <td class="AFCColumnTD" nowrap align="left">
+                  <!-- BEGIN Sorter Sorter_NOME --><a class="AFCSorterLink" href="{Sort_URL}">Nome</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_NOME -->&nbsp;</td> 
+                <td class="AFCColumnTD" nowrap align="left">
+                  <!-- BEGIN Sorter Sorter_ZONA --><a class="AFCSorterLink" href="{Sort_URL}">Zona</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ZONA -->&nbsp;</td> 
+                <td class="AFCColumnTD" nowrap align="left">
+                  <!-- BEGIN Sorter Sorter_SEQUENZA --><a class="AFCSorterLink" href="{Sort_URL}">Sequenza</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_SEQUENZA -->&nbsp;</td> 
+                <td class="AFCColumnTD" nowrap align="left">
+                  <!-- BEGIN Sorter Sorter_IMMAGINE --><a class="AFCSorterLink" href="{Sort_URL}">Immagine</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_IMMAGINE -->&nbsp;</td> 
+                <td class="AFCColumnTD" nowrap align="left">
+                  <!-- BEGIN Sorter Sorter_LINK --><a class="AFCSorterLink" href="{Sort_URL}">Link</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_LINK -->&nbsp;</td> 
+              </tr>
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD" align="left"><a class="AFCDataLink" href="{NOME_Src}">{NOME}</a>&nbsp;</td> 
+                <td class="AFCDataTD" align="left">{ZONA}&nbsp;</td> 
+                <td class="AFCDataTD" align="left">{SEQUENZA}&nbsp;</td> 
+                <td class="AFCDataTD" align="left">{IMMAGINE}&nbsp;</td> 
+                <td class="AFCDataTD" align="left">{LINK}&nbsp;</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="6">Nessun record&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFieldCaptionTD" nowrap align="center" colspan="6">&nbsp;{AFCNavigator} </td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AMV_TIPOLOGIE --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="center">
+            <!-- BEGIN Record AMV_TIPOLOGIE_RECORD --><br>
+            <form name="{HTMLFormName}" action="{Action}" method="post" enctype="{HTMLFormEnctype}">
+              <font class="AFCFormHeaderFont">Aggiornamento Tipologia</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="90%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD">Nome&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="40" size="40" value="{NOME}" name="NOME">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD">Descrizione&nbsp;</td> 
+                  <td class="AFCDataTD"><textarea class="AFCTextarea" style="WIDTH: 100%" name="{DESCRIZIONE_Name}">{DESCRIZIONE}</textarea></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD">Sequenza&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="12" size="12" value="{SEQUENZA}" name="SEQUENZA">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD">Link&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="200" value="{LINK}" name="LINK" style="WIDTH: 100%"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" colspan="2">
+                    <p align="left"><font class="AFCFormHeaderFont">Proprietà&nbsp;blocco:</font></p>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td align="left" class="AFCFieldCaptionTD">Zona&nbsp;di&nbsp;visualizzazione:&nbsp;</td> 
+                  <td width="100%" class="AFCDataTD">
+                    <!-- BEGIN RadioButton ZONA --><input type="radio" value="{Value}" name="{ZONA_Name}" {Check}>{Description}<!-- END RadioButton ZONA --></td> 
+                </tr>
+ 
+                <tr>
+                  <td align="left" class="AFCFieldCaptionTD">Visibile:&nbsp;</td> 
+                  <td class="AFCDataTD">
+                    <!-- BEGIN RadioButton ZONA_VISIBILITA --><input type="radio" value="{Value}" name="{ZONA_VISIBILITA_Name}" {Check}>{Description}<!-- END RadioButton ZONA_VISIBILITA --></td> 
+                </tr>
+ 
+                <tr>
+                  <td align="left" class="AFCFieldCaptionTD">Intestazione&nbsp;del&nbsp;blocco:&nbsp;</td> 
+                  <td class="AFCDataTD">
+                    <!-- BEGIN RadioButton ZONA_FORMATO --><input type="radio" value="{Value}" name="{ZONA_FORMATO_Name}" {Check}>{Description}<!-- END RadioButton ZONA_FORMATO --></td> 
+                </tr>
+ 
+                <tr>
+                  <td align="left" class="AFCFieldCaptionTD">Immagine&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" style="WIDTH: 90%" value="{IMMAGINE}" name="IMMAGINE">
+				  <a id="TestoLink" href="javascript:void(0)" onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVTYPE=img&amp;MVFILE={IMMAGINE}','scrollbars=no', 'AMV_TIPOLOGIE_RECORD', 'IMMAGINE')" name="ImageNote"><img alt="Seleziona immagine da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a> </td> 
+                </tr>
+ 
+                <tr>
+                  <td align="left" class="AFCFieldCaptionTD">Documenti&nbsp;visualizzati&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="4" size="4" value="{MAX_VIS}" name="MAX_VIS"></td> 
+                </tr>
+ 
+                <tr>
+                  <td align="left" class="AFCFieldCaptionTD">Icona&nbsp;documenti</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" style="WIDTH: 90%" value="{ICONA}" name="ICONA">
+				  <a id="IconaLink" href="javascript:void(0)" onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVTYPE=icn&amp;MVFILE={ICONA}','scrollbars=no', 'AMV_TIPOLOGIE_RECORD', 'ICONA')" name="ImageNote"><img alt="Seleziona immagine da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a> </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" align="right" nowrap colspan="2">
+                    <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Inserisci" name="Insert"><!-- END Button Insert -->
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+                    <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Elimina" name="Delete"><!-- END Button Delete -->
+                    <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ <input type="hidden" value="{ID_TIPOLOGIA}" name="ID_TIPOLOGIA" class="AFCInput">
+            </form>
+ <!-- END Record AMV_TIPOLOGIE_RECORD --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Selezione File</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript" src="../Lov.js"></script>
+<script language="JavaScript">
+function showFileUpload()
+{
+	if (document.forms[0].MOSTRA.value == "NO") {
+	    document.forms[0].MOSTRA.value = "SI";
+	}
+    document.forms[0].submit();
+}
+function showFileUploadNetscape()
+{
+	var isNN = (navigator.appName.indexOf("Netscape") != -1);
+	if (isNN) {
+		if (document.forms[0].MOSTRA.value == "NO") {
+		    document.forms[0].MOSTRA.value = "SI";
+		}
+    	document.forms[0].submit();
+	}
+}
+function cambia()
+{
+	var index1 = navigator.appVersion.indexOf("MSIE ")+5;
+	var index2 = navigator.appVersion.indexOf(".",index1);
+	var vnumber = navigator.appVersion.substr(index1,index2-index1);	
+	var isIE5 = ((navigator.appName.indexOf("Microsoft") != -1) && (vnumber < 6));
+	if (isIE5) {
+		document.forms[0].FILE_UPLOAD.onfocus = showFileUpload;
+	}	
+}
+function mostra(src,dir)
+{
+	document.getElementById('image').src = dir + '/' + src;
+}
+function getLovValue() {
+callRecord = top.opener.document.forms[0].name;
+callField = (eval('top.opener.'+ eval('top.opener.LovObject.control')+'.name'));
+
+if ((callField == 'LOGO_SX')||(callField == 'LOGO_DX')) {
+	return '"../common/images/' + document.forms[0].VALORE.value + '"';
+ }
+else {
+	return document.forms[0].VALORE.value;
+ } 
+}
+</script>
+</head>
+<body class="AFCPageBODY" onload="onLoadLOV()">
+{AmvStyle}
+<!-- BEGIN Record FILE_LIST -->
+<form method="post" action="{Action}" name="{HTMLFormName}" enctype="multipart/form-data">
+  <font class="AFCFormHeaderFont">&nbsp;&nbsp;{TITOLO}</font> {MVIF} 
+  <table cellpadding="3" cellspacing="0" class="AFCFormTABLE" height="87%" width="100%">
+    <!-- BEGIN Error -->
+    <tr>
+      <td colspan="2" class="AFCErrorDataTD">{Error}</td> 
+    </tr>
+ <!-- END Error -->
+    <tr>
+      <td class="AFCDataTD" height="100%" width="50%">&nbsp;{FILE_LIST_BOX}</td> 
+      <td width="50%" height="100%"><iframe id="image" width="100%" height="100%" align="center" valign="middle" src="images/AMV/spacer.gif"></iframe></td> 
+    </tr>
+ 
+    <tr>
+      <table cellpadding="3" cellspacing="0" class="AFCFormTABLE" width="100%">
+        <tr>
+          <td align="left" nowrap class="AFCFooterTD" style="BORDER-RIGHT: 0px">{INPUT_FILE}<input class="AFCInput" type="hidden" value="{MOSTRA}" name="{MOSTRA_Name}">&nbsp;</td> 
+          <td align="right" nowrap class="AFCFooterTD" style="BORDER-LEFT: 0px">
+            <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="button" value="Seleziona" class="AFCButton" onclick="top.opener.returnLOV(getLovValue())"><!-- END Button Button_Update -->
+            <!-- BEGIN Button Annulla --><input class="AFCButton" onclick="top.opener.closeLOV()" type="button" value="Annulla" name="{Button_Name}"><!-- END Button Annulla -->&nbsp; </td> 
+        </tr>
+      </table>
+ 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record FILE_LIST -->
+</body>
+</html>

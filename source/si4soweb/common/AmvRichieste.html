@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Richieste</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body class="AFCPageBODY">
+<table border="0" cellpadding="0" cellspacing="2" width="100%" height="100%">
+  <tr>
+    <td width="100%" colspan="3">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td width="100%" valign="top">
+      <table width="100%" cellpadding="3">
+        <tr>
+          <td valign="top" align="left" width="100%">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td align="left">
+            <!-- BEGIN Record AMV_VISTA_DOCUMENTISearch -->
+            <form name="ARTICOLISearch" action="{Action}" method="post" target="">
+              <font class="AFCFormHeaderFont">Cerca&nbsp;{NOME_TIPOLOGIA}&nbsp;:&nbsp;{TITOLO}</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="3">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr width="100%">
+                  <td class="AFCFieldCaptionTD" valign="middle">Contenuto&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="250" value="{s_TESTO}" name="s_TESTO" size="40">&nbsp;</td> 
+                  <td class="AFCDataTD" nowrap align="right">&nbsp; 
+                    <!-- BEGIN Button DoSearch --><input class="AFCButton" type="submit" value="Cerca" name="DoSearch"><!-- END Button DoSearch -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AMV_VISTA_DOCUMENTISearch --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid AMV_VISTA_DOCUMENTI --><font class="AFCFormHeaderFont">Elenco
+            Documenti</font> 
+            <table width="100%" class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+              <tr>
+                <td class="AFCColumnTD" nowrap>ID.</td> 
+                <td class="AFCColumnTD" nowrap>
+                  <!-- BEGIN Sorter Sorter_DATA_INSERIMENTO --><a class="AFCSorterLink" href="{Sort_URL}">Data</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_DATA_INSERIMENTO --></td> 
+                <td class="AFCColumnTD" nowrap colspan="2"> 
+                  <!-- BEGIN Sorter SorterSTATO --><a class="AFCSorterLink" href="{Sort_URL}">Stato</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter SorterSTATO --></td> 
+                <td class="AFCColumnTD" nowrap>
+                  <!-- BEGIN Sorter SorterAUTORE --><a class="AFCSorterLink" href="{Sort_URL}">Autore</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter SorterAUTORE --></td> 
+              </tr>
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD" nowrap><a class="AFCDataLink" href="{ID_DOCUMENTO_Src}">{ID_DOCUMENTO}</a>&nbsp;</td> 
+                <td class="AFCDataTD">{DATA_INSERIMENTO}</td> 
+                <td class="AFCDataTD" nowrap>&nbsp;{STATO_DOCUMENTO}&nbsp;</td><td class="AFCDataTD">&nbsp;{FLUSSO}</td> 
+                <td class="AFCDataTD">{AUTORE}&nbsp;</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="6">Nessuna registrazione&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" colspan="6" align="center" nowrap>{AFCNavigator}
+                  &nbsp;</td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AMV_VISTA_DOCUMENTI --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+    <td valign="top">{Right}</td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="3">{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

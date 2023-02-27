@@ -1,0 +1,89 @@
+
+<script language="JavaScript">
+ function control_help() {
+var help_href = '';
+if (document.getElementById('Help') != null) {
+	help_href = help_href + document.getElementById('Help').href;
+	if (help_href.indexOf('?') > 0) {
+		document.getElementById('Help').href = help_href.substring(0,help_href.indexOf('?')) + '?ID=' + this.name;
+	} else {
+		document.getElementById('Help').href = help_href + '?ID=' + this.name;
+	}
+}
+}
+// Inizializza evento onfocus di tutti gli element delle form della pagina alla funzione control_help
+function init_help() {
+ var form_collection = document.forms;
+ if (form_collection!=null) {
+    for (j=0; j<form_collection.length; j++) {
+
+	var coll = document.forms[j].elements;
+	if (coll!=null) {
+    		for (i=0; i<coll.length; i++) {
+			eval('document.forms[j].' + coll.item(i).name).onfocus=control_help;
+    		}
+	}
+    }
+ }
+}
+
+if (navigator.appName.indexOf("Netscape") != -1) {
+	window.addEventListener("load", init_help, false)
+} else {
+	window.attachEvent("onload", init_help);
+}
+
+</script>
+<link href="../Themes/AFC/Style.css" type="text/css" rel="stylesheet">
+{AmvControl} {AmvAccessControl}
+<table width="100%" border="0" cellpadding="0" class="AFCHeaderTable" cellspacing="0">
+  <tr class="AFCHeaderTR">
+    <td valign="bottom" align="left">
+      <!-- BEGIN Grid LOGO -->
+      <!-- BEGIN Row -->{LOGO}<!-- END Row --><!-- END Grid LOGO --></td> 
+    <td valign="bottom" align="left">&nbsp;&nbsp;</td> 
+    <td valign="bottom" align="left" width="100%">
+      <table cellspacing="0" cellpadding="0" width="100%">
+        <!-- BEGIN Grid welcome -->
+        <!-- BEGIN Row -->
+        <tr>
+          <td valign="top" colspan="2"><font class="AFCHeaderTitle">{INTESTAZIONE}</font></td> 
+        </tr>
+ 
+        <tr>
+          <td><font class="AFCHeaderWelcome">{MESSAGGIO}</font></td> 
+          <td align="right"><font class="AFCHeaderDate">{OGGI}</font></td> 
+        </tr>
+ 
+        <tr>
+          <td><font class="AFCHeaderNote">{NOTE}</font></td> 
+          <td align="right"><font class="AFCHeaderNewMessage">{NEW_MSG}</font></td> 
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords --><!-- END NoRecords -->
+      </table>
+ <!-- END Grid welcome --></td> 
+    <td valign="bottom" align="left">&nbsp;&nbsp;</td> 
+    <td align="right" valign="bottom">
+      <!-- BEGIN Grid LOGO_PORTALE -->
+      <!-- BEGIN Row -->{LOGO_PORTALE}<!-- END Row --><!-- END Grid LOGO_PORTALE --></td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" colspan="5">
+      <!-- BEGIN Grid AD4_MODULI -->
+      <!-- BEGIN Row -->
+      <table width="100%" cellspacing="0" cellpadding="1">
+        <tr>
+          <td class="AFCHeaderBarTD" align="left" valign="middle" width="2%">&nbsp;{RETURN_PAGE}</td> 
+          <td class="AFCHeaderBarTD" align="left" valign="middle" width="39%" nowrap>{NAVIGATORE}</td> 
+          <td class="AFCHeaderBarTD" align="left" valign="middle" width="57%"><strong>&nbsp;{MENUBAR}&nbsp;{SECTIONBAR}</strong></td> 
+          <td class="AFCHeaderBarTD" align="right" valign="middle" width="2%">{HELP}</td> 
+        </tr>
+ 
+      </table>
+ <!-- END Row -->
+      <!-- BEGIN NoRecords --><!-- END NoRecords --><!-- END Grid AD4_MODULI --></td> 
+  </tr>
+ 
+</table>

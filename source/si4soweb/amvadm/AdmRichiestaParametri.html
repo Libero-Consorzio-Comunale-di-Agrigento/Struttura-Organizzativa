@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Parametri Servizio</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN EditableGrid PARAMETRI -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <font class="AFCFormHeaderFont">Modifica parametri aggiuntivi</font> <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="3">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="3">{Error}</td> 
+                </tr>
+                <!-- END RowError -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" nowrap>{NOME}</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" value="{VALORE}" name="{VALORE_Name}" maxlength="250" size="50"><input class="AFCInput" type="hidden" value="{NOME_PAR}" name="{NOME_PAR_Name}"><input class="AFCInput" type="hidden" value="{ID_RIC}" name="{ID_RIC_Name}">
+                    <!-- BEGIN CheckBox CheckBox_Delete --><input class="AFCInput" type="checkbox" value="1" name="{CheckBox_Delete_Name}" {CheckBox_Delete}><!-- END CheckBox CheckBox_Delete -->&nbsp;</td> 
+                </tr>
+                <!-- END Row -->
+                <!-- BEGIN NoRecords -->
+                <tr>
+                  <td class="AFCDataTD" colspan="3">Nessuna registrazione&nbsp;</td> 
+                </tr>
+                <!-- END NoRecords -->
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="3">&nbsp; 
+                    <!-- BEGIN Button Button_Submit --><input class="AFCButton" type="submit" value="Conferma" name="{Button_Name}"><!-- END Button Button_Submit -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END EditableGrid PARAMETRI --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

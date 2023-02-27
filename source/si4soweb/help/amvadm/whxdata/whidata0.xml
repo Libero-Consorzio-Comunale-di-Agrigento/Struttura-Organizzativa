@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<indexdata>
+<key name="Abilitazione" >
+  <topic name="Approvazione" url="Approvazione.htm" />
+  <topic name="Registrazione Automatica" url="Registrazione_Automatica.htm" />
+  <topic name="Registrazione Controllata" url="Registrazione_Controllata.htm" />
+</key>
+<key name="Abilitazione accesso" >
+  <topic name="Richieste abilitazione" url="AdmRichieste.htm" />
+</key>
+<key name="Accessi" >
+  <topic name="Accessi" url="AdmAccessi.htm" />
+</key>
+<key name="Accesso" >
+  <topic name="Amministrazione DirittiAccesso" url="AdmDirittiAccesso.htm" />
+  <topic name="Aree" url="AdmAree.htm" />
+  <topic name="Diritti Accesso" url="AdmDiritti.htm" />
+  <topic name="Richieste abilitazione" url="AdmRichieste.htm" />
+</key>
+<key name="AD4" >
+  <topic name="Gestione delle Notifiche" url="Gestione_delle_Notifiche.htm" />
+  <topic name="Registrazione Anagrafica" url="Registrazione_Anagrafica.htm" />
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+  <topic name="Registrazione da Sistema" url="Registrazione_da_Sistema.htm" />
+  <topic name="Servizi del Portale" url="Servizi_del_Portale.htm" />
+</key>
+<key name="Aggiornamento Documento" >
+  <topic name="Aggiornamento Documento" url="AdmDocumento.htm" />
+</key>
+<key name="Amministratore" >
+  <topic name="Caratteristiche Generali" url="AmvAmministratorePortale.htm" />
+</key>
+<key name="Amministratore del Portale" >
+  <topic name="Approvazione" url="Approvazione.htm" />
+  <topic name="Registrazione Controllata" url="Registrazione_Controllata.htm" />
+  <topic name="Registrazione da Applicazione" url="Registrazione_da_Applicazione.htm" />
+  <topic name="Registrazione Utente al Portale" url="Registrazione_Utente_al_Portale.htm" />
+</key>
+<key name="Amministratore di Sistema" >
+  <topic name="Registrazione da Sistema" url="Registrazione_da_Sistema.htm" />
+  <topic name="Registrazione Utente al Portale" url="Registrazione_Utente_al_Portale.htm" />
+</key>
+<key name="Amministrazione Contenuti" >
+  <topic name="Amministrazione Contenuti" url="AdmContenuti.htm" />
+</key>
+<key name="Amministrazione del Portale" >
+  <topic name="Caratteristiche Generali" url="AmvAmministratorePortale.htm" />
+</key>
+<key name="Amministrazione Diritti Accesso" >
+  <topic name="Amministrazione DirittiAccesso" url="AdmDirittiAccesso.htm" />
+</key>
+<key name="Amministrazione Funzioni" >
+  <topic name="Amministrazione Funzioni" url="AdmFunzioni.htm" />
+</key>
+<key name="Amministrazione Guide" >
+  <topic name="Amministrazione Guide" url="AdmGuide.htm" />
+</key>
+<key name="Amministrazione Preferenze" >
+  <topic name="Amministrazione Preferenze" url="AdmPreferenzeImpostazione.htm" />
+</key>
+<key name="Amministrazione Revisioni" >
+  <topic name="Amministrazione Revisioni" url="AdmRevisioniElenco.htm" />
+</key>
+<key name="Amministrazione Servizi" >
+  <topic name="Amministrazione Servizi" url="AdmServizi.htm" />
+</key>
+<key name="Ammministrazione Classificazioni" >
+  <topic name="Ammministrazione Classificazioni" url="AdmClassificazioni.htm" />
+</key>
+<key name="Applicazione" >
+  <topic name="Registrazione da Applicazione" url="Registrazione_da_Applicazione.htm" />
+</key>
+<key name="Approvazione" >
+  <topic name="Approvazione" url="Approvazione.htm" />
+</key>
+<key name="Aree" >
+  <topic name="Aree" url="AdmAree.htm" />
+</key>
+<key name="Argomenti" >
+  <topic name="Argomenti" url="AdmArgomenti.htm" />
+</key>
+<key name="Automatica" >
+  <topic name="Registrazione Automatica" url="Registrazione_Automatica.htm" />
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Autorizzazione" >
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Azienda" >
+  <topic name="Approvazione" url="Approvazione.htm" />
+  <topic name="Registrazione Controllata" url="Registrazione_Controllata.htm" />
+  <topic name="Registrazione Utente al Portale" url="Registrazione_Utente_al_Portale.htm" />
+</key>
+<key name="Caratteristiche Generali" >
+  <topic name="Caratteristiche Generali" url="AmvAmministratorePortale.htm" />
+</key>
+<key name="Categorie" >
+  <topic name="Categorie" url="AdmCategorie.htm" />
+</key>
+<key name="Come fare per" >
+  <topic name="Come fare per..." url="Come_fare_per___.htm" />
+</key>
+<key name="Communication Manager" >
+  <topic name="Approvazione" url="Approvazione.htm" />
+  <topic name="Registrazione Automatica" url="Registrazione_Automatica.htm" />
+  <topic name="Registrazione Controllata" url="Registrazione_Controllata.htm" />
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Contenuti" >
+  <topic name="Aggiornamento Documento" url="AdmDocumento.htm" />
+  <topic name="Amministrazione Contenuti" url="AdmContenuti.htm" />
+  <topic name="Amministrazione Revisioni" url="AdmRevisioniElenco.htm" />
+  <topic name="Storico Revisioni" url="AdmRevisioniStorico.htm" />
+</key>
+<key name="Controllata" >
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Diritti Accesso" >
+  <topic name="Amministrazione DirittiAccesso" url="AdmDirittiAccesso.htm" />
+  <topic name="Diritti Accesso" url="AdmDiritti.htm" />
+</key>
+<key name="Documento" >
+  <topic name="Aggiornamento Documento" url="AdmDocumento.htm" />
+  <topic name="Amministrazione Contenuti" url="AdmContenuti.htm" />
+  <topic name="Storico Revisioni" url="AdmRevisioniStorico.htm" />
+</key>
+<key name="Esempi di Notifica" >
+  <topic name="Esempi di Notifica" url="Esempi_di_Notifica.htm" />
+</key>
+<key name="Funzionalità Principali" >
+  <topic name="Amministrazione Funzioni" url="AdmFunzioni.htm" />
+</key>
+<key name="Funzioni" >
+  <topic name="Menu funzioni" url="AdmMenu.htm" />
+</key>
+<key name="Generalità" >
+  <topic name="Caratteristiche Generali" url="AmvAmministratorePortale.htm" />
+</key>
+<key name="Gestione delle Notifiche" >
+  <topic name="Gestione delle Notifiche" url="Gestione_delle_Notifiche.htm" />
+</key>
+<key name="Gruppi" >
+  <topic name="Gruppi" url="AdmGruppi.htm" />
+</key>
+<key name="Guide del Menu" >
+  <topic name="Amministrazione Guide" url="AdmGuide.htm" />
+</key>
+<key name="Impostazione Preferenze" >
+  <topic name="Amministrazione Preferenze" url="AdmPreferenzeImpostazione.htm" />
+</key>
+<key name="Indirizzo CCR Servizio" >
+  <topic name="Approvazione" url="Approvazione.htm" />
+  <topic name="Registrazione Automatica" url="Registrazione_Automatica.htm" />
+  <topic name="Registrazione Controllata" url="Registrazione_Controllata.htm" />
+</key>
+<key name="Istanza" >
+  <topic name="Servizi del Portale" url="Servizi_del_Portale.htm" />
+</key>
+<key name="JGDM - Gestione Documentale Modulistica" >
+  <topic name="Richieste on-line" url="Richieste_on-line.htm" />
+</key>
+<key name="LDAP" >
+  <topic name="Registrazione da Sistema" url="Registrazione_da_Sistema.htm" />
+</key>
+<key name="Mail" >
+  <topic name="Esempi di Notifica" url="Esempi_di_Notifica.htm" />
+  <topic name="Gestione delle Notifiche" url="Gestione_delle_Notifiche.htm" />
+</key>
+<key name="Menu funzioni" >
+  <topic name="Amministrazione Funzioni" url="AdmFunzioni.htm" />
+  <topic name="Amministrazione Guide" url="AdmGuide.htm" />
+  <topic name="Menu funzioni" url="AdmMenu.htm" />
+</key>
+<key name="Modello inserimento" >
+  <topic name="Richieste on-line" url="Richieste_on-line.htm" />
+</key>
+<key name="Modulo" >
+  <topic name="Servizi del Portale" url="Servizi_del_Portale.htm" />
+</key>
+<key name="Notifiche" >
+  <topic name="Esempi di Notifica" url="Esempi_di_Notifica.htm" />
+  <topic name="Gestione delle Notifiche" url="Gestione_delle_Notifiche.htm" />
+</key>
+<key name="Novità" >
+  <topic name="Novità" url="Novit_.htm" />
+</key>
+<key name="on-line" >
+  <topic name="Richieste on-line" url="Richieste_on-line.htm" />
+</key>
+<key name="Preferenze" >
+  <topic name="Amministrazione Preferenze" url="AdmPreferenzeImpostazione.htm" />
+</key>
+<key name="Registrazione al Portale" >
+  <topic name="Registrazione Anagrafica" url="Registrazione_Anagrafica.htm" />
+</key>
+<key name="Registrazione Anagrafica" >
+  <topic name="Registrazione Anagrafica" url="Registrazione_Anagrafica.htm" />
+</key>
+<key name="Registrazione Automatica" >
+  <topic name="Registrazione Automatica" url="Registrazione_Automatica.htm" />
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Registrazione Controllata" >
+  <topic name="Registrazione Controllata" url="Registrazione_Controllata.htm" />
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Registrazione da Applicazione" >
+  <topic name="Registrazione da Applicazione" url="Registrazione_da_Applicazione.htm" />
+</key>
+<key name="Registrazione da Portale" >
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Registrazione da Sistema" >
+  <topic name="Registrazione da Sistema" url="Registrazione_da_Sistema.htm" />
+</key>
+<key name="Registrazione Utente al Portale" >
+  <topic name="Registrazione Utente al Portale" url="Registrazione_Utente_al_Portale.htm" />
+</key>
+<key name="Revisioni" >
+  <topic name="Amministrazione Revisioni" url="AdmRevisioniElenco.htm" />
+</key>
+<key name="Revisioni Documento" >
+  <topic name="Storico Revisioni" url="AdmRevisioniStorico.htm" />
+</key>
+<key name="Richieste abilitazione" >
+  <topic name="Richieste abilitazione" url="AdmRichieste.htm" />
+</key>
+<key name="Richieste on-line" >
+  <topic name="Richieste on-line" url="Richieste_on-line.htm" />
+</key>
+<key name="Rilevanze" >
+  <topic name="Rilevanze" url="AdmRilevanze.htm" />
+</key>
+<key name="Servizi" >
+  <topic name="Amministrazione Servizi" url="AdmServizi.htm" />
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+</key>
+<key name="Servizi del Portale" >
+  <topic name="Servizi del Portale" url="Servizi_del_Portale.htm" />
+</key>
+<key name="Servizio" >
+  <topic name="Registrazione Utente al Portale" url="Registrazione_Utente_al_Portale.htm" />
+</key>
+<key name="Sezioni" >
+  <topic name="Sezioni" url="AdmSezioni.htm" />
+</key>
+<key name="Sistema" >
+  <topic name="Registrazione da Sistema" url="Registrazione_da_Sistema.htm" />
+</key>
+<key name="Storico Revisioni" >
+  <topic name="Storico Revisioni" url="AdmRevisioniStorico.htm" />
+</key>
+<key name="Tipologie" >
+  <topic name="Tipologie" url="AdmTipologie.htm" />
+</key>
+<key name="Utente" >
+  <topic name="Approvazione" url="Approvazione.htm" />
+  <topic name="Registrazione Anagrafica" url="Registrazione_Anagrafica.htm" />
+  <topic name="Registrazione Automatica" url="Registrazione_Automatica.htm" />
+  <topic name="Registrazione Controllata" url="Registrazione_Controllata.htm" />
+  <topic name="Registrazione da Applicazione" url="Registrazione_da_Applicazione.htm" />
+  <topic name="Registrazione da Portale" url="Registrazione_da_Portale.htm" />
+  <topic name="Registrazione da Sistema" url="Registrazione_da_Sistema.htm" />
+  <topic name="Registrazione Utente al Portale" url="Registrazione_Utente_al_Portale.htm" />
+</key>
+<key name="Utenti" >
+  <topic name="Utenti" url="AdmUtenti.htm" />
+</key>
+
+</indexdata>

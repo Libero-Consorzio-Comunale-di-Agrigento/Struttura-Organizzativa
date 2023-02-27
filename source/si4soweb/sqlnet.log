@@ -1,0 +1,252 @@
+
+
+***********************************************************************
+Fatal OSN connect error 12537, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1526)))(CONNECT_DATA=(SID=svi)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 30-NOV-06 16:25:06
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12537
+    TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+    TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12547, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 30-NOV-06 16:25:06
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12547
+    TNS-12547: TNS:lost contact
+    ns secondary err code: 12560
+    nt main err code: 517
+    TNS-00517: Lost contact
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12537, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1526)))(CONNECT_DATA=(SID=svi)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 30-NOV-06 16:25:09
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12537
+    TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+    TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12547, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 30-NOV-06 16:25:09
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12547
+    TNS-12547: TNS:lost contact
+    ns secondary err code: 12560
+    nt main err code: 517
+    TNS-00517: Lost contact
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12537, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1526)))(CONNECT_DATA=(SID=svi)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 30-NOV-06 16:26:21
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12537
+    TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+    TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12547, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 30-NOV-06 16:26:21
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12547
+    TNS-12547: TNS:lost contact
+    ns secondary err code: 12560
+    nt main err code: 517
+    TNS-00517: Lost contact
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12537, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1526)))(CONNECT_DATA=(SID=svi)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 01-DEC-06 15:47:25
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12537
+    TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+    TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12547, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 01-DEC-06 15:47:25
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12547
+    TNS-12547: TNS:lost contact
+    ns secondary err code: 12560
+    nt main err code: 517
+    TNS-00517: Lost contact
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12537, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1526)))(CONNECT_DATA=(SID=svi)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 01-DEC-06 15:47:27
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12537
+    TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+    TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12547, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 01-DEC-06 15:47:27
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12547
+    TNS-12547: TNS:lost contact
+    ns secondary err code: 12560
+    nt main err code: 517
+    TNS-00517: Lost contact
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12537, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=panama)(Port=1526)))(CONNECT_DATA=(SID=svi)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 01-DEC-06 15:54:10
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12537
+    TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+    TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12547, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=ccs.exe)(HOST=SSIMONI)(USER=SSimoni))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 01-DEC-06 15:54:10
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12547
+    TNS-12547: TNS:lost contact
+    ns secondary err code: 12560
+    nt main err code: 517
+    TNS-00517: Lost contact
+    nt secondary err code: 0
+    nt OS err code: 0

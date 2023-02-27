@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Utenti</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include JSFunctions @1-FB634A57
+  </script>
+<script language="JavaScript" type="text/javascript" src="../functions.js"></script>
+<script language="JavaScript" type="text/javascript">
+  
+//End Include JSFunctions
+
+//page_ASSEGNATI_Uno_OnClick @81-07511836
+function page_ASSEGNATI_Uno_OnClick()
+{
+    var result;
+//End page_ASSEGNATI_Uno_OnClick
+
+//Confirmation Message @109-D423044A
+    return confirm('ATTENZIONE:\nSe l\'utente possiede diritti di accesso derivanti unicamente dall\'appartenenza ai gruppi assegnati, la rimozione comportera\' la perdita di tutti i diritti e l\'utente non sara\' piu\' visibile.\n\nContinuare?');
+//End Confirmation Message
+
+//DEL      return confirm('L'operazione rimuove il gruppo assegnato ed i relativi diritti di accesso. Continuare?');
+
+//Close page_ASSEGNATI_Uno_OnClick @81-BC33A33A
+    return result;
+}
+//End Close page_ASSEGNATI_Uno_OnClick
+
+//page_ASSEGNATI_Tutti_OnClick @94-688F0116
+function page_ASSEGNATI_Tutti_OnClick()
+{
+    var result;
+//End page_ASSEGNATI_Tutti_OnClick
+
+//Confirmation Message @108-7BBD2DA1
+    return confirm('L\'operazione rimuove tutti i gruppi assegnati all\'utente ed i relativi diritti di accesso.\n\n ATTENZIONE:\nSe l\'utente possiede diritti di accesso derivanti unicamente dall\'appartenenza ai gruppi assegnati, la rimozione comporterà la perdita di tutti i diritti e l\'utente non sarà più visibile.\n\nContinuare?');
+//End Confirmation Message
+
+//Close page_ASSEGNATI_Tutti_OnClick @94-BC33A33A
+    return result;
+}
+//End Close page_ASSEGNATI_Tutti_OnClick
+
+//bind_events @1-3F17D506
+function bind_events() {
+    if (document.forms["ASSEGNATI"]) check_and_bind('document.forms["ASSEGNATI"].Tutti','onclick',page_ASSEGNATI_Tutti_OnClick);
+    if (document.forms["ASSEGNATI"]) check_and_bind('document.forms["ASSEGNATI"].Uno','onclick',page_ASSEGNATI_Uno_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table class="" border="0" cellpadding="0" cellspacing="2" style="BORDER-COLLAPSE: collapse" bordercolor="#111111" width="100%" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td width="100%" valign="top">
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%">{AmvUtenteNominativo_i}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" align="center">
+            <table width="90%">
+              <tr>
+                <td width="100%" colspan="2"><font class="AFCFormHeaderFont">Aggiornamento
+                  gruppi di appartenenza</font></td> 
+              </tr>
+ 
+              <tr>
+                <td width="50%" valign="top" align="left" nowrap>
+                  <!-- BEGIN Record DISPONIBILI -->
+                  <form name="{HTMLFormName}" action="{Action}" method="post">
+                    <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                      <!-- BEGIN Error -->
+                      <tr>
+                        <td class="AFCErrorDataTD">{Error}</td> 
+                      </tr>
+ <!-- END Error -->
+                      <tr>
+                        <td class="AFCColumnTD">Disponibili</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCDataTD">
+                          <select name="{GRUPPO_D_Name}" size="10" style="WIDTH: 100%" class="AFCSelect">
+                            {GRUPPO_D_Options} 
+                          </select>
+ &nbsp;</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFooterTD" nowrap align="right">
+                          <!-- BEGIN Button Tutti --><input class="AFCButton" type="submit" value="  >>  " name="{Button_Name}"><!-- END Button Tutti -->
+                          <!-- BEGIN Button Uno --><input class="AFCButton" type="submit" value="  >  " name="{Button_Name}"><!-- END Button Uno -->&nbsp; </td> 
+                      </tr>
+ 
+                    </table>
+ 
+                  </form>
+ <!-- END Record DISPONIBILI --></td> 
+                <td width="50%" valign="top" align="left">
+                  <!-- BEGIN Record ASSEGNATI -->
+                  <form name="{HTMLFormName}" action="{Action}" method="post">
+                    <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+                      <!-- BEGIN Error -->
+                      <tr>
+                        <td class="AFCErrorDataTD">{Error}</td> 
+                      </tr>
+ <!-- END Error -->
+                      <tr>
+                        <td class="AFCColumnTD">Assegnati</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCDataTD">
+                          <select name="{GRUPPO_A_Name}" size="10" style="WIDTH: 100%" class="AFCSelect">
+                            {GRUPPO_A_Options} 
+                          </select>
+ &nbsp;</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFooterTD" nowrap align="left">
+                          <!-- BEGIN Button Uno --><input class="AFCButton" type="submit" value="  <  " name="{Button_Name}"><!-- END Button Uno -->
+                          <!-- BEGIN Button Tutti --><input class="AFCButton" type="submit" value="  <<  " name="{Button_Name}"><!-- END Button Tutti --></td> 
+                      </tr>
+ 
+                    </table>
+ 
+                  </form>
+ <!-- END Record ASSEGNATI --></td> 
+              </tr>
+ 
+            </table>
+ </td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

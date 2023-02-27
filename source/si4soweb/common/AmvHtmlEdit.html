@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Editor HTML</title>
+<link href="../Themes/AFC/Style.css" type="text/css" rel=
+"stylesheet">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<script src="../Lov.js" language="JavaScript" type=
+"text/javascript">
+</script>
+
+<script type="text/javascript" src="../fckeditor.js"></script>
+<meta name="description" content="This is Finmatica Vortal">
+</head>
+<body>
+<div class="AFCContainer">
+<form name="edit" id="edit" method="post" action="AmvHtmlEdit.html">
+<script type="text/javascript">
+  var oFCKeditor = new FCKeditor( 'FCKeditor1' ) ;
+  oFCKeditor.BasePath = '../' ;
+  oFCKeditor.Value = top.opener.get_value();
+  oFCKeditor.Height = 400 ; // 400 pixels 
+
+  oFCKeditor.Create() ;
+  //oFCKeditor.ReplaceTextarea() ;
+  /**
+  * Funzioni per la sostituzione dell'apice sbagliato prima che l'editor ritorni quanto immesso dall'utente
+  **/
+  function ReplaceTextNodes( parentNode, regex, replaceValue, replaceAll, hasFound )
+  {
+	for ( var i = 0 ; i < parentNode.childNodes.length ; i++ )
+	{
+		var oNode = parentNode.childNodes[i] ;
+		if ( oNode.nodeType == 3 )
+		{
+			var sReplaced = oNode.nodeValue.replace( regex, replaceValue ) ;
+			if ( oNode.nodeValue != sReplaced )
+			{
+				oNode.nodeValue = sReplaced ;
+				if ( ! replaceAll )
+					return true ;
+				hasFound = true ;
+			}
+		}
+
+		hasFound = ReplaceTextNodes( oNode, regex, replaceValue, replaceAll, hasFound ) ;
+		if ( ! replaceAll && hasFound )
+			return true ;
+	}
+	
+	return hasFound ;
+  }
+  function InnerDialogLoaded()
+  {
+	var oInnerDoc = document.getElementById('frmMain').contentWindow.document ;
+
+	// Set the language direction.
+	oInnerDoc.dir = dialogArguments.Editor.FCKLang.Dir ;
+	
+	// Sets the Skin CSS.
+	oInnerDoc.write( '<link href="' + dialogArguments.Editor.FCKConfig.SkinPath + 'fck_dialog.css" type="text/css" rel="stylesheet">' ) ;
+	
+	SetOnKeyDown( oInnerDoc ) ;
+	DisableContextMenu( oInnerDoc ) ;
+	
+	return dialogArguments.Editor ;
+  }
+  
+  function ReplaceAll()
+  {
+ 	//Recupera l'html presente nell'editor
+	var editor = FCKeditorAPI.GetInstance('FCKeditor1') ;
+	html = editor.GetXHTML( true );
+	//html = window.frames[0].frames[0].document.body.innerHTML;
+	//Sostituisce la parte html che rispetta l'espressione regolare con un'altra stringa
+	regExp = /&ldquo;/gi;
+	virgolette = new String("&quot;");
+	results = html.replace(regExp, virgolette);
+
+	regExp = /&rdquo;/gi;
+	results = results.replace(regExp, virgolette);
+	
+	regExp =  /&rsquo;/gi;
+	apice = new String("'");
+	//Il secondo parametro è il carattere che verrà sostituito
+	results = results.replace(regExp, apice);
+	
+	//Sembrano essere questi che funzionano, ma per sicurezza di altri casi di copia e incolla
+	//lascierei anche la ricerca e sostituzione dei caratteri nei tre blocchi precedenti
+	regExp =  /’/gi;
+	results = results.replace(regExp,apice);
+	
+	regExp =  /“/gi;
+	results = results.replace(regExp,virgolette);
+	
+	regExp =  /”/gi;
+	results = results.replace(regExp,virgolette);
+	
+	
+	//Ritorna il risultato ottenuto alla finestra che ha aperto l'editor
+	top.opener.returnLOV(results);
+
+  }
+
+
+
+</script>
+<p align="right">
+<input onclick="ReplaceAll()" value=" Aggiorna " name="ok" type="submit" class="AFCButton">
+<input onclick="top.opener.closeLOV()" value=" Annulla " name="ins"
+class="AFCButton" type="button"></p>
+</form>
+</div>
+</body>
+</html>
+

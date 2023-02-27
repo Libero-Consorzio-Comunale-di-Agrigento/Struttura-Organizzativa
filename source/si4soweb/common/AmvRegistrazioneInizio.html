@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>Registrazione</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include JSFunctions @1-FB634A57
+  </script>
+<script language="JavaScript" type="text/javascript" src="../functions.js"></script>
+<script language="JavaScript" type="text/javascript">
+  
+//End Include JSFunctions
+
+//page_AD4_UTENTE_DATA_NASCITA_OnChange @60-DB5530EC
+function page_AD4_UTENTE_DATA_NASCITA_OnChange()
+{
+    var result;
+//End page_AD4_UTENTE_DATA_NASCITA_OnChange
+
+//Validate Entry @118-77E53E02
+    this.ccsRequired = true;
+    this.ccsMinLength = 10;
+    this.ccsMaxLength = 10;
+    this.ccsDateFormat = "dd/mm/yyyy";
+    this.ccsInputMask = "00/00/0000";
+    this.onkeypress = inputMasking;
+    this.ccsCaption = "DATA_NASCITA";
+//End Validate Entry
+
+//Close page_AD4_UTENTE_DATA_NASCITA_OnChange @60-BC33A33A
+    return result;
+}
+//End Close page_AD4_UTENTE_DATA_NASCITA_OnChange
+
+//page_AD4_UTENTE_DATA_NASCITA_OnLoad @60-1E758B3C
+function page_AD4_UTENTE_DATA_NASCITA_OnLoad()
+{
+    var result;
+//End page_AD4_UTENTE_DATA_NASCITA_OnLoad
+
+//Validate Entry @119-77E53E02
+    this.ccsRequired = true;
+    this.ccsMinLength = 10;
+    this.ccsMaxLength = 10;
+    this.ccsDateFormat = "dd/mm/yyyy";
+    this.ccsInputMask = "00/00/0000";
+    this.onkeypress = inputMasking;
+    this.ccsCaption = "DATA_NASCITA";
+//End Validate Entry
+
+//Close page_AD4_UTENTE_DATA_NASCITA_OnLoad @60-BC33A33A
+    return result;
+}
+//End Close page_AD4_UTENTE_DATA_NASCITA_OnLoad
+
+//page_AD4_UTENTE_STATO_NASCITA_OnChange @73-0F18A382
+function page_AD4_UTENTE_STATO_NASCITA_OnChange()
+{
+    var result;
+//End page_AD4_UTENTE_STATO_NASCITA_OnChange
+
+//Custom Code @111-2A29BDB7
+// -------------------------
+// Write your own code here.
+// -------------------------
+  document.AD4_UTENTE.submit();
+//End Custom Code
+
+//Close page_AD4_UTENTE_STATO_NASCITA_OnChange @73-BC33A33A
+    return result;
+}
+//End Close page_AD4_UTENTE_STATO_NASCITA_OnChange
+
+//page_AD4_UTENTE_PROVINCIA_NASCITA_OnChange @61-DF25C8DD
+function page_AD4_UTENTE_PROVINCIA_NASCITA_OnChange()
+{
+    var result;
+//End page_AD4_UTENTE_PROVINCIA_NASCITA_OnChange
+
+//Custom Code @112-2A29BDB7
+// -------------------------
+// Write your own code here.
+// -------------------------
+ //document.AD4_UTENTE.action="AmvRegistrazioneInizio.do?ccsForm=AD4_UTENTE:Edit";
+ document.AD4_UTENTE.submit();
+
+//End Custom Code
+
+//Close page_AD4_UTENTE_PROVINCIA_NASCITA_OnChange @61-BC33A33A
+    return result;
+}
+//End Close page_AD4_UTENTE_PROVINCIA_NASCITA_OnChange
+
+//bind_events @1-4C5C3CA7
+function bind_events() {
+    if (document.forms["AD4_UTENTE"]) check_and_bind('document.forms["AD4_UTENTE"].PROVINCIA_NASCITA','onchange',page_AD4_UTENTE_PROVINCIA_NASCITA_OnChange);
+    if (document.forms["AD4_UTENTE"]) check_and_bind('document.forms["AD4_UTENTE"].STATO_NASCITA','onchange',page_AD4_UTENTE_STATO_NASCITA_OnChange);
+    if (document.forms["AD4_UTENTE"]) check_and_bind('document.forms["AD4_UTENTE"].DATA_NASCITA','onLoad',page_AD4_UTENTE_DATA_NASCITA_OnLoad);
+    if (document.forms["AD4_UTENTE"]) check_and_bind('document.forms["AD4_UTENTE"].DATA_NASCITA','onchange',page_AD4_UTENTE_DATA_NASCITA_OnChange);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{AmvGuida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="center">
+            <p align="center"><font class="AFCFormHeaderFont">Introdurre i dati
+            identificativi dell'utente per la registrazione al portale: </font></p>
+ 
+            <table class="AFCFormTABLE" width="90%" style="BORDER-COLLAPSE: collapse">
+              <tr valign="top">
+                <td width="100%" bgcolor="#ffffff" class="AFCDataTD" style="COLOR: #000000"><font size="1" face="Verdana">
+                  <!-- BEGIN Grid PRIVACY -->
+                  <!-- BEGIN Row -->{PRIVACY} <!-- END Row -->
+                  <!-- BEGIN NoRecords --><!-- END NoRecords --><!-- END Grid PRIVACY --></font></td> 
+              </tr>
+ 
+            </table>
+ 
+            <!-- BEGIN Record AD4_UTENTE -->
+            <form name="AD4_UTENTE" action="{Action}" method="post">
+              <p><font class="AFCNote">I campi identificati con (*) sono
+              obbligatori.</font> 
+              <p>
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="90%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td colspan="2" class="AFCErrorDataTD">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Nominativo
+                    per&nbsp;Login&nbsp;(*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="40" size="40" value="{NOMINATIVO}" name="{NOMINATIVO_Name}" style="TEXT-TRANSFORM: uppercase"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" style="BORDER-RIGHT: 0px" valign="top">&nbsp;</td> 
+                  <td class="AFCDataTD" style="BORDER-LEFT: 0px">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Cognome&nbsp;(*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="40" size="40" value="{COGNOME}" name="{COGNOME_Name}" style="TEXT-TRANSFORM: uppercase"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Nome (*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="40" size="40" value="{NOME}" name="{NOME_Name}" style="TEXT-TRANSFORM: uppercase"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Sesso (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{SESSO_Name}">
+                      <option value="" selected>- -</option>
+ {SESSO_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCDataTD" style="BORDER-RIGHT: 0px; COLOR: #000000" valign="top"><strong>Nascita:</strong></td> 
+                  <td class="AFCDataTD" style="BORDER-LEFT: 0px">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Data&nbsp;(*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="10" size="10" value="{DATA_NASCITA}" name="{DATA_NASCITA_Name}">&nbsp;(gg/mm/aaaa)</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Stato (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{STATO_NASCITA_Name}">
+                      <option value="" selected>- -</option>
+ {STATO_NASCITA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Provincia (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{PROVINCIA_NASCITA_Name}">
+                      {PROVINCIA_NASCITA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Comune (*)</td> 
+                  <td class="AFCDataTD">
+                    <select class="AFCSelect" name="{COMUNE_NASCITA_Name}">
+                      {COMUNE_NASCITA_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top" nowrap>Codice
+                    fiscale (*)</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="40" size="40" value="{CODICE_FISCALE}" name="{CODICE_FISCALE_Name}" style="TEXT-TRANSFORM: uppercase"></td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right" colspan="2">
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="{Button_Name}"><!-- END Button Update -->
+                    <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Registra" name="{Button_Name}"><!-- END Button Insert -->&nbsp; </td> 
+                </tr>
+ 
+              </table>
+ <input class="AFCInput" type="hidden" value="{RR}" name="{RR_Name}">
+            </form>
+ <!-- END Record AD4_UTENTE --></p>
+ </td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

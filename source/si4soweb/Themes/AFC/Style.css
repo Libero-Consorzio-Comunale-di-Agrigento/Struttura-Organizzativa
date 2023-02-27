@@ -1,0 +1,773 @@
+/* AFC CCSTheme */
+BODY, TABLE, TH, TR, TD, UL, OL, LI, P, FONT, A, BLOCKQUOTE, LABEL { 
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+	font-size: 100%;
+}
+BODY{ 
+	font-size:70%;
+	margin:1px;
+} 
+IMG {
+	border:0px;
+} 
+.AFCPageBODY{
+	font-size:70%;
+}
+.AFCFormTABLE{
+	border-bottom: 1px solid #7386A5;
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;
+}
+.AFCFormHeaderFont{
+	color: #000000;
+	font-size: 115%;
+	font-weight: bold;
+	padding-right : 5px; 
+	padding-bottom : 5px; 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+	background-color: transparent; 
+	border-right: 0px;
+	border-top: 0px;*
+}
+.AFCFieldCaptionTD{
+	border-bottom: 1px solid #E6E6E6;
+	background-color: #F7F7F7;
+	color: #000000;
+	font-size: 100%;
+	font-weight: bold; 
+}
+.AFCAltDataTD{
+	border-bottom: 1px solid #E6E6E6;
+	background-color: #F7F7F7;
+	color: #808080;
+	font-size: 100%;
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #FFFFFF; 
+	border-right: 1px solid #C6CBDE; 
+}
+.AFCColumnTD{
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #DEE3EF; 
+	border-right: 1px solid #DEE3EF; 
+	border-left: 1px solid #7386A5; 
+	background-color: #F3F3F3;
+	color: #000000;
+	font-size: 100%;
+	font-weight: bold;
+	BACKGROUND-IMAGE: url('Title.gif')
+}
+.AFCDataTD{
+	border-bottom: 1px solid #E6E6E6;
+	background-color: #FFFFFF;
+	color: #808080;
+	font-size: 100%;
+}
+.AFCErrorDataTD{
+	border-bottom: 1px solid #E6E6E6;
+	background-color: #FFFFFF;
+	color: #FF0000;
+	font-size: 100%;
+}
+.AFCSeparatorTD{
+	height: 1px;
+}
+.AFCFooterTD{
+	border-bottom: 1px solid #DEE3EF; 
+	border-right: 1px solid #DEE3EF; 
+	border-left: 1px solid #7386A5; 
+	border-top: 2px solid #808080;
+	background-color: #F3F3F3;
+	color: #000000;
+	font-size: 100%;
+}
+a.AFCSorterLink:link, a.AFCSorterLink:visited{
+	color: #000000;
+	font-size: 100%;
+	text-decoration: underline;
+}
+a.AFCSorterLink:hover, a.AFCSorterLink:active{
+	color: #ff9900;
+	font-size: 100%;
+	text-decoration: underline;
+}
+a.AFCDataLink:link, a.AFCDataLink:visited{
+	color: #000000;
+	font-size: 100%;
+	text-decoration: underline;
+}
+a.AFCDataLink:hover, a.AFCDataLink:active{
+	color: #ff9900;
+	font-size: 100%;
+	text-decoration: underline;
+}
+a.AFCNavigatorLink:link, a.AFCNavigatorLink:visited{
+	color: #000000;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.AFCNavigatorLink:hover, a.AFCNavigatorLink:active{
+	color: #ff9900;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.AFCButton {
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	background-color: #F3F3F3;
+	font-size: 100%;
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+.AFCInput {
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	background-color: #FFFFFF;
+	font-size: 100%;
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+.AFCTextarea {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	background-color: #FFFFFF; 
+	font-size: 100%;
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+.AFCTextareaReadOnly { 
+	border: 0px;
+	background-color:transparent;
+	color: #000000; 
+	font-size: 100%; 
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+.AFCAltTextareaReadOnly { 
+	border: 0px;
+	background-color:transparent;
+	color: #000000; 
+	font-size: 100%; 
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+.AFCSelect {
+	font-size: 100%;
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+		
+
+/* Calendar */
+a.today:link, a.today:visited{ color: #FF0000; font-weight: bold; text-decoration: none; }
+a.today:hover, a.today:active{ color: #000000; font-weight: bold; text-decoration: none; }
+a.selectedDay:link, a.selectedDay:visited{ color: #000000; font-weight: bold; text-decoration: none; }
+a.selectedDay:hover, a.selectedDay:active{ color: #FF0000; font-weight: bold; text-decoration: none; }
+a.weekDay:link, a.weekDay:visited{ color: #000000; text-decoration: none; }
+a.weekDay:hover, a.weekDay:active{ color: #FF0000; text-decoration: none; }
+TD.selectedDay { border-bottom: 1px solid #E6E6E6; background-color: #DDDDDD; color: #000000; font-size: 100%; }
+TD.today { border-top: 1px solid #FF0000; border-left: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-right: 1px solid #FF0000; background-color: #FFFFFF; color: #000000; font-size: 100%; }
+TD.workday { border-bottom: 1px solid #E6E6E6; background-color: #FFFFFF; color: #000000; font-size: 100%; }
+TD.weekend { border-bottom: 1px solid #E6E6E6; background-color: #ECECEC; color: #000000; font-size: 100%; }
+TH.calendar { margin: 1px; border-top: 2px solid #000000; border-bottom: 1px solid #000000; background-color: #F3F3F3; color: #000000; font-size: 100%; font-weight: bold; }
+.CalendarButtons { border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; background-color: #F3F3F3; font-size: 100%; font-family: Tahoma, Verdana, Arial, Helvetica; }
+.CalendarControls { 	font-family: Verdana, Tahoma,  Arial, Helvetica; font-size: 100%; }
+.Table { }
+
+/* ------------------------------------- AFC CCSTheme classi speciali ------------------------------------- */
+
+.AFCInputReadOnly {
+	border-bottom: 1px solid #E6E6E6;
+	border-left: 1px ridge #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-top: 1px ridge #E6E6E6;
+	background-color: transparent;
+	font-size: 100%;
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+.AFCInputDisplay {
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	background-color: transparent;
+	font-size: 100%;
+	font-family: Verdana, Tahoma,  Arial, Helvetica; 
+}
+.AFCTextEnable {
+	color: #ff9900;
+}
+a.AFCTextEnable:link, a.AFCTextEnable:active, a.AFCTextEnable:visited {
+	color: #ff9900;
+	text-decoration: underline;
+}
+a.AFCTextEnable:hover {
+	color: red; text-decoration: underline;
+} 
+.AFCTextDisable {
+	color: #808080;
+}
+a.AFCTextDisable:link, a.AFCTextDisable:active, a.AFCTextDisable:visited {
+	color: #808080;
+}
+a.AFCTextDisable:hover {
+	color: red;
+}
+.AFCVisible { 
+	visibility: inherit;
+	/*display:block;*/
+}
+.AFCHidden { 
+	visibility: hidden;
+	display:none;
+}  
+
+
+.AFCTextHighlight {
+	color: navy;
+}
+a.AFCTextHighlight:link, a.AFCTextHighlight:active, a.AFCTextHighlight:visited {
+	color: navy;
+}
+a.AFCTextHighlight:hover {
+	color: #ff9900;
+} 
+.AFCNote {
+	font-size: 85%;
+	font-weight: normal;
+	font-style: italic;
+}
+.AFCFormTABLEnoborder{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+/* ------------------------------------- Header ------------------------------------- */
+
+.AFCHeaderTable {
+	background-image: url('head.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.AFCHeaderTR{
+	background-position-y:50%
+}
+.AFCHeaderTitle { 
+}
+.AFCHeaderWelcome { 
+}
+.AFCHeaderDate { 
+}
+.AFCHeaderNote { 
+}
+.AFCHeaderNewMessage { 
+}
+
+/* ------------------------------------- Header Bar ------------------------------------- */
+
+.AFCHeaderBarTD{
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	background-color: #F3F3F3;
+	color: #000000;
+	font-weight: bold;
+	BACKGROUND-IMAGE: url('HeaderBar.gif');
+
+}
+.AFCHeaderBarTDnoBold{
+ border-top: 1px solid #808080;
+ border-bottom: 1px solid #808080;
+ background-color: #F3F3F3;
+ color: #000000;
+ font-weight: normal;
+ BACKGROUND-IMAGE: url('HeaderBar.gif')
+}
+.AFCHeaderBarNavigator { 
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 93%;
+}
+a.AFCHeaderBarNavigator:link, a.AFCHeaderBarNavigator:active, a.AFCHeaderBarNavigator:visited { 
+	color: black;
+	text-decoration: underline;
+	font-weight: normal;
+}
+a.AFCHeaderBarNavigator:hover {
+	text-decoration: nome;
+	font-weight: bold;
+	color: black;
+}
+a.AFCHeaderBarMenu:link, a.AFCHeaderBarMenu:active, a.AFCHeaderBarMenu:visited { 
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.AFCHeaderBarMenu:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+/* ------------------------------------- Blocchi Left------------------------------------ */
+
+.AFCLeft {
+	width:150px;
+}
+.AFCLeftTable {
+	padding-top:3px;
+	padding-bottom:0px;
+}
+.AFCLeftFormTABLE{ 
+	padding-top:0px;
+	padding-bottom:0px;
+}
+a.AFCLeftNavigatorLink:link, a.AFCLeftNavigatorLink:visited{ 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCLeftNavigatorLink:hover, a.AFCLeftNavigatorLink:active{ 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCLeftDataLink:link, a.AFCLeftDataLink:active, a.AFCLeftDataLink:visited { 
+	color: black; 
+	text-decoration: none;
+}
+a.AFCLeftDataLink:hover { 
+	color: black; 
+	text-decoration: underline;
+}
+.AFCLeftColumnTD{ 
+	border:1px solid #89999b; background-color: #d7d7d7;
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+} 
+.AFCLeftDataTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #B1C6C8; 
+	border-bottom: 1px solid #B1C6C8; 
+	border-right: 1px solid #B1C6C8; 
+	background-color: #F7F7F7;
+	color: #000000; 
+	font-size: 100%;
+}
+.AFCLeftImageTD{ 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE;
+	border-top: 1px solid #C6CBDE; 
+}
+.AFCLeftSelectedColumnTD{ 
+ 	border:1px solid #FEB658; BACKGROUND-IMAGE: url('HeaderBar.gif');
+	color: #FFFFFF; 
+	font-size: 100%
+}
+.AFCLeftSelectedTD{ 
+	border-top: 1px solid #b1c6c8; 
+	border-left: 1px solid #b1c6c8; 
+	border-bottom: 1px solid #b1c6c8; 
+	border-right: 1px solid #b1c6c8; 
+	background-color: #FFEACF;
+	color: #C5D3D6; 
+	font-weight: bold;
+	font-size: 100%; 
+}
+.AFCLeftDetailTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #FEB658; 
+	border-bottom: 1px solid #FEB658; 
+	border-right: 1px solid #FEB658; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCLeftSeparatorTD{ 
+ 	background-image: url('section_sep.jpg');
+	background-repeat: repeat-x
+}
+/* ------------------------------------- Blocchi Center------------------------------------ */
+
+.AFCCenter {
+	width:100%;
+}
+.AFCCenterTable {
+	padding-top:3px;
+	padding-bottom:0px;
+} 
+.AFCCenterFormTABLE{
+	border-top: 1px solid #DEE3EF; 
+}
+a.AFCCenterNavigatorLink:link, a.AFCCenterNavigatorLink:visited{ 
+	color: navy; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCCenterNavigatorLink:hover, a.AFCCenterNavigatorLink:active{ 
+	color: navy; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCCenterDataLink:link, a.AFCCenterDataLink:active, a.AFCCenterDataLink:visited { 
+	color: navy; 
+	text-decoration: none;
+}
+a.AFCCenterDataLink:hover { 
+	color: navy; 
+	text-decoration: underline;
+}
+.AFCCenterColumnTD{ 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+} 
+.AFCCenterDataTD{ 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCCenterImageTD{ 
+/*	border-top: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; */
+}
+.AFCCenterHeadlineTD{ 
+	border-top: 1px solid #C6CBDE; 
+}
+.AFCCenterSelectedColumnTD{ 
+	border-bottom: 1px solid #DEE3EF; 
+	border-right: 1px solid #DEE3EF; 
+	border-top: 1px solid #7386A5; 
+	border-left: 1px solid #7386A5; 
+	background-color: #FEB658; 
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+}
+.AFCCenterSelectedTD{ 
+	border-top: 1px solid #b1c6c8; 
+	border-left: 1px solid #b1c6c8; 
+	border-bottom: 1px solid #b1c6c8; 
+	border-right: 1px solid #b1c6c8; 
+	background-color: #e7efef;
+	color: #C5D3D6; 
+	font-weight: bold;
+	font-size: 100%; 
+}
+.AFCCenterDetailTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCCenterSeparatorTD{ 
+ 	background-repeat: repeat-x
+}
+/* ------------------------------------- Blocchi Right------------------------------------ */
+
+.AFCRight {
+	width:150px;
+}
+.AFCRightTable {
+	padding-top:3px;
+	padding-bottom:0px
+}
+.AFCRightFormTABLE{ 
+}
+a.AFCRightNavigatorLink:link, a.AFCRightNavigatorLink:visited{ 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCRightNavigatorLink:hover, a.AFCRightNavigatorLink:active{ 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCRightDataLink:link, a.AFCRightDataLink:active, a.AFCRightDataLink:visited { 
+	color: navy; 
+	text-decoration: none;
+}
+a.AFCRightDataLink:hover { 
+	color: navy; 
+	text-decoration: underline;
+}
+.AFCRightColumnTD{ 
+	border:1px solid #89999b; background-color: #d7d7d7;
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+ 	
+} 
+.AFCRightDataTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #89999b; 
+	border-bottom: 1px solid #89999b; 
+	border-right: 1px solid #89999b; 
+	background-color: #F7F7F7;
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCRightImageTD{ 
+	border-left: 1px solid #C6CBDE; 
+	border-bottom: 1px solid #C6CBDE; 
+	border-right: 1px solid #C6CBDE; 
+	border-top: 1px solid #C6CBDE;
+	background-color: #FFFFFF;
+}
+.AFCRightSelectedColumnTD{ 
+ 	border:1px solid #FEB658; BACKGROUND-IMAGE: url('HeaderBar.gif');
+	color: #FFFFFF; 
+	font-size: 100%
+}
+.AFCRightSelectedTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #FEB658; 
+	border-bottom: 1px solid #FEB658; 
+	border-right: 1px solid #FEB658; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold;
+}
+.AFCRightDetailTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #FEB658; 
+	border-bottom: 1px solid #FEB658; 
+	border-right: 1px solid #FEB658; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%;
+}
+.AFCRightSeparatorTD{ 
+ 	background-image: url('section_sep.jpg');
+	background-repeat: repeat-x
+}
+
+/* ------------------------------------- Menu ------------------------------------- */
+.AFCMenu {
+	color: navy;
+	text-decoration: none;
+}
+a.AFCMenuNavigatorLink:link, a.AFCMenuNavigatorLink:visited{ 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCMenuNavigatorLink:hover, a.AFCMenuNavigatorLink:active{ 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+a.AFCMenuDataLink:link, a.AFCMenuDataLink:active, a.AFCMenuDataLink:visited { 
+	color: #000000; 
+	text-decoration: none;
+}
+a.AFCMenuDataLink:hover { 
+	color: #000000; 
+	text-decoration: underline;
+}
+.AFCMenuColumnTD{ 
+	border:1px solid #89999b;
+	background-color: #d7d7d7;
+	color: #FFFFFF; 
+	font-size: 100%; 
+	font-weight: bold; 
+}
+.AFCMenuDataTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #89999b; 
+	border-bottom: 1px solid #89999b; 
+	border-right: 1px solid #89999b; 
+	background-color: #F7F7F7;
+	color: #000000; 
+	font-size: 100%; 
+}
+.AFCMenuSelectedColumnTD{ 
+ 	border:1px solid #FEB658;
+ 	BACKGROUND-IMAGE: url('HeaderBar.gif');
+	background-repeat: repeat-x;
+	background-position: left top; width: 100%;
+	color: #FFFFFF;
+	font-size: 100%
+}
+.AFCMenuSelectedTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #FEB658; 
+	border-bottom: 1px solid #FEB658; 
+	border-right: 1px solid #FEB658; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%; 
+	font-weight: bold;
+}
+.AFCMenuDetailTD{ 
+	border-top: 1px solid #FFFFFF; 
+	border-left: 1px solid #FEB658; 
+	border-bottom: 1px solid #FEB658; 
+	border-right: 1px solid #FEB658; 
+	background-color: #FFEACF; 
+	color: #000000; 
+	font-size: 100%;
+}
+.AFCMenuSelectedTR{ 
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.AFCMenuSeparatorTD{ 
+ 	background-image: url('section_sep.jpg');
+	background-repeat: repeat-x
+}
+
+
+
+.AFCMenuSelTR{ 
+	BACKGROUND-IMAGE: url('menu_sel.gif');
+	background-repeat: no-repeat;
+	background-position :  right center;
+}
+
+/* ------------------------------------- Pagina Main Homepage ------------------------------------- */
+
+.AFCHomePageTitle{
+	font-size: 120%;
+	font-weight: bold;
+	color:red
+}
+.AFCHomePageTR{
+	background-position: left top; width: 100%;
+	background-image: url('../../common/images/AMV/blockopen.gif');
+	background-repeat: no-repeat;
+}
+.AFCHomePageTD{
+	border: 1px solid #E1E1E1;
+}
+.AFCHeadLineFormTable{ 
+}
+.AFCHeadLineColumnTD{ 
+	font-weight: bold;
+}
+.AFCHeadLineDataTD{ 
+}
+.AFCHeadLineSeparatorTD{ 
+	border-bottom: 1px solid #C0C0C0; 
+}
+.AFCHomePageFormTable{ 
+}
+.AFCHomePageColumnTD{ 
+}
+.AFCHomePageTR{
+	 
+}
+.AFCHomePageDataTD{ 
+}
+.AFCHomePageLink{ 
+}
+.AFCHomePageSeparatorTD{ 
+	border-bottom: 1px solid #C0C0C0; 
+}
+.AFCHomeNavigatorTD{ 
+	border: 1px solid #C0C0C0; 
+}
+
+/* ------------------------------------- Guida ------------------------------------- */
+
+.AFCGuida{
+	border-top: 0px solid #808080;
+	border-bottom: 0px solid #808080;
+	color: #ffffff; font-size: 100%;
+	font-weight: normal;
+	background-image: url('GuidaC.gif');
+	background-repeat: repeat-x
+}
+.AFCGuidaL{
+	border-top: 0px solid #808080;
+	border-bottom: 0px solid #808080;
+	color: #ffffff; font-size: 100%;
+	font-weight: normal;
+	background-image: url('GuidaL.gif');
+	background-repeat: no-repeat;
+}
+.AFCGuidaR{
+	 border-top: 0px solid #808080;
+	 border-bottom: 0px solid #808080;
+	 color: #ffffff; font-size: 100%;
+	 font-weight: normal;
+	 background-image: url('GuidaR.gif');
+	 background-repeat: no-repeat;
+}
+.AFCGuidaSel{
+	border-top: 0px solid #808080;
+	border-bottom: 0px solid #808080;
+	color: #ffffff;
+	font-size: 100%;
+	font-weight: normal;
+	background-image: url('GuidaSelC.gif');
+	background-repeat: repeat-x
+}
+a.AFCGuidaLink:link, a.AFCGuidaLink:active, a.AFCGuidaLink:visited { 
+	text-decoration:none;
+	border-top: 0px solid #808080;
+	border-bottom: 0px solid #808080;
+	color: #000000;
+	font-size: 100%;
+	font-weight: normal;
+}
+.AFCGuidaSelL{ 
+	 border-top: 0px solid #808080;
+	 border-bottom: 0px solid #808080;
+	 color: #ffffff;
+	 font-size: 100%;
+	 font-weight: normal;
+	 background-image: url('GuidaSelL.gif');
+	 background-repeat: no-repeat;
+}
+.AFCGuidaSelR{ 
+	 border-top: 0px solid #808080;
+	 border-bottom: 0px solid #808080;
+	 color: #ffffff;
+	 font-size: 100%;
+	 font-weight: normal;
+	 background-image: url('GuidaSelR.gif');
+	 background-repeat: no-repeat;
+}
+.AFCGuidaTable{
+	 background-repeat: repeat-x
+}
+
+/* ------------------------------------- SA4 ------------------------------------- */
+.SA4HeaderBarTDnoBold{
+ 	border-top: 1px solid #808080;
+ 	border-bottom: 1px solid #808080;
+ 	background-color: #F3F3F3;
+ 	color: #000000;
+ 	BACKGROUND-IMAGE: url('HeaderBar.gif')
+}
+a.SA4HeaderBarLink:link, a.SA4HeaderBarLink:visited, a.SA4HeaderBarLink:active{ 
+	color: #000000;
+	font-size: 100%;
+	text-decoration: underline; 
+}
+a.SA4HeaderBarLink:hover{ 
+	color: #ff0000;
+	font-size: 100%;
+	text-decoration: underline; 
+}

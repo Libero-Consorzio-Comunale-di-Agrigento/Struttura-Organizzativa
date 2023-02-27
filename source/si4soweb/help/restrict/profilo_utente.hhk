@@ -1,0 +1,157 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="index">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Accessi Utente">
+    <param name="Name" value="Accesso">
+    <param name="Local" value="Accesso.htm">
+    <param name="Name" value="Profilo">
+    <param name="Local" value="Profilo.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Account Utente">
+    <param name="Name" value="Utente">
+    <param name="Local" value="Utente.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Aree Documentali Utente">
+    <param name="Name" value="Accesso">
+    <param name="Local" value="Accesso.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Caratteristiche Utente">
+    <param name="Name" value="Accesso">
+    <param name="Local" value="Accesso.htm">
+    <param name="Name" value="Profilo">
+    <param name="Local" value="Profilo.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Dati Utente">
+    <param name="Name" value="Utente">
+    <param name="Local" value="Utente.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Gruppi">
+    <param name="Name" value="Gruppi">
+    <param name="Local" value="Gruppi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Le mie Richieste">
+    <param name="Name" value="Le mie Richieste">
+    <param name="Local" value="AmvRichiesteAutore.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="on-line">
+    <param name="Name" value="Le mie Richieste">
+    <param name="Local" value="AmvRichiesteAutore.htm">
+    <param name="Name" value="Richieste on-line">
+    <param name="Local" value="AmvRichiesteElenco.htm">
+    <param name="Name" value="Tutte le Richieste">
+    <param name="Local" value="AmvRichiesteModello.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Preferenze Utente">
+    <param name="Name" value="Preferenze">
+    <param name="Local" value="Preferenze.htm">
+    <param name="Name" value="Profilo">
+    <param name="Local" value="Profilo.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Profilo">
+    <param name="Name" value="Profilo">
+    <param name="Local" value="Profilo.htm">
+    <param name="Name" value="Utente">
+    <param name="Local" value="Utente.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Recapito Utente">
+    <param name="Name" value="Utente">
+    <param name="Local" value="Utente.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Registrazione richiesta">
+    <param name="Name" value="Registrazione richiesta">
+    <param name="Local" value="ServletModulistica.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Richieste abilitate">
+    <param name="Name" value="Servizi">
+    <param name="Local" value="Servizi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Richieste eseguite">
+    <param name="Name" value="Tutte le Richieste">
+    <param name="Local" value="AmvRichiesteModello.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Richieste in attesa di abilitazione">
+    <param name="Name" value="Servizi">
+    <param name="Local" value="Servizi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Richieste on-line">
+    <param name="Name" value="Le mie Richieste">
+    <param name="Local" value="AmvRichiesteAutore.htm">
+    <param name="Name" value="Registrazione richiesta">
+    <param name="Local" value="ServletModulistica.htm">
+    <param name="Name" value="Richieste on-line">
+    <param name="Local" value="AmvRichiesteElenco.htm">
+    <param name="Name" value="Tutte le Richieste">
+    <param name="Local" value="AmvRichiesteModello.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizi">
+    <param name="Name" value="Servizi">
+    <param name="Local" value="Servizi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizi disponibili">
+    <param name="Name" value="Servizi">
+    <param name="Local" value="Servizi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizi disponibili utente">
+    <param name="Name" value="Servizi">
+    <param name="Local" value="Servizi.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizi disponibili Utente">
+    <param name="Name" value="Profilo">
+    <param name="Local" value="Profilo.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Servizio">
+    <param name="Name" value="Servizio">
+    <param name="Local" value="Servizio.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Stile">
+    <param name="Name" value="Preferenze">
+    <param name="Local" value="Preferenze.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Tutte le Richieste">
+    <param name="Name" value="Tutte le Richieste">
+    <param name="Local" value="AmvRichiesteModello.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Ultimi accessi Utente">
+    <param name="Name" value="Accesso">
+    <param name="Local" value="Accesso.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Utente">
+    <param name="Name" value="Utente">
+    <param name="Local" value="Utente.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Utenti">
+    <param name="Name" value="Gruppi">
+    <param name="Local" value="Gruppi.htm">
+  </object>
+</ul>
+</html>

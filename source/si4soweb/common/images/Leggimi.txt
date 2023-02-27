@@ -1,0 +1,6 @@
+Ambiente MiniVortal Standard per Code Charge Studio AFC ADS Foundation Class
+____________________________________________________________________________
+(c) 2004 Gruppo Finmatica - www.ads.it 
+
+
+In questa cartella vengono depositate le immagini caricate da web e utilizzate per la gestione del Portale.

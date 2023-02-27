@@ -1,0 +1,118 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include JSFunctions @1-FB634A57
+  </script>
+<script language="JavaScript" type="text/javascript" src="../functions.js"></script>
+<script language="JavaScript" type="text/javascript">
+  
+//End Include JSFunctions
+
+//page_AMV_DOCUMENTO_RESPINGI_Delete_OnClick @41-01AE7F91
+function page_AMV_DOCUMENTO_RESPINGI_Delete_OnClick()
+{
+    var result;
+//End page_AMV_DOCUMENTO_RESPINGI_Delete_OnClick
+
+//Confirmation Message @45-ED0FE9AC
+    return confirm('ATTENZIONE:\nL'eliminazione rimuove il documento ponendolo Fuori Uso.\n\nContinuare?');
+//End Confirmation Message
+
+//Close page_AMV_DOCUMENTO_RESPINGI_Delete_OnClick @41-BC33A33A
+    return result;
+}
+//End Close page_AMV_DOCUMENTO_RESPINGI_Delete_OnClick
+
+//page_AMV_DOCUMENTO_RESPINGI_Cancel_OnClick @13-7C41679B
+function page_AMV_DOCUMENTO_RESPINGI_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_AMV_DOCUMENTO_RESPINGI_Cancel_OnClick
+
+//bind_events @1-36108A45
+function bind_events() {
+    if (document.forms["AMV_DOCUMENTO_RESPINGI"]) check_and_bind('document.forms["AMV_DOCUMENTO_RESPINGI"].Delete','onclick',page_AMV_DOCUMENTO_RESPINGI_Delete_OnClick);
+    if (document.forms["AMV_DOCUMENTO_RESPINGI"]) check_and_bind('document.forms["AMV_DOCUMENTO_RESPINGI"].Cancel','onclick',page_AMV_DOCUMENTO_RESPINGI_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%" height="100%">
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td width="100%" valign="top" align="left">{Guida}</td> 
+          </tr>
+ 
+          <tr>
+            <td width="100%" valign="top" align="left">
+              <!-- BEGIN Record AMV_DOCUMENTO_RESPINGI -->
+              <form name="AMV_RILEVANZE1" action="{Action}" method="post">
+                <font class="AFCFormHeaderFont">Conferma operazione di
+                Eliminazione</font>&nbsp; 
+                <table class="AFCFormTABLE" cellpadding="5" width="100%">
+                  <!-- BEGIN Error -->
+                  <tr>
+                    <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                  </tr>
+                  <!-- END Error -->
+                  <tr>
+                    <td valign="top">
+                      <p><b>Titolo:</b>&nbsp;{TITOLO} </p>
+ 
+                      <p><b>Creato il:</b>&nbsp;{DATA_INSERIMENTO}&nbsp;<b>da</b>&nbsp;{NOMINATIVO_AUTORE} </p>
+ 
+                      <p><b>Aggiornato il:</b>&nbsp;{DATA_AGGIORNAMENTO}&nbsp;<b>da</b>&nbsp;{NOMINATIVO_AGGIORNAMENTO} </p>
+ <br>
+                      <br>
+                      <b>Annotazioni&nbsp;:</b><br>
+                      <textarea class="AFCTextarea" name="{NOTE_Name}" rows="5" cols="60">{NOTE}</textarea> </td> 
+                    <td valign="top" width="50%"><b>Cronologia&nbsp;:</b><br>
+                      {CRONOLOGIA}<br>
+                      <br>
+                      <b>Note&nbsp;:</b><br>
+                      {NOTE_LABEL} </td> 
+                  </tr>
+ 
+                  <tr>
+                    <td colspan="2" class="AFCFooterTD" align="right">
+                      <!-- BEGIN Button Delete --><input class="AFCButton" title="Conferma Eliminazione" type="submit" value="Conferma" name="Delete"><!-- END Button Delete -->
+                      <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;
+                      &nbsp;<input class="AFCInput" type="hidden" value="{REVISIONE}" name="REVISIONE"><input class="AFCInput" type="hidden" value="{ID_DOCUMENTO}" name="ID_DOCUMENTO"></td> 
+                  </tr>
+ 
+                </table>
+ 
+              </form>
+ <!-- END Record AMV_DOCUMENTO_RESPINGI --></td>
+            <!-- Fine Tabella  -->
+          </td> 
+        </tr>
+ 
+      </table>
+    </td>
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</tbody>
+</table>
+</body>
+</html>

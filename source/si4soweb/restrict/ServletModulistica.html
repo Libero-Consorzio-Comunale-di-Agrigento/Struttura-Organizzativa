@@ -1,0 +1,70 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body class="AFCPageBODY">
+<table cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid AMV_VISTA_DOCUMENTI -->
+            <table class="AFCCenterFormTable" cellspacing="0" cellpadding="5" width="100%">
+              <!-- BEGIN Row -->
+              <tr>
+                <td valign="top" width="55%"><font class="AFCFormHeaderFont">{TITOLO}&nbsp;&nbsp;&nbsp;</font><br>
+                </td> 
+                <td align="center" valign="top" width="10%" nowrap>{MODIFICA}&nbsp;&nbsp;<br>
+                  <font color="red"><b>{STATO}</b></font> {COD_STATO} </td> 
+                <td valign="top" align="right" width="35%"><font class="AFCNote">Ultimo
+                  aggiornamento&nbsp; {DATA_ULTIMA_MODIFICA}</font></td> 
+              </tr>
+ 
+              <tr>
+                <td class="AFCCenterDataTD" colspan="3"><span style="TEXT-ALIGN: justify">{TESTO}</span></td> 
+              </tr>
+ 
+              <tr>
+                <td class="AFCCenterDataTD" colspan="3">{ALLEGATI}</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="3">Pagina&nbsp;non&nbsp;disponibile</td> 
+              </tr>
+              <!-- END NoRecords -->
+            </table>
+ <!-- END Grid AMV_VISTA_DOCUMENTI --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid INSERISCI_RICHIESTA -->
+            <!-- BEGIN Row --><b>{MESSAGGIO}</b><!-- END Row --><!-- END Grid INSERISCI_RICHIESTA --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top"></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">{corpoHtml}</td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

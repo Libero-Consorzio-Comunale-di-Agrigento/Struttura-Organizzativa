@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Aggiorna Utenti Gruppo</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body>
+<!-- BEGIN Record UTENTI_GRUPPO -->
+<form name="STILE" action="{Action}" method="post">
+  Aggiorna utente gruppo 
+  <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+    <!-- BEGIN Error -->
+    <tr>
+      <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td class="AFCFieldCaptionTD" valign="top">Utente</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{UTENTE}" name="{UTENTE_Name}">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFieldCaptionTD" valign="top">DbUser&nbsp;</td> 
+      <td class="AFCDataTD"><input class="AFCInput" value="{P_GRUPPO}" name="{P_GRUPPO_Name}">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td class="AFCFooterTD" nowrap align="right" colspan="2">
+        <!-- BEGIN Button Button_Insert --><input class="AFCButton" type="submit" value="Inserisci" name="{Button_Name}"><!-- END Button Button_Insert -->
+        <!-- BEGIN Button Button_Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Button_Update -->
+        <!-- BEGIN Button Button_Delete --><input class="AFCButton" type="submit" value="Elimina" name="{Button_Name}"><!-- END Button Button_Delete -->&nbsp; </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record UTENTI_GRUPPO -->
+</body>
+</html>

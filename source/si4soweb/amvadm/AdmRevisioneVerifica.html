@@ -1,0 +1,78 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" border="0" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%" height="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Record AMV_DOCUMENTO_VERIFICA -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <font class="AFCFormHeaderFont">Conferma operazione di Verifica</font> 
+              <table class="AFCFormTABLE" cellpadding="5" cellspacing="0" width="100%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr>
+                  <td valign="top">
+                    <p><b>Titolo:</b>&nbsp;{TITOLO} <input type="hidden" name="{MVPAGES_Name}" value="{MVPAGES}"></p>
+ 
+                    <p><b>Creato il</b>:&nbsp;{DATA_INSERIMENTO}&nbsp;<b>da</b>&nbsp;{NOMINATIVO_AUTORE}</p>
+ 
+                    <p><b>Aggiornato il:</b>&nbsp;{DATA_AGGIORNAMENTO}&nbsp; <b>da</b>&nbsp;{NOMINATIVO_AGGIORNAMENTO} </p>
+ <b>Approvatore:</b> 
+                    <select class="AFCSelect" tabindex="0" name="UTENTE_APPROVAZIONE">
+                      <option value="null" selected>-&nbsp;-</option>
+ {UTENTE_APPROVAZIONE_Options} 
+                    </select>
+ &nbsp; <br>
+                    <br>
+                    <b>Annotazioni&nbsp;:</b><br>
+                    <textarea class="AFCTextarea" name="{NOTE_Name}" rows="5" cols="60">{NOTE}</textarea> </td> 
+                  <td valign="top" width="50%"><b>Cronologia&nbsp;:</b><br>
+                    {CRONOLOGIA} <br>
+                    <br>
+                    <b>Note&nbsp;:</b><br>
+                    {NOTE_LABEL} </td> 
+                </tr>
+ 
+                <tr>
+                  <td colspan="2" class="AFCFooterTD" align="right">
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Verifica" name="Update"><!-- END Button Update -->
+                    <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;
+                    &nbsp;<input class="AFCInput" type="hidden" value="{REVISIONE}" name="REVISIONE"><input class="AFCInput" type="hidden" value="{ID_DOCUMENTO}" name="ID_DOCUMENTO"></td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AMV_DOCUMENTO_VERIFICA --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

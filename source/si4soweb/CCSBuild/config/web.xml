@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<!--
+//webApp configuration head @1-20A8545C
+-->
+<web-app>
+  <filter>
+    <filter-name>CodeChargeFilter</filter-name>
+    <filter-class>it.finmatica.codecharge.CodeChargeFilter</filter-class>
+      <init-param>
+        <param-name>jndiDbName</param-name>
+        <param-value>jdbc/ad4</param-value>
+      </init-param>        
+      <init-param>
+        <param-name>modulo</param-name>
+        <param-value>AMV</param-value>
+      </init-param>        
+      <init-param>
+        <param-name>istanza</param-name>
+        <param-value>MV</param-value>
+      </init-param>        
+  </filter>
+  <filter-mapping>
+    <filter-name>CodeChargeFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>controller</servlet-name>
+    <servlet-class>com.codecharge.ControllerServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>viewer</servlet-name>
+    <servlet-class>com.codecharge.ViewerServlet</servlet-class>
+  </servlet>
+<!--
+
+//End webApp configuration head
+
+//siteInit head @2-560E289E
+-->
+  <servlet>
+    <servlet-name>siteInit</servlet-name>
+    <servlet-class>com.codecharge.InitServlet</servlet-class>
+
+        <init-param>
+            <param-name>configuration.file</param-name>
+            <param-value>/WEB-INF/site.properties</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>languages.file</param-name>
+            <param-value>/WEB-INF/languages.properties</param-value>
+        </init-param>
+<!--
+
+//End siteInit head
+
+//server specific parameters @3-09626FDE
+-->
+
+        <init-param>
+            <param-name>controllerHandlerClassName</param-name>
+            <param-value>com.codecharge.util.DefaultControllerHandler</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>usedUnpackedWarFile</param-name>
+            <param-value>false</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>convertReturnLinkToAbsolute</param-name>
+            <param-value>false</param-value>
+        </init-param>
+<!--
+
+//End server specific parameters
+
+//siteInit tail @5-5E3BCE44
+-->
+    <load-on-startup>108</load-on-startup>
+  </servlet>
+
+<!--
+
+//End siteInit tail
+
+//Servlet mapping @6-15175CD1
+-->
+  <servlet-mapping>
+    <servlet-name>controller</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>viewer</servlet-name>
+    <url-pattern>*.show</url-pattern>
+  </servlet-mapping>
+
+<!--
+
+//End Servlet mapping
+
+//webApp configuration tail @7-398BFCF7
+-->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.do</welcome-file>
+  </welcome-file-list>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Restrict</web-resource-name>
+      <url-pattern>/restrict/*</url-pattern>
+      <url-pattern>/amvadm/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>AMV@MV</role-name>
+    </auth-constraint>
+    <user-data-constraint>
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/common/Login.do?MVVC=amvlogin</form-login-page>
+      <form-error-page>/common/Login.do?MVERR=S</form-error-page>
+    </form-login-config>
+  </login-config> 
+<error-page>
+        <error-code>404</error-code>
+        <location>/common/Denied.do</location>
+</error-page>  
+
+</web-app>
+<!--
+
+//End webApp configuration tail
+
+
+-->
+

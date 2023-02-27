@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Amministrazione Richieste di abilitazione</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript">
+//Begin CCS script
+//Include Common JSFunctions @1-A1D84A39
+</script>
+<script language="JavaScript" type="text/javascript" src="../DatePicker.js"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-EA7B98EB
+
+var AD4_ACCESSISearch_DatePicker1 = new Object(); 
+AD4_ACCESSISearch_DatePicker1.format           = "dd/mm/yyyy";
+AD4_ACCESSISearch_DatePicker1.style            = "Themes/AFC/Style.css";
+AD4_ACCESSISearch_DatePicker1.relativePathPart = "../";
+
+var AD4_ACCESSISearch_DatePicker2 = new Object(); 
+AD4_ACCESSISearch_DatePicker2.format           = "dd/mm/yyyy";
+AD4_ACCESSISearch_DatePicker2.style            = "Themes/AFC/Style.css";
+AD4_ACCESSISearch_DatePicker2.relativePathPart = "../";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table class="" border="0" cellpadding="0" cellspacing="2" style="BORDER-COLLAPSE: collapse" bordercolor="#111111" width="100%" height="100%" id="AutoNumber1">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="center" width="100%">
+      <table width="100%">
+        <tr>
+          <td width="100%" valign="top" align="left">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Record AD4_ACCESSISearch -->
+            <form name="AD4_ACCESSISearch" action="{Action}" method="post" target="">
+              <font class="AFCFormHeaderFont">Cerca&nbsp;Accessi</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="3">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr width="100%">
+                  <td class="AFCFieldCaptionTD" valign="middle">Data</td> 
+                  <td class="AFCDataTD">&nbsp;dal <input class="AFCInput" maxlength="10" size="10" value="{DAL}" name="DAL">&nbsp; 
+                    <!-- BEGIN DatePicker DatePicker1 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker1 -->&nbsp;al <input class="AFCInput" maxlength="10" size="10" value="{AL}" name="AL">&nbsp; 
+                    <!-- BEGIN DatePicker DatePicker2 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker2 --></td> 
+                  <td class="AFCDataTD" nowrap align="right" rowspan="2">&nbsp; 
+                    <!-- BEGIN Button DoSearch --><input class="AFCButton" type="submit" value="Cerca" name="DoSearch"><!-- END Button DoSearch -->&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="middle">Modulo</td> 
+                  <td class="AFCDataTD">&nbsp; 
+                    <select class="AFCSelect" tabindex="0" name="SM">
+                      {SM_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AD4_ACCESSISearch --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid AccessiDettaglio --><font class="AFCFormHeaderFont">Elenco&nbsp;Accessi</font> 
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <tr>
+                <td class="AFCColumnTD" nowrap>
+                  <!-- BEGIN Sorter Sorter_ACCESSO --><a class="AFCSorterLink" href="{Sort_URL}">Accesso</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ACCESSO --></td> 
+                <td class="AFCColumnTD" nowrap colspan="2">
+                  <!-- BEGIN Sorter Sorter_NOMINATIVO --><a class="AFCSorterLink" href="{Sort_URL}">Utente</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_NOMINATIVO --></td> 
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD" nowrap>{DATA_ACCESSO}</td> 
+                <td class="AFCDataTD" valign="top" nowrap><a class="AFCDataLink" title="Informazioni utente" href="{NOMINATIVO_Src}">{NOMINATIVO}</a></td> 
+                <td class="AFCDataTD" width="100%">&nbsp;{SESSIONE}</td> 
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="3">Nessuna registrazione&nbsp;</td> 
+              </tr>
+ <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" nowrap align="center" colspan="3">{AFCNavigator}&nbsp; </td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AccessiDettaglio --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

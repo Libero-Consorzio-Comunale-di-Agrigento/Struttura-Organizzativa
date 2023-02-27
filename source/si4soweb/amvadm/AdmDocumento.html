@@ -1,0 +1,483 @@
+<html>
+<head>
+<title>Amministrazione Documenti</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript" src="../Lov.js"></script>
+<script language="JavaScript">
+//Begin CCS script
+//Include JSFunctions @1-FB634A57
+  </script>
+<script language="JavaScript" type="text/javascript" src="../functions.js"></script>
+<script language="JavaScript" type="text/javascript">
+  
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-A1D84A39
+</script>
+<script language="JavaScript" type="text/javascript" src="../DatePicker.js"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-EB9EB2D6
+
+var AMV_DOCUMENTI_DatePicker3 = new Object(); 
+AMV_DOCUMENTI_DatePicker3.format           = "dd/mm/yyyy";
+AMV_DOCUMENTI_DatePicker3.style            = "Themes/AFC/Style.css";
+AMV_DOCUMENTI_DatePicker3.relativePathPart = "../";
+
+var AMV_DOCUMENTI_DatePicker1 = new Object(); 
+AMV_DOCUMENTI_DatePicker1.format           = "dd/mm/yyyy";
+AMV_DOCUMENTI_DatePicker1.style            = "Themes/AFC/Style.css";
+AMV_DOCUMENTI_DatePicker1.relativePathPart = "../";
+
+var AMV_DOCUMENTI_DatePicker2 = new Object(); 
+AMV_DOCUMENTI_DatePicker2.format           = "dd/mm/yyyy";
+AMV_DOCUMENTI_DatePicker2.style            = "Themes/AFC/Style.css";
+AMV_DOCUMENTI_DatePicker2.relativePathPart = "../";
+
+//End Date Picker Object Definitions
+
+//page_AMV_DOCUMENTI_ID_AREA_OnChange @105-E82997F1
+function page_AMV_DOCUMENTI_ID_AREA_OnChange()
+{
+    var result;
+//End page_AMV_DOCUMENTI_ID_AREA_OnChange
+
+//Submit Form @108-8D44148D
+    document.forms["AMV_DOCUMENTI"].submit();
+//End Submit Form
+
+//Close page_AMV_DOCUMENTI_ID_AREA_OnChange @105-BC33A33A
+    return result;
+}
+//End Close page_AMV_DOCUMENTI_ID_AREA_OnChange
+
+//page_AMV_DOCUMENTI_Delete_OnClick @8-E2F5D4AA
+function page_AMV_DOCUMENTI_Delete_OnClick()
+{
+    var result;
+//End page_AMV_DOCUMENTI_Delete_OnClick
+
+//Confirmation Message @163-ECED59AF
+    return confirm('ATTENZIONE:\n\nL\'operazione di eliminazione distrugge il documento definitivamente.\n\nConferma?');
+//End Confirmation Message
+
+//Close page_AMV_DOCUMENTI_Delete_OnClick @8-BC33A33A
+    return result;
+}
+//End Close page_AMV_DOCUMENTI_Delete_OnClick
+
+//page_AMV_DOCUMENTI_Cancel_OnClick @9-9F4CF227
+function page_AMV_DOCUMENTI_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_AMV_DOCUMENTI_Cancel_OnClick
+
+//bind_events @1-B9350CB8
+function bind_events() {
+    if (document.forms["AMV_DOCUMENTI"]) check_and_bind('document.forms["AMV_DOCUMENTI"].ID_AREA','onchange',page_AMV_DOCUMENTI_ID_AREA_OnChange);
+    if (document.forms["AMV_DOCUMENTI"]) check_and_bind('document.forms["AMV_DOCUMENTI"].Delete','onclick',page_AMV_DOCUMENTI_Delete_OnClick);
+    if (document.forms["AMV_DOCUMENTI"]) check_and_bind('document.forms["AMV_DOCUMENTI"].Cancel','onclick',page_AMV_DOCUMENTI_Cancel_OnClick);
+    forms_onload();
+    if (document.AMV_DOCUMENTI.TIPO_TESTO[0].checked) show_testo('Testo');
+    if (document.AMV_DOCUMENTI.TIPO_TESTO[1].checked) show_testo('Link');
+    if (document.AMV_DOCUMENTI.TIPO_TESTO[2].checked) show_testo('Form');
+ //   if (document.AMV_DOCUMENTI.TIPO_TESTO[3].checked) show_testo('Xquery');
+ //   show_testo(document.getElementById("tipo_testo").defaultValue);
+ //   alert('Default Value ' + document.getElementById("tipo_testo").value);
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+<script language="JavaScript">
+ function show_guida(num) {
+	if (num == 1) {
+		document.getElementById('t1').style.display='inline';
+		//document.getElementById('t2').style.display='inline';
+		document.getElementById('t3').style.display='none';
+                document.getElementById('g11').className = 'AFCGuidaSelL';
+                document.getElementById('g12').className = 'AFCGuidaSel';
+                document.getElementById('g13').className = 'AFCGuidaSelR';
+                //document.getElementById('g21').className = 'AFCGuidaL';
+                //document.getElementById('g22').className = 'AFCGuida';
+                //document.getElementById('g23').className = 'AFCGuidaR';
+                document.getElementById('g31').className = 'AFCGuidaL';
+                document.getElementById('g32').className = 'AFCGuida';
+                document.getElementById('g33').className = 'AFCGuidaR';
+                
+	}
+	if (num == 2) {
+		document.getElementById('t1').style.display='inline';
+		//document.getElementById('t2').style.display='inline';
+		document.getElementById('t3').style.display='none';
+                //document.getElementById('g21').className = 'AFCGuidaSelL';
+                //document.getElementById('g22').className = 'AFCGuidaSel';
+                //document.getElementById('g23').className = 'AFCGuidaSelR';
+                document.getElementById('g11').className = 'AFCGuidaL';
+                document.getElementById('g12').className = 'AFCGuida';
+                document.getElementById('g13').className = 'AFCGuidaR';
+                document.getElementById('g31').className = 'AFCGuidaL';
+                document.getElementById('g32').className = 'AFCGuida';
+                document.getElementById('g33').className = 'AFCGuidaR';
+	}
+	if (num == 3) {
+		document.getElementById('t1').style.display='none';
+		//document.getElementById('t2').style.display='none';
+		document.getElementById('t3').style.display='inline';
+                document.getElementById('g31').className = 'AFCGuidaSelL';
+                document.getElementById('g32').className = 'AFCGuidaSel';
+                document.getElementById('g33').className = 'AFCGuidaSelR';
+                document.getElementById('g11').className = 'AFCGuidaL';
+                document.getElementById('g12').className = 'AFCGuida';
+                document.getElementById('g13').className = 'AFCGuidaR';
+                //document.getElementById('g21').className = 'AFCGuidaL';
+                //document.getElementById('g22').className = 'AFCGuida';
+                //document.getElementById('g23').className = 'AFCGuidaR';
+	}
+}
+ function show_testo(tipo) {
+    //alert('Checkedf ' + document.AMV_DOCUMENTI.TIPO_TESTO[1].checked);
+	if (tipo == 'Testo') {
+		document.getElementById('row1').style.display='block';
+		document.getElementById('row2').style.display='none';
+		document.getElementById('row3').style.display='block';
+		document.getElementById('row4').style.display='none';	
+		document.getElementById('row5').style.display='none';	
+		document.getElementById('row6').style.display='none';	
+		document.getElementById('row7').style.display='none';	
+		document.getElementById('row8').style.display='none';	
+		document.getElementById('row9').style.display='none';	
+		document.getElementById('row10').style.display='none';	
+	}
+	if (tipo == 'Link') {
+		document.getElementById('row1').style.display='none';
+		document.getElementById('row2').style.display='block';
+		document.getElementById('row3').style.display='none';
+		document.getElementById('row4').style.display='none';
+		document.getElementById('row5').style.display='none';	
+		document.getElementById('row6').style.display='none';	
+		document.getElementById('row7').style.display='none';	
+		document.getElementById('row8').style.display='none';	
+		document.getElementById('row10').style.display='none';	
+	}
+	if (tipo == 'Form') {
+		document.getElementById('row1').style.display='block';
+		document.getElementById('row2').style.display='none';
+		document.getElementById('row3').style.display='none';
+		document.getElementById('row4').style.display='block';
+		document.getElementById('row5').style.display='block';	
+		document.getElementById('row6').style.display='block';	
+		document.getElementById('row7').style.display='block';	
+		document.getElementById('row8').style.display='none';	
+		document.getElementById('row9').style.display='none';	
+		document.getElementById('row10').style.display='none';	
+	}
+	if ((tipo == 'Xquery')||(tipo == 'SQLquery')) {
+		document.getElementById('row8').style.display='block';
+		document.getElementById('row1').style.display='none';
+		document.getElementById('row2').style.display='none';
+		document.getElementById('row3').style.display='none';
+		document.getElementById('row4').style.display='none';
+		document.getElementById('row5').style.display='none';	
+		document.getElementById('row6').style.display='none';	
+		document.getElementById('row7').style.display='none';	
+		document.getElementById('row9').style.display='block';	
+		document.getElementById('row10').style.display='block';	
+	}
+}
+</script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY" cols="100">
+<table cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">
+      <!--Left-->
+    </td> 
+    <td valign="top" align="center" width="100%">
+      <table width="100%" valign="top">
+        <tr>
+          <td valign="top">
+            <!-- BEGIN Record AMV_DOCUMENTI -->
+            <form name="{HTMLFormName}" action="{Action}" method="post" enctype="multipart/form-data">
+              <p><font class="AFCFormHeaderFont">{RECORD_TITLE}</font> </p>
+ 
+              <table cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <td id="g11" align="left" valign="top" class="AFCGuidaSelL"><img src="../Themes/Default/GuidaBlank.gif"></td> 
+                  <td id="g12" align="left" class="AFCGuidaSel" valign="middle" nowrap><a class="AFCGuidaLink" href="javascript:show_guida(1)">Proprietà</a></td> 
+                  <td id="g13" align="left" valign="top" class="AFCGuidaSelR"><img src="../Themes/Default/GuidaBlank.gif"></td>
+                  <!--
+			<td id="g21" align="left" valign="top" class="AFCGuidaL"><img src="../Themes/Default/GuidaBlank.gif"></td>
+			<td id="g22" align="left" class="AFCGuida" valign="center" nowrap><a class="AFCGuidaLink" href="javascript:show_guida(2)">Categorizzazione</a></td>
+			<td id="g23" align="left" valign="top" class="AFCGuidaR"><img src="../Themes/Default/GuidaBlank.gif" ></td>
+			-->
+                  <td id="g31" align="left" valign="top" class="AFCGuidaL"><img src="../Themes/Default/GuidaBlank.gif"></td> 
+                  <td id="g32" align="left" class="AFCGuida" valign="middle" nowrap><a class="AFCGuidaLink" href="javascript:show_guida(3)">Contenuto</a></td> 
+                  <td id="g33" align="left" valign="top" class="AFCGuidaR"><img src="../Themes/Default/GuidaBlank.gif"></td> 
+                  <td width="100%"></td> 
+                </tr>
+ 
+              </table>
+ 
+              <table cellspacing="0" cellpadding="3" width="100%" class="AFCFormTABLE">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="4">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td><input type="hidden" name="ID_DOCUMENTO" value="{ID_DOCUMENTO}" class="AFCInput"><input class="AFCInput" type="hidden" value="{REVISIONE}" name="REVISIONE"><input class="AFCInput" type="hidden" value="{STATO}" name="STATO"></td> 
+                </tr>
+ 
+                <tr>
+                  <td valign="top" width="100%">
+                    <table class="AFCFormTABLE" id="t1" style="DISPLAY: block" width="100%" cellspacing="0" cellpadding="3">
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Titolo</td> 
+                        <td class="AFCDataTD"><input class="AFCInput" maxlength="250" value="{TITOLO}" name="TITOLO" size="90"></td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Revisione</td> 
+                        <td class="AFCDataTD" width="80%">{REVISIONE_LABEL}&nbsp;</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Stato</td> 
+                        <td class="AFCDataTD" width="80%">{STATO_DOCUMENTO}&nbsp;&nbsp;{FLUSSO}&nbsp;</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Inserimento&nbsp;</td> 
+                        <td class="AFCDataTD" width="80%"><input name="{DATA_INSERIMENTO_Name}" value="{DATA_INSERIMENTO}" maxlength="10" size="10" class="AFCInputDisplay" readonly>&nbsp;-&nbsp; <input name="{AUTORE_Name}" value="{AUTORE}" class="AFCInputDisplay" readonly></td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Aggiornamento&nbsp;</td> 
+                        <td class="AFCDataTD" width="80%"><input name="{DATA_AGGIORNAMENTO_Name}" value="{DATA_AGGIORNAMENTO}" maxlength="10" size="10" class="AFCInputDisplay" readonly>&nbsp;-&nbsp; <input name="{UTENTE_AGGIORNAMENTO_Name}" value="{UTENTE_AGGIORNAMENTO}" class="AFCInputDisplay" readonly></td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Cronologia</td> 
+                        <td class="AFCDataTD" width="80%">{CRONOLOGIA}&nbsp;</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Note</td> 
+                        <td class="AFCDataTD" width="80%">{NOTE}&nbsp;</td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Area di
+                          accesso</td> 
+                        <td class="AFCDataTD" width="80%">
+                          <select name="{ID_AREA_Name}" class="AFCSelect">
+                            {ID_AREA_Options} 
+                          </select>
+ <input class="AFCInput" type="hidden" value="{ID_AREA_SEL}" name="{ID_AREA_SEL_Name}"></td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Tipologia&nbsp;</td> 
+                        <td class="AFCDataTD" width="80%">
+                          <select name="{ID_TIPOLOGIA_Name}" class="AFCSelect">
+                            {ID_TIPOLOGIA_Options} 
+                          </select>
+ </td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Categoria</td> 
+                        <td class="AFCDataTD" width="80%">
+                          <select class="AFCSelect" tabindex="0" name="ID_CATEGORIA">
+                            {ID_CATEGORIA_Options} 
+                          </select>
+ </td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Argomento</td> 
+                        <td class="AFCDataTD" width="80%">
+                          <select class="AFCSelect" tabindex="0" name="ID_ARGOMENTO">
+                            {ID_ARGOMENTO_Options} 
+                          </select>
+ </td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Sezione</td> 
+                        <td class="AFCDataTD" width="80%">
+                          <select class="AFCSelect" tabindex="0" name="ID_SEZIONE">
+                            {ID_SEZIONE_Options} 
+                          </select>
+ </td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Rilevanza</td> 
+                        <td class="AFCDataTD" width="80%">
+                          <select class="AFCSelect" tabindex="0" name="ID_RILEVANZA">
+                            {ID_RILEVANZA_Options} 
+                          </select>
+ </td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Ordine di
+                          visualizzazione</td> 
+                        <td class="AFCDataTD" width="80%"><input class="AFCInput" value="{SEQUENZA}" name="{SEQUENZA_Name}" maxlength="10" size="4"></td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top" nowrap>Data&nbsp;riferimento</td> 
+                        <td class="AFCDataTD" width="80%"><input class="AFCInput" maxlength="10" size="10" value="{DATA_RIFERIMENTO}" name="DATA_RIFERIMENTO">&nbsp; 
+                          <!-- BEGIN DatePicker DatePicker3 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker3 --></td> 
+                      </tr>
+ 
+                      <tr>
+                        <td class="AFCFieldCaptionTD" valign="top">Pubblicazione</td> 
+                        <td class="AFCDataTD" nowrap width="80%"><input class="AFCInput" maxlength="10" size="10" value="{INIZIO_PUBBLICAZIONE}" name="INIZIO_PUBBLICAZIONE">&nbsp; 
+                          <!-- BEGIN DatePicker DatePicker1 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker1 -->&nbsp;-&nbsp;<input class="AFCInput" maxlength="10" size="10" value="{FINE_PUBBLICAZIONE}" name="FINE_PUBBLICAZIONE">&nbsp; 
+                          <!-- BEGIN DatePicker DatePicker2 --><a class="AFCDataLink" href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Themes/DatePicker/DatePicker1.gif" border="0"></a><!-- END DatePicker DatePicker2 --></td> 
+                      </tr>
+ 
+                    </table>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td width="100%">
+                    <table id="t3" style="DISPLAY: none" width="100%" class="AFCFormTABLE" cellpadding="3" cellspacing="0">
+                      <tr style="DISPLAY: block">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Tipo&nbsp;Contenuto</td> 
+                        <td class="AFCDataTD" valign="top" align="left" width="80%">
+                          <!-- BEGIN RadioButton TIPO_TESTO --><input id="tipo_testo" type="radio" value="{Value}" name="{TIPO_TESTO_Name}" onclick="show_testo(this.value);" {Check}>{Description} <!-- END RadioButton TIPO_TESTO --></td> 
+                      </tr>
+ 
+                      <tr id="row1">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Testo</td> 
+                        <td class="AFCDataTD" valign="top" width="80%"><textarea class="AFCTextarea" name="{TESTO_Name}" rows="10" cols="90">{TESTO}</textarea>&nbsp; <a id="TestoLink" onclick="showLOV('../common/AmvHtmlEdit.html','scrollbars=no, width=800, height=470 ', 'AMV_DOCUMENTI', 'TESTO')" href="javascript:void(0)" name="ImageNote"><img alt="Modifica testo" src="../common/images/AMV/edit.gif" align="absMiddle" border="0"></a> </td> 
+                      </tr>
+ 
+                      <tr id="row8">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Xquery/SQL
+                          Query)</td> 
+                        <td class="AFCDataTD" valign="top" width="80%"><textarea class="AFCTextArea" id="TESTOXQUERY" name="TESTOXQUERY" rows="10" cols="90">{TESTOXQUERY}</textarea>&nbsp;<a id="TestoLink" onclick="showLOV('../common/AmvXqueryEdit.do','scrollbars=no, width=600, height=400 ', 'AMV_DOCUMENTI', 'TESTOXQUERY')" href="javascript:void(0)" name="ImageNote"><img alt="Crea Query" src="../common/images/AMV/edit.gif" align="absMiddle" border="0"></a> </td> 
+                      </tr>
+ 
+                      <tr id="row2">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">URL</td> 
+                        <td class="AFCDataTD" width="80%"><input id="LINK" class="AFCInput" maxlength="200" value="{LINKURL}" name="LINKURL" title="URL (http://...)" size="90">&nbsp;<a onclick="showLOV('../common/AmvDocSelect.do?TITLE=Documenti&amp;ID_AREA={ID_AREA_SEL}','scrollbars=no', 'AMV_DOCUMENTI', 'LINKURL')" href="javascript:void(0)" name="EsploraLink"><img alt="Seleziona documento da elenco" src="../common/images/AMV/esplora.gif" align="absMiddle" border="0"></a><input class="AFCInput" type="hidden" value="{CR}" name="{CR_Name}"><input type="hidden" value="{LINK}" name="{LINK_Name}" class="AFCInput"></td> 
+                      </tr>
+ 
+                      <tr id="row10">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">XSL</td> 
+                        <td class="AFCDataTD" width="80%"><textarea class="AFCTextArea" id="TESTOXQUERY" name="XML" rows="10" cols="90">{XML}</textarea></td> 
+                      </tr>
+ 
+                      <tr id="row3">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Testo
+                          breve</td> 
+                        <td class="AFCDataTD" valign="top" width="80%"><textarea class="AFCTextarea" name="{ABSTRACT_Name}" rows="5" cols="90">{ABSTRACT}</textarea></td> 
+                      </tr>
+ 
+                      <tr id="row4">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Modello
+                          Richiesta</td> 
+                        <td class="AFCDataTD" valign="top" width="80%"><input class="AFCInput" id="LINKMR" maxlength="200" size="90" value="{LINKMR}" name="{LINKMR_Name}" readonly>&nbsp;<a onclick="showLOV('../common/AmvModSelect.do?TITLE=Modello&amp;VALUE={LINKMR}','scrollbars=no', 'AMV_DOCUMENTI', 'LINKMR')" href="javascript:void(0)" name="EsploraModelli"><img alt="Seleziona modello da elenco" src="../common/images/AMV/esplora.gif" align="absMiddle" border="0"></a> </td> 
+                      </tr>
+ 
+                      <tr id="row5">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%" nowrap>Modello
+                          Approvazione</td> 
+                        <td class="AFCDataTD" valign="top" width="80%"><input class="AFCInput" id="LINKMA" readonly maxlength="200" size="90" value="{LINKMA}" name="{LINKMA_Name}">&nbsp;<a onclick="showLOV('../common/AmvModSelect.do?TITLE=Modello&amp;VALUE={LINKMA}','scrollbars=no', 'AMV_DOCUMENTI', 'LINKMA')" href="javascript:void(0)" name="EsploraModelli"><img alt="Seleziona modello da elenco" src="../common/images/AMV/esplora.gif" align="absMiddle" border="0"></a> </td> 
+                      </tr>
+ 
+                      <tr id="row6">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Iter
+                          Approvazione</td> 
+                        <td class="AFCDataTD" valign="top" width="80%" align="left">
+                          <!-- BEGIN RadioButton LINK_ITER --><input class="" type="radio" value="{Value}" name="{LINK_ITER_Name}" {Check}>{Description}<!-- END RadioButton LINK_ITER --></td> 
+                      </tr>
+ 
+                      <tr id="row7">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Modalità
+                          Inoltro</td> 
+                        <td class="AFCDataTD" valign="top" width="80%" align="left">
+                          <!-- BEGIN RadioButton LINK_INOLTRO --><input type="radio" name="{LINK_INOLTRO_Name}" value="{Value}" class="" {Check}>{Description}<!-- END RadioButton LINK_INOLTRO --></td> 
+                      </tr>
+ 
+                      <tr id="row9">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Data
+                          Source</td> 
+                        <td class="AFCDataTD" valign="top" width="80%" align="left"><input class="AFCInput" id="LINKDATASOURCE" maxlength="200" size="90" value="{LINKDATASOURCE}" name="{LINKDATASOURCE_Name}"></td> 
+                      </tr>
+ 
+                      <tr style="DISPLAY: block">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%" title="Immagine utilizzata nei blocchi laterali">Immagine </td> 
+                        <td class="AFCDataTD" width="80%" align="left"><input class="AFCInput" value="{IMMAGINE}" name="{IMMAGINE_Name}" size="90"><a onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVFILE={IMMAGINE}&amp;MVTYPE=docimg','scrollbars=no', 'AMV_DOCUMENTI', 'IMMAGINE')" href="javascript:void(0)" name="EsploraImmagine"><img alt="Seleziona file da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a></td> 
+                      </tr>
+ 
+                      <tr>
+                        <td align="left" class="AFCFieldCaptionTD" title="Icona utilizzata negli elenchi centrali">Icona </td> 
+                        <td class="AFCDataTD"><input class="AFCInput" value="{ICONA}" name="ICONA" size="90"><a id="IconaLink" onclick="showLOV('../common/AmvImageSelect.do?TITLE=Immagini&amp;MVTYPE=icn&amp;MVFILE={ICONA}','scrollbars=no', 'AMV_DOCUMENTI', 'ICONA')" href="javascript:void(0)" name="ImageNote"><img alt="Seleziona file da elenco" src="../common/images/AMV/image.gif" align="absMiddle" border="0"></a></td> 
+                      </tr>
+ 
+                      <tr style="DISPLAY: block">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Allegati</td> 
+                        <td class="AFCDataTD" width="80%">{ALLEGATI}&nbsp;</td> 
+                      </tr>
+ 
+                      <tr style="DISPLAY: block">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Inserisci
+                          allegato</td> 
+                        <td class="AFCDataTD" width="80%">{FILE_UPLOAD}&nbsp;</td> 
+                      </tr>
+ 
+                      <tr style="DISPLAY: block">
+                        <td class="AFCFieldCaptionTD" valign="top" width="20%">Elimina
+                          allegato</td> 
+                        <td class="AFCDataTD" width="80%">
+                          <select class="AFCSelect" name="{ALLEGATO_Name}">
+                            <option value="-1" selected>-&nbsp;-</option>
+ {ALLEGATO_Options} 
+                          </select>
+ </td> 
+                      </tr>
+ 
+                    </table>
+ </td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" nowrap align="right">
+                    <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Inserisci" name="Insert"><!-- END Button Insert -->
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+                    <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Elimina" name="Delete"><!-- END Button Delete -->
+                    <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AMV_DOCUMENTI --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

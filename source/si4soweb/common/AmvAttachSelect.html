@@ -1,0 +1,148 @@
+<html>
+<head>
+<meta name="GENERATOR" content="CodeCharge Studio 2.3.2.24">
+<title>Selezione File</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<link rel="stylesheet" type="text/css" href="../editor/skins/default/fck_dialog.css">
+</head>
+<script>
+	function updateUrl(){
+	
+	var doc = document.getElementById('doc');
+	//Determina il titolo del documento
+	var docTitle = doc.options[doc.selectedIndex].text;
+	//Torva l'indice dell'ultimo carattere .
+	var index = docTitle.lastIndexOf('.');
+	
+	var url = '/UploadDownload/downloadservlet?table=AMV_BLOB&blobfield=BLOB_FILE&dataSource='+document.forms[0].DATASOURCE.value+'&wherecondition=where%20'+document.forms[0].DOCUMENTO.value+'&mimetype='+getMimeType(docTitle.substring(index+1));
+	
+
+	top.opener.document.getElementById('txtUrl').value = url;
+	//Ritorna il titolo del documento che va nell'attributo alt dell'immagine
+	top.opener.document.getElementById('txtDocTitle').value = docTitle.substring(0,index); 
+	//Ritorna l'estensione del file da cui dipende l'icona che serve nell'editor
+	top.opener.document.getElementById('ext').value = docTitle.substring(index+1);
+	top.opener.document.getElementById('cmbLinkProtocol').value = "";
+	window.close();
+}
+//Data l'estensione di un file, determina il mime type ad essa associato
+//se l'estensione non è presente tra quelle prevista viene ritornata la stringa nulla
+//Realizzata il 7-5-2005 da Ing. Marco Rinaldi
+function getMimeType(ext){
+	var mimetype;
+	switch(ext){
+		case "doc":
+			mimetype = "application/msword";
+			break;
+        case "pdf":
+			mimetype = "application/pdf";
+			break;
+		case "txt":
+			mimetype = "text/plain";
+			break;
+		case "xls":
+			//mimetype = "application/x-excel";
+			mimetype = "application/vnd.ms-excel";
+			break;
+		case "pps":
+			mimetype = "application/vnd.ms-powerpoint";
+			break;
+		case "ppt":
+			mimetype = "application/vnd.ms-powerpoint";
+			break;
+	    case "wks":
+			mimetype = "application/vnd.ms-works";
+			break;
+		case "rtf":
+			mimetype = "application/rtf";
+			break;
+		case "zip":
+			mimetype = "application/zip";
+			break;
+		case "bmp":
+			mimetype = "image/bmp";
+			break;
+		case "jpg":
+			mimetype = "image/jpg";
+			break;
+		case "jpeg":
+			mimetype = "image/jpg";
+			break;
+		case "jpe":
+			mimetype = "image/jpg";
+			break;
+		case "gif":
+			mimetype = "image/gif";
+			break;
+		case "tif":
+			mimetype = "image/tiff";
+			break;
+		case "tiff":
+			mimetype = "image/tiff";
+			break;
+		case "png":
+			mimetype = "image/png";
+			break;
+		case "xml":
+			mimetype = "text/xml";
+			break;
+		case "mpg":
+			mimetype = "video/mpeg";
+			break;
+		case "mpeg":
+			mimetype = "video/mpeg";
+			break;
+		case "mpe":
+			mimetype = "video/mpeg";
+			break;
+		case "mov":
+			mimetype = "video/quicktime";
+			break;	
+		case "html":
+			mimetype = "text/html";
+			break;	
+		case "htm":
+			mimetype = "text/html";
+			break;	
+		
+		default:
+			mimetype = null;
+			
+	}
+	return mimetype;
+}
+</script>
+<body class="BackColor">
+{AmvStyle}
+<!-- BEGIN Record FILE_LIST -->
+<form method="post" action="{Action}" name="{HTMLFormName}" enctype="multipart/form-data">
+  <!--<font class="AFCFormHeaderFont">&nbsp;&nbsp;{TITOLO}</font> -->
+  <div class="PopupTitle PopupTitleBorder" align="left">
+    Seleziona allegato 
+  </div>
+ 
+  <table cellpadding="3" cellspacing="3" align="center">
+    <!-- BEGIN Error -->
+    <tr>
+      <td class="AFCErrorDataTD">{Error}</td> 
+    </tr>
+ <!-- END Error -->
+    <tr>
+      <td class="PopupBody" valign="top">&nbsp; 
+        <select id="doc" size="20" name="{DOCUMENTO_Name}" align="center" style="WIDTH: 212px; HEIGHT: 266px">
+          {DOCUMENTO_Options} 
+        </select>
+ </td> 
+    </tr>
+ 
+    <tr valign="top">
+      <td align="right" nowrap><input type="hidden" value="{DATASOURCE}" name="{DATASOURCE_Name}">
+        <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Seleziona" class="Button" onclick="updateUrl()"><!-- END Button Button_Update -->
+        <!-- BEGIN Button Annulla --><input class="Button" onclick="window.close()" type="button" value="Annulla" name="{Button_Name}"><!-- END Button Annulla -->&nbsp; </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record FILE_LIST -->
+</body>
+</html>

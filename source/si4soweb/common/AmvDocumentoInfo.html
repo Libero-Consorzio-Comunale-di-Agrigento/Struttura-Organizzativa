@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Documento</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body class="AFCPageBODY">
+<table border="0" cellpadding="0" cellspacing="2" width="100%" height="100%">
+  <tr>
+    <td width="100%" colspan="3">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td width="100%" valign="top">
+      <table width="100%" cellpadding="0" border="0">
+        <tr>
+          <td width="100%" valign="top" align="left" height="100%">{AmvNavigatore} </td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- Tabella Documento -->
+            <!-- BEGIN Grid AMV_VISTA_DOCUMENTI -->
+            <table class="AFCCenterFormTable" width="100%" cellspacing="0" cellpadding="5">
+              <!-- BEGIN Row -->
+              <tr>
+                <td valign="top" width="80%"><font class="AFCFormHeaderFont">{TITOLO}&nbsp;&nbsp;&nbsp;{IMG_LINK}</font></td> 
+                <td valign="top" align="center" width="10%" nowrap>{STORICO}{REVISIONA}{MODIFICA}<br>
+                  <font color="red"><b>{STATO}</b></font></td> 
+                <td valign="top" width="10%" align="right" nowrap><font class="AFCNote">Pubblicazione
+                  &nbsp;{INIZIO_PUBBLICAZIONE}{DSP_FINE_PUBBLICAZIONE}<br>
+                  Ultimo aggiornamento&nbsp; {DATA_ULTIMA_MODIFICA}</font></td> 
+              </tr>
+ 
+              <tr>
+                <td class="AFCCenterDataTD" colspan="3"><span style="TEXT-ALIGN: justify">{TESTO}</span></td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="3">Pagina&nbsp;non&nbsp;disponibile</td> 
+              </tr>
+              <!-- END NoRecords -->
+            </table>
+ <!-- END Grid AMV_VISTA_DOCUMENTI --></td> 
+        </tr>
+      </table>
+ </td> 
+    <td valign="top">{Right}</td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="3">{Footer}</td> 
+  </tr>
+ 
+</table>
+ 
+</body>
+ 
+</html>

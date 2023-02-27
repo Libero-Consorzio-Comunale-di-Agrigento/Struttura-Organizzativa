@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<tocdata>
+<book name="Amministrazione del Portale" >
+  <item name="Caratteristiche Generali" url="AmvAmministratorePortale.htm" />
+  <item name="Novità" url="Novit_.htm" />
+  <item name="Come fare per..." url="Come_fare_per___.htm" />
+  <book name="Funzioni" >
+    <item name="Amministrazione Funzioni" url="AdmFunzioni.htm" />
+    <item name="Menu Funzioni" url="AdmMenu.htm" />
+    <item name="Guide del Menù" url="AdmGuide.htm" />
+  </book>
+  <book name="Contenuti" >
+    <item name="Amministrazione Contenuti" url="AdmContenuti.htm" />
+    <item name="Gestione dei Documenti" url="AdmDocumento.htm" />
+  </book>
+  <book name="Revisioni" >
+    <item name="Amministrazione Revisioni" url="AdmRevisioniElenco.htm" />
+    <item name="Storico Revisioni" url="AdmRevisioniStorico.htm" />
+  </book>
+  <book name="Classificazioni" >
+    <item name="Amministrazione Classificazioni" url="AdmClassificazioni.htm" />
+    <item name="Tipologie" url="AdmTipologie.htm" />
+    <item name="Categorie" url="AdmCategorie.htm" />
+    <item name="Argomenti" url="AdmArgomenti.htm" />
+    <item name="Sezioni" url="AdmSezioni.htm" />
+    <item name="Rilevanze" url="AdmRilevanze.htm" />
+  </book>
+  <book name="Diritti Accesso" >
+    <item name="Amministrazione Diritti Accesso" url="AdmDirittiAccesso.htm" />
+    <item name="Diritti di Accesso" url="AdmDiritti.htm" />
+    <item name="Aree di Accesso" url="AdmAree.htm" />
+  </book>
+  <book name="Servizi" >
+    <item name="Ammministrazione Servizi" url="AdmServizi.htm" />
+    <item name="Richieste" url="AdmRichieste.htm" />
+    <item name="Utenti" url="AdmUtenti.htm" />
+    <item name="Gruppi" url="AdmGruppi.htm" />
+    <item name="Accessi" url="AdmAccessi.htm" />
+  </book>
+  <book name="Preferenze" >
+    <item name="Amministrazione Preferenze" url="AdmPreferenzeImpostazione.htm" />
+  </book>
+</book>
+
+</tocdata>

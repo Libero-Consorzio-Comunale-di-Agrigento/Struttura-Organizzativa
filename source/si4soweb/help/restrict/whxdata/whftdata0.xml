@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<ftstdata>
+<topic name="Profilo" url="Profilo.htm" />
+<topic name="Utente" url="Utente.htm" />
+<topic name="Aree_Documentali" url="Accesso.htm" />
+<topic name="Servizi" url="Servizi.htm" />
+<topic name="Preferenze" url="Preferenze.htm" />
+<topic name="Richieste on-line" url="AmvRichiesteElenco.htm" />
+<topic name="Le mie Richieste" url="AmvRichiesteAutore.htm" />
+<topic name="Tutte le Richieste" url="AmvRichiesteModello.htm" />
+<topic name="Registrazione richiesta" url="ServletModulistica.htm" />
+<topic name="Servizio" url="Servizio.htm" />
+<topic name="Gruppi" url="Gruppi.htm" />
+
+</ftstdata>  

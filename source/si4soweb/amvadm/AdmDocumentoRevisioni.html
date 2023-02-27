@@ -1,0 +1,40 @@
+
+<!-- BEGIN Grid AD4_DOCUMENTO_SEL -->
+<table cellpadding="0" cellspacing="0" width="100%">
+  <!-- BEGIN Row -->
+  <tr>
+    <td><font class="AFCFormHeaderFont">Storico&nbsp;revisioni&nbsp;del&nbsp;documento:
+      &nbsp;{NOME_DOCUMENTO}&nbsp;</font></td> 
+    <td align="right">{NUOVA_REV}</td> 
+  </tr>
+ <!-- END Row -->
+  <!-- BEGIN NoRecords --><!-- END NoRecords -->
+</table>
+<!-- END Grid AD4_DOCUMENTO_SEL -->
+<!-- BEGIN Grid ELENCO_REVISIONI -->
+<table class="AFCFormTABLE" width="100%" height="97%">
+  <tr>
+    <td valign="top" align="center" class="AFCColumnTD" width="10%">Rev.</td> 
+    <td valign="top" align="center" class="AFCColumnTD" width="10%">Stato</td> 
+    <td valign="top" class="AFCColumnTD" width="79%">Titolo</td> 
+    <td valign="top" class="AFCColumnTD" width="1%">&nbsp;</td> 
+  </tr>
+ 
+  <!-- BEGIN Row -->
+  <tr>
+    <td valign="top" align="center"><a href="{REVISIONE_Src}">{REVISIONE}</a></td> 
+    <td valign="top" align="left" nowrap>{STATO_DOCUMENTO}</td> 
+    <td valign="top">{TITOLO_DOC}</td> 
+    <td valign="top" align="center">{MODIFICA}</td> 
+  </tr>
+ <!-- END Row -->
+  <!-- BEGIN NoRecords -->
+  <tr>
+    <td colspan="4" class="AFCNote">Nessun&nbsp;contenuto</td> 
+  </tr>
+ <!-- END NoRecords -->
+  <tr>
+    <td colspan="4" height="100%">&nbsp;</td> 
+  </tr>
+</table>
+<!-- END Grid ELENCO_REVISIONI -->

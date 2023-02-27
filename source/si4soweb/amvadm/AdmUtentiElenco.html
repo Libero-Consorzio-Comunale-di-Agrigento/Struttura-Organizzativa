@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Utenti</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table class="" border="0" cellpadding="0" cellspacing="2" style="BORDER-COLLAPSE: collapse" bordercolor="#111111" width="100%" height="100%">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td width="100%" valign="top">
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%" colspan="2">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%">
+            <!-- BEGIN Record AD4_UTENTISearch -->
+            <form name="ARTICOLISearch" action="{Action}" method="post" target="">
+              <font class="AFCFormHeaderFont">Cerca&nbsp;Utenti</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="3">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr width="100%">
+                  <td class="AFCFieldCaptionTD" valign="center">Utente</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="250" value="{s_TESTO}" name="s_TESTO" size="40">&nbsp;<input class="AFCInput" type="hidden" value="{ID}" name="ID">&nbsp;<input class="AFCInput" type="hidden" value="{RICERCA}" name="RICERCA"></td> 
+                  <td class="AFCDataTD" nowrap align="right">&nbsp; 
+                    <!-- BEGIN Button DoSearch --><input class="AFCButton" type="submit" value="Cerca" name="DoSearch"><!-- END Button DoSearch -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ 
+            </form>
+ <!-- END Record AD4_UTENTISearch --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="50%" valign="top" align="left">
+            <!-- BEGIN Grid AD4_UTENTI --><font class="AFCFormHeaderFont">Elenco
+            Utenti</font> 
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <tr>
+                <td class="AFCColumnTD" nowrap>
+                  <!-- BEGIN Sorter Sorter_NOMINATIVO --><a class="AFCSorterLink" href="{Sort_URL}">Nominativo</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_NOMINATIVO -->&nbsp;</td> 
+                <td class="AFCColumnTD">&nbsp;Gruppi di appartenenza</td> 
+              </tr>
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD"><a class="AFCDataLink" title="Informazioni utente" href="{NOMINATIVO_Src}">{NOMINATIVO}</a>&nbsp;</td> 
+                <td class="AFCDataTD">&nbsp;{GRUPPI}</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="2">Immettere un valore nel campo
+                  di ricerca o nessun valore per elenco completo&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" align="middle" colspan="2">{AFCNavigator}</td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AD4_UTENTI --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>

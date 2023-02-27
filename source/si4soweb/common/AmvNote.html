@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>AmvNote</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+<script language="JavaScript" src="../Lov.js"></script>
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY" onload="onLoadLOV(); document.forms[0].VALORE.value = top.opener.get_value();" onunload="onUnLoadLOV()">
+<!-- BEGIN Record NOTE -->
+<form method="post" action="{Action}" name="{HTMLFormName}">
+  <font class="AFCFormHeaderFont">{TITOLO}</font> 
+  <table cellpadding="3" cellspacing="0" class="AFCFormTABLE" height="93%" width="100%">
+    <!-- BEGIN Error -->
+    <tr>
+      <td colspan="2" class="AFCErrorDataTD">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td class="AFCDataTD" height="100%" width="100%"><textarea class="AFCTextarea" onblur="onBlurLOV()" style="WIDTH: 100%; HEIGHT: 100%" onfocus="onFocusLOV()" name="{VALORE_Name}">{VALORE}</textarea>&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td align="right" nowrap class="AFCFooterTD">
+        <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Aggiorna" class="AFCButton" onclick="top.opener.returnLOV(document.forms[0].VALORE.value)"><!-- END Button Button_Update -->
+        <!-- BEGIN Button Annulla --><input class="AFCButton" onclick="top.opener.closeLOV()" type="button" value="Annulla" name="{Button_Name}"><!-- END Button Annulla -->&nbsp; </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record NOTE -->{AmvStyle}
+</body>
+</html>

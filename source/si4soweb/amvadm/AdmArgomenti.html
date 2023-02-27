@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Amministrazione Argomenti</title>
+<link rel="stylesheet" type="text/css" href="../Themes/AFC/Style.css">
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="AFCPageBODY">
+<table id="AutoNumber1" style="BORDER-COLLAPSE: collapse" bordercolor="#111111" cellspacing="2" cellpadding="0" width="100%" height="100%" border="0">
+  <tr>
+    <td width="100%" colspan="2">{Header}</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top">{Left}</td> 
+    <td valign="top" align="middle" width="100%">
+      <table width="100%">
+        <tr>
+          <td valign="top" align="left" width="100%">{Guida}</td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="left">
+            <!-- BEGIN Grid AMV_ARGOMENTI --><font class="AFCFormHeaderFont">Elenco
+            Argomenti</font> 
+            <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+              <tr>
+                <td class="AFCColumnTD" align="left" nowrap>
+                  <!-- BEGIN Sorter Sorter_NOME --><a class="AFCSorterLink" href="{Sort_URL}">Nome</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_NOME -->&nbsp;</td> 
+                <td class="AFCColumnTD" align="left" nowrap>
+                  <!-- BEGIN Sorter Descrizione --><a class="AFCSorterLink" href="{Sort_URL}">Descrizione</a> 
+                  <!-- BEGIN Asc_On --><img src="../Themes/AFC/AscOn.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Themes/AFC/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Descrizione --></td> 
+              </tr>
+              <!-- BEGIN Row -->
+              <tr>
+                <td class="AFCDataTD" align="left"><a class="AFCDataLink" href="{NOME_Src}">{NOME}</a>&nbsp;</td> 
+                <td class="AFCDataTD" align="left">{DESCRIZIONE}&nbsp;</td> 
+              </tr>
+              <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr>
+                <td class="AFCDataTD" colspan="2">Nessuna registrazione&nbsp;</td> 
+              </tr>
+              <!-- END NoRecords -->
+              <tr>
+                <td class="AFCFooterTD" align="middle" nowrap colspan="2">{AFCNavigator}&nbsp;</td> 
+              </tr>
+ 
+            </table>
+ <!-- END Grid AMV_ARGOMENTI --></td> 
+        </tr>
+ 
+        <tr>
+          <td width="100%" valign="top" align="middle">
+            <!-- BEGIN Record AMV_ARGOMENTI1 --><br>
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <font class="AFCFormHeaderFont">Aggiornamento Argomento</font> 
+              <table class="AFCFormTABLE" cellspacing="0" cellpadding="3" width="90%">
+                <!-- BEGIN Error -->
+                <tr>
+                  <td class="AFCErrorDataTD" colspan="2">{Error}</td> 
+                </tr>
+                <!-- END Error -->
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Nome&nbsp;</td> 
+                  <td class="AFCDataTD"><input class="AFCInput" maxlength="100" size="40" value="{NOME}" name="NOME">&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFieldCaptionTD" valign="top">Descrizione</td> 
+                  <td class="AFCDataTD"><textarea class="AFCTextArea" style="WIDTH: 100%" name="DESCRIZIONE" rows="5">{DESCRIZIONE}</textarea>&nbsp;</td> 
+                </tr>
+ 
+                <tr>
+                  <td class="AFCFooterTD" valign="top" align="right" colspan="2">
+                    <!-- BEGIN Button Insert --><input class="AFCButton" type="submit" value="Inserisci" name="Insert"><!-- END Button Insert -->
+                    <!-- BEGIN Button Update --><input class="AFCButton" type="submit" value="Aggiorna" name="Update"><!-- END Button Update -->
+                    <!-- BEGIN Button Delete --><input class="AFCButton" type="submit" value="Elimina" name="Delete"><!-- END Button Delete -->
+                    <!-- BEGIN Button Cancel --><input class="AFCButton" type="submit" value="Annulla" name="Cancel"><!-- END Button Cancel -->&nbsp;</td> 
+                </tr>
+ 
+              </table>
+ <input type="hidden" value="{ID_ARGOMENTO}" name="ID_ARGOMENTO" class="AFCInput">
+            </form>
+ <!-- END Record AMV_ARGOMENTI1 --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+ 
+  <tr>
+    <td width="100%" height="100%" valign="bottom" colspan="2">&nbsp;{Footer}</td> 
+  </tr>
+</table>
+</body>
+</html>
